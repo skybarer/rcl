@@ -24,4 +24,6 @@
 
 [component driven architecture](https://www.componentdriven.org/)
 
+[How to Add Localization (l10n) to Your React App with react-i18next](https://www.freecodecamp.org/news/how-to-add-localization-to-your-react-app/)
+
 
