@@ -88,7 +88,7 @@ const Template = (args) => <$COMPONENT {...args} />;
 
 export const Basic = Template.bind({});
 Basic.parameters = {
-  layout: 'centered',
+  layout: 'fullscreen'
 };
 
 Basic.args = {

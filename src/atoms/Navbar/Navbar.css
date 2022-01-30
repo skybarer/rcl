@@ -1,0 +1,9 @@
+.navbar {
+    background-color: #0A192B;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    color: white;
+    margin: 0;
+    border-radius: 0;
+}

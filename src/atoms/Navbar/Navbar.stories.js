@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar';
+import './Navbar.css'
 import {
   Title,
   Subtitle,
@@ -30,7 +31,7 @@ export default {
   },
   argTypes: {
     backgroundColor: { control: 'color' },
-    
+
   }
 };
 
@@ -38,7 +39,7 @@ const Template = (args) => <Navbar {...args} />;
 
 export const Basic = Template.bind({});
 Basic.parameters = {
-  layout: 'centered',
+  layout: 'fullscreen'
 
 };
 

@@ -38,7 +38,6 @@ const Template = (args) => <Navs {...args} />;
 
 export const Basic = Template.bind({});
 Basic.parameters = {
-  layout: 'centered',
 
 };
 

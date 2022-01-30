@@ -38,7 +38,7 @@ const Template = (args) => <Tooltips {...args} />;
 
 export const Basic = Template.bind({});
 Basic.parameters = {
-  layout: 'centered',
+  layout: 'fullscreen'
 
 };
 
