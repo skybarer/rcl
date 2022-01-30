@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './Accordion.css'
 
 export const Accordion = ({ title, content, backgroundColor, onClick }) => {
   return (
