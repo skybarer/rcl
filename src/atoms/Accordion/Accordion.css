@@ -1,4 +1,5 @@
-div {
+.accordion {
     display: block;
-    border: 1px dashed black;
+    border: .1px dashed black;
+    background-color: aliceblue;
 }

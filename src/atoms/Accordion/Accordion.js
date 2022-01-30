@@ -5,10 +5,10 @@ import './Accordion.css'
 export const Accordion = ({ title, content, backgroundColor, onClick }) => {
   return (
     <React.Fragment>
-      <div>
+      <div className='accordion'>
         {title}
       </div>
-      <div>
+      <div className='accordion'>
         {content}
       </div>
     </React.Fragment>
