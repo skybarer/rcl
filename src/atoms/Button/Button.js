@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './Button.css';
 
 export const Button = (
   {
@@ -12,13 +13,12 @@ export const Button = (
 ) => {
   return (
     <button
+      className='rcl-button'
       disabled={disabled}
       onClick={onClick}
       style={{
         backgroundColor,
-        border: 'none',
         padding: '0.7rem',
-        borderRadius
       }}>
       {label}
     </button>
@@ -40,13 +40,3 @@ Button.defaultProps = {
   disabled: false
 };
 
-// {
-//   border: none !important;
-//   padding: 0.7rem;
-//   font-size: 14px;
-//   font-weight: 500;
-//   /* line-height: 36px; */
-//   color: #000000;
-//   border-radius: 4px;
-//   transition: background 400ms cubic-bezier(0.25, 0.8, 0.25, 1),box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
-// }

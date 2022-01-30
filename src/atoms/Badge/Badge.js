@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './Badge.css'
 
 // https://staxmanade.com/CssToReact/
 
@@ -12,14 +13,15 @@ export const Badge = ({
 }) => {
   return (
     <span
-      style={{
-        backgroundColor,
-        borderRadius,
-        padding,
-        color,
-        textAlign: 'center',
-        fontSize: 'small'
-      }}
+      className='tip'
+      // style={{
+      //   backgroundColor,
+      //   borderRadius,
+      //   padding,
+      //   color,
+      //   textAlign: 'center',
+      //   fontSize: 'small'
+      // }}
     >
       {content}
     </span>

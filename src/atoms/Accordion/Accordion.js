@@ -3,14 +3,26 @@ import PropTypes from 'prop-types';
 import './Accordion.css'
 
 export const Accordion = ({ title, content, backgroundColor, onClick }) => {
+
+  const [toogleBody, setToggleBody] = React.useState(false)
+
+  const titleOnClikc = () => {
+    setToggleBody(!toogleBody);
+  }
+
   return (
     <React.Fragment>
-      <div className='accordion'>
+      <div className='accordion accordian-header' onClick={titleOnClikc}>
         {title}
       </div>
-      <div className='accordion'>
-        {content}
-      </div>
+      {
+        toogleBody ?
+          <div className='accordion'>
+            {content}
+          </div>
+          :
+          null
+      }
     </React.Fragment>
   );
 }
