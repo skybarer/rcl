@@ -1,7 +1,16 @@
 {
-  "name": "rcl",
+  "name": "@skybarer/rcl",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skybarer/rcl"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
@@ -17,7 +26,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "clean": "rimraf dist",
+    "compile": "npm run clean && cross-env NODE_ENV=production babel src/atoms --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,stories.js,__snapshots__"
   },
   "eslintConfig": {
     "extends": [
@@ -47,7 +58,13 @@
       "last 1 safari version"
     ]
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
+    "@babel/cli": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
     "@storybook/addon-actions": "^6.4.16",
     "@storybook/addon-essentials": "^6.4.16",
     "@storybook/addon-links": "^6.4.16",
@@ -56,6 +73,12 @@
     "@storybook/node-logger": "^6.4.16",
     "@storybook/preset-create-react-app": "^4.0.0",
     "@storybook/react": "^6.4.16",
+    "cross-env": "^7.0.3",
     "webpack": "^5.67.0"
+  },
+  "peerDependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.3"
   }
 }

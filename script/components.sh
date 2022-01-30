@@ -6,7 +6,7 @@
 
 # this should not be run multiple times otherwise files will be overridden
 
-#COMPONENT_PATH="C:\\Users\\inkol\\code\\react\\react-components-lib\\src\\components\\"
+#COMPONENT_PATH="C:\\Users\\inkol\\code\\react\\rcl\\src\\components\\"
 
 COMPONENT_ARRAY=(
   Alerts
@@ -42,7 +42,7 @@ COMPONENT_ARRAY=(
 
 for COMPONENT in ${COMPONENT_ARRAY[@]}; do
 
-  COMPONENT_PATH="C:\\Users\\inkol\\code\\react\\react-components-lib\\src\\atoms\\"
+  COMPONENT_PATH="C:\\Users\\inkol\\code\\react\\rcl\\src\\atoms\\"
   INDEX_JS_CONTENT="import $COMPONENT from './$COMPONENT';
 
 export {
