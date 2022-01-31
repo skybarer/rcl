@@ -44,3 +44,5 @@ https://designrevision.com/docs/shards-react/getting-started
 http://react-toolbox.io/#/components/menu
 http://reactdesktop.js.org/docs/mac-os/checkbox
 https://dev.to/nghiemthu/an-introduction-about-reusable-components-and-creating-typography-component-4c6o
+https://css-tricks.com/snippets/css/stack-of-paper/
+https://jsfiddle.net/chriscoyier/KVjFQ/1/
