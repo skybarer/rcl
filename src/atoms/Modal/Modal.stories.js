@@ -30,15 +30,26 @@ export default {
   },
   argTypes: {
     backgroundColor: { control: 'color' },
-    
+
   }
 };
 
-const Template = (args) => <Modal {...args} />;
+var showFlag = false;
+
+const toggleModal = () => {
+  showFlag = !showFlag;
+}
+
+const Template = (args) => (
+  <>
+    <button onClick={toggleModal}>click me : {showFlag}</button>
+    <Modal show={showFlag} />
+  </>
+);
 
 export const Basic = Template.bind({});
 Basic.parameters = {
-  layout: 'fullscreen'
+  // layout: 'fullscreen'
 
 };
 
