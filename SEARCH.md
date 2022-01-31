@@ -53,3 +53,4 @@ https://github.com/IBM/carbon-components-angular
 https://gitlab-org.gitlab.io/gitlab-ui/ (story book components)
 https://gitlab.com/gitlab-org/gitlab-ui
 https://github.com/tuchk4/storybook-readme
+https://storybook.js.org/addons/@spring-media/storybook-addon-image-snapshots/
