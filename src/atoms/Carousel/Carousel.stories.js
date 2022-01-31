@@ -1,5 +1,6 @@
 import React from 'react';
 import Carousel from './Carousel';
+
 import {
   Title,
   Subtitle,
@@ -9,6 +10,7 @@ import {
   Stories,
   PRIMARY_STORY,
 } from '@storybook/addon-docs';
+import { CarouselItem } from './CarouselItem';
 
 export default {
   title: 'atoms/Carousel/Basic',
@@ -30,11 +32,19 @@ export default {
   },
   argTypes: {
     backgroundColor: { control: 'color' },
-    
+
   }
 };
 
-const Template = (args) => <Carousel {...args} />;
+const Template = (args) => (
+  <Carousel {...args}>
+    <CarouselItem>item1</CarouselItem>
+    <CarouselItem>item2</CarouselItem>
+    <CarouselItem>item3</CarouselItem>
+    <CarouselItem>item4</CarouselItem>
+    <CarouselItem>item5</CarouselItem>
+  </Carousel>
+);
 
 export const Basic = Template.bind({});
 Basic.parameters = {
@@ -43,7 +53,5 @@ Basic.parameters = {
 };
 
 Basic.args = {
-  label: 'Carousel',
-  backgroundColor: 'aliceblue',
-  color: '#000000'
+ 
 };

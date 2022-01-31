@@ -46,3 +46,5 @@ http://reactdesktop.js.org/docs/mac-os/checkbox
 https://dev.to/nghiemthu/an-introduction-about-reusable-components-and-creating-typography-component-4c6o
 https://css-tricks.com/snippets/css/stack-of-paper/
 https://jsfiddle.net/chriscoyier/KVjFQ/1/
+https://medium.com/@RahulTMody/create-a-scrolling-image-slider-in-react-1e4eddcd407b
+https://medium.com/tinyso/how-to-create-the-responsive-and-swipeable-carousel-slider-component-in-react-99f433364aa0
