@@ -1,0 +1,10 @@
+.rcl-close {
+    padding: 2px;
+    cursor: pointer;
+}
+
+.rcl-close:hover {
+    padding: 2px;
+    border-radius: 50%;
+    background-color: #00000038;
+}

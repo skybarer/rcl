@@ -30,7 +30,7 @@ export default {
   },
   argTypes: {
     backgroundColor: { control: 'color' },
-    
+
   }
 };
 
@@ -38,12 +38,9 @@ const Template = (args) => <Close {...args} />;
 
 export const Basic = Template.bind({});
 Basic.parameters = {
-  layout: 'fullscreen'
+  layout: 'centered'
 
 };
 
 Basic.args = {
-  label: 'Close',
-  backgroundColor: 'aliceblue',
-  color: '#000000'
 };
