@@ -11,7 +11,7 @@ import {
 } from '@storybook/addon-docs';
 
 export default {
-  title: 'atoms/Spinners/Basic',
+  title: 'atoms/Spinners',
   component: Spinners,
   parameters: {
     options: { selectedPanel: 'storybook/a11y/panel' },
@@ -36,13 +36,13 @@ export default {
 
 const Template = (args) => <Spinners {...args} />;
 
-export const Basic = Template.bind({});
-Basic.parameters = {
-  layout: 'fullscreen'
+export const Circular = Template.bind({});
+Circular.parameters = {
+  layout: 'centered'
 
 };
 
-Basic.args = {
+Circular.args = {
   label: 'Spinners',
   backgroundColor: 'aliceblue',
   color: '#000000'
