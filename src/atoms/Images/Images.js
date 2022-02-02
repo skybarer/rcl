@@ -1,21 +1,37 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './Images.css';
+import { simpleSvgPlaceholder } from './../../util/Placeholder';
 
-export default function Images({ label = 'button', backgroundColor, onClick }) {
+export default function Images(
+  { src,
+    type,
+    alt,
+    className = 'rounded',
+    style,
+    backgroundColor
+  }) {
   return (
-    <button onClick={onClick} style={{ backgroundColor, border: 'none', padding: '0.7rem', borderRadius: '4px' }}>
-      {label}
-    </button>
+    <img
+      className={className}
+      src={src == null ?
+        simpleSvgPlaceholder(
+          {
+            width: 200,
+            height: 200,
+            bgColor: backgroundColor
+          }) : src}
+      alt={alt}
+      style={style}
+    >
+    </img>
   );
 }
 
 Images.propTypes = {
-  backgroundColor: PropTypes.string,
-  label: PropTypes.string.isRequired,
-  onClick: PropTypes.func,
+  type: PropTypes.string,
 };
 
 Images.defaultProps = {
-  backgroundColor: null,
-  onClick: undefined,
+  type: null,
 };

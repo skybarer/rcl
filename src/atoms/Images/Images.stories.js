@@ -30,7 +30,7 @@ export default {
   },
   argTypes: {
     backgroundColor: { control: 'color' },
-    
+
   }
 };
 
@@ -38,12 +38,30 @@ const Template = (args) => <Images {...args} />;
 
 export const Basic = Template.bind({});
 Basic.parameters = {
-  layout: 'fullscreen'
-
+  layout: 'centered'
 };
 
 Basic.args = {
-  label: 'Images',
-  backgroundColor: 'aliceblue',
-  color: '#000000'
+  className: '',
+  style: { backgroundColor: 'aliceblue' }
+};
+
+export const Rounded = Template.bind({});
+Rounded.parameters = {
+  layout: 'centered'
+}
+
+Rounded.args = {
+  className: 'rounded',
+  style: { backgroundColor: 'aliceblue' }
+};
+
+export const edgeRounded = Template.bind({});
+edgeRounded.parameters = {
+  layout: 'centered'
+}
+
+edgeRounded.args = {
+  className: 'edge-rounded',
+  style: { backgroundColor: 'aliceblue' }
 };

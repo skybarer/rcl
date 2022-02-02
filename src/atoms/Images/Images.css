@@ -1,0 +1,23 @@
+.img {
+    vertical-align: middle;
+}
+
+.rounded {
+    border-radius: 50%;
+}
+
+.rounded-border {
+    border-radius: 50%;
+}
+
+.bordered {
+    border: 1px dashed black;
+}
+
+.shadow {
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.edge-rounded {
+    border-radius: 20px;
+}
