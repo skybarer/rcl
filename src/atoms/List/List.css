@@ -1,0 +1,21 @@
+.rc-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.rc-list-item {
+    background-color: #fff;
+    padding: .4rem 1rem;
+
+}
+
+.default {
+    border: 1px solid #ddd;
+    margin-top: -1px;
+}
+
+.bottomBorder {
+    border-bottom: 1px solid #ddd;
+}

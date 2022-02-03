@@ -1,21 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './List.css';
+import { ListItem } from './ListItem';
 
-export default function List({ label = 'button', backgroundColor, onClick }) {
+export default function List(props) {
+
   return (
-    <button onClick={onClick} style={{ backgroundColor, border: 'none', padding: '0.7rem', borderRadius: '4px' }}>
-      {label}
-    </button>
+    <ul className='rc-list' style={props?.style}>
+      <ListItem {...props} />
+    </ul>
   );
 }
 
 List.propTypes = {
   backgroundColor: PropTypes.string,
-  label: PropTypes.string.isRequired,
-  onClick: PropTypes.func,
 };
 
 List.defaultProps = {
   backgroundColor: null,
-  onClick: undefined,
 };
+
+
+
+
+
+
+
