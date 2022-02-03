@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Close.css'
 
-export default function Close(props) {
+export default function Close() {
   return (
     <span
       className='rcl-close'
@@ -20,7 +20,6 @@ export default function Close(props) {
 
 Close.propTypes = {
   backgroundColor: PropTypes.string,
-  label: PropTypes.string.isRequired,
   onClick: PropTypes.func,
 };
 

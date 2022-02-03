@@ -6,5 +6,5 @@
 .rcl-close:hover {
     padding: 2px;
     border-radius: 50%;
-    background-color: #00000038;
+    background-color: rgb(0 0 0 / 10%)
 }
