@@ -12,7 +12,6 @@ export default function Cards({ content }) {
 
 Cards.propTypes = {
   backgroundColor: PropTypes.string,
-  label: PropTypes.string.isRequired,
   onClick: PropTypes.func,
 };
 
