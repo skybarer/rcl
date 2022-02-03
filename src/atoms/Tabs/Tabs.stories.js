@@ -11,7 +11,7 @@ import {
 } from '@storybook/addon-docs';
 
 export default {
-  title: 'atoms/Tabs/Basic',
+  title: 'atoms/Tabs',
   component: Tabs,
   parameters: {
     options: { selectedPanel: 'storybook/a11y/panel' },

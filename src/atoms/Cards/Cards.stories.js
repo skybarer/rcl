@@ -11,7 +11,7 @@ import {
 } from '@storybook/addon-docs';
 
 export default {
-  title: 'atoms/Cards/Basic',
+  title: 'atoms/Cards',
   component: Cards,
   parameters: {
     options: { selectedPanel: 'storybook/a11y/panel' },

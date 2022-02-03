@@ -11,7 +11,7 @@ import {
 } from '@storybook/addon-docs';
 
 export default {
-  title: 'atoms/Badge/Basic',
+  title: 'atoms/Badge',
   component: Badge,
   parameters: {
     options: { selectedPanel: 'storybook/a11y/panel' },

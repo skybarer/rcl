@@ -11,7 +11,7 @@ import {
 } from '@storybook/addon-docs';
 
 export default {
-  title: 'atoms/Pagination/Basic',
+  title: 'atoms/Pagination',
   component: Pagination,
   parameters: {
     options: { selectedPanel: 'storybook/a11y/panel' },

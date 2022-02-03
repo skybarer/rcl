@@ -11,7 +11,7 @@ import {
 } from '@storybook/addon-docs';
 
 export default {
-  title: 'atoms/Tooltips/Basic',
+  title: 'atoms/Tooltips',
   component: Tooltips,
   parameters: {
     options: { selectedPanel: 'storybook/a11y/panel' },

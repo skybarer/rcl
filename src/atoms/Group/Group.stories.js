@@ -11,7 +11,7 @@ import {
 } from '@storybook/addon-docs';
 
 export default {
-  title: 'atoms/Group/Basic',
+  title: 'atoms/Group',
   component: Group,
   parameters: {
     options: { selectedPanel: 'storybook/a11y/panel' },

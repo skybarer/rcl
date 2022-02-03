@@ -11,7 +11,7 @@ import {
 } from '@storybook/addon-docs';
 
 export default {
-  title: 'atoms/Close/Basic',
+  title: 'atoms/Close',
   component: Close,
   parameters: {
     options: { selectedPanel: 'storybook/a11y/panel' },

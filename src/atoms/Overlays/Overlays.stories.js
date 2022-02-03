@@ -11,7 +11,7 @@ import {
 } from '@storybook/addon-docs';
 
 export default {
-  title: 'atoms/Overlays/Basic',
+  title: 'atoms/Overlays',
   component: Overlays,
   parameters: {
     options: { selectedPanel: 'storybook/a11y/panel' },

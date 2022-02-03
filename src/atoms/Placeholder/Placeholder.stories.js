@@ -11,7 +11,7 @@ import {
 } from '@storybook/addon-docs';
 
 export default {
-  title: 'atoms/Placeholder/Basic',
+  title: 'atoms/Placeholder',
   component: Placeholder,
   parameters: {
     options: { selectedPanel: 'storybook/a11y/panel' },

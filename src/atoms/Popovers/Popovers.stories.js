@@ -11,7 +11,7 @@ import {
 } from '@storybook/addon-docs';
 
 export default {
-  title: 'atoms/Popovers/Basic',
+  title: 'atoms/Popovers',
   component: Popovers,
   parameters: {
     options: { selectedPanel: 'storybook/a11y/panel' },

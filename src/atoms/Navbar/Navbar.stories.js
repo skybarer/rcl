@@ -12,7 +12,7 @@ import {
 } from '@storybook/addon-docs';
 
 export default {
-  title: 'atoms/Navbar/Basic',
+  title: 'atoms/Navbar',
   component: Navbar,
   parameters: {
     options: { selectedPanel: 'storybook/a11y/panel' },

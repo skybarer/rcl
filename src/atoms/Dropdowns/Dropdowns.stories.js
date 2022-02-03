@@ -11,7 +11,7 @@ import {
 } from '@storybook/addon-docs';
 
 export default {
-  title: 'atoms/Dropdowns/Basic',
+  title: 'atoms/Dropdowns',
   component: Dropdowns,
   parameters: {
     options: { selectedPanel: 'storybook/a11y/panel' },

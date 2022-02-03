@@ -13,7 +13,7 @@ import {
 import { CarouselItem } from './CarouselItem';
 
 export default {
-  title: 'atoms/Carousel/Basic',
+  title: 'atoms/Carousel',
   component: Carousel,
   parameters: {
     options: { selectedPanel: 'storybook/a11y/panel' },
