@@ -26,6 +26,7 @@
 
 [design.pega.com](https://design.pega.com/design/getting-started/)
 
+
 https://stenciljs.com/docs/introduction
 https://blog.logrocket.com/build-component-library-react-typescript/
 https://react-styleguidist.js.org/
@@ -57,3 +58,4 @@ https://storybook.js.org/addons/@spring-media/storybook-addon-image-snapshots/
 https://blog.logrocket.com/building-a-custom-dropdown-menu-component-for-react-e94f02ced4a1/
 https://chakra-ui.com/
 https://unsplash.com/ (free images )
+https://livebook.manning.com/book/react-quickly/chapter-8/47 (default propTypes use)
