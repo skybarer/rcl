@@ -1,15 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export const ListItem = (props) => {
-    const childrenCount = React.Children.count(props.children);
+export const ListItem = ({ type, children }) => {
+    const childrenCount = React.Children.count(children);
     return (
         <React.Fragment>
             {
-                React.Children.map(props.children, (child, index) => {
+                React.Children.map(children, (child, index) => {
                     const isLastChild = index === childrenCount - 1;
-                    const className = isLastChild && props.type === 'bottomBorder' ? 
-                        'rc-list-item' : `rc-list-item ${props?.type}`;
+                    const className = isLastChild && type === 'bottomBorder' ?
+                        'rc-list-item' : `rc-list-item ${type}`;
                     return (
                         <li
                             className={className}
