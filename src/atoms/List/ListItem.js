@@ -26,7 +26,8 @@ export const ListItem = ({ type, children }) => {
 }
 
 ListItem.propTypes = {
-    label: PropTypes.string.isRequired,
+    type: PropTypes.string.isRequired,
+    children: PropTypes.node.isRequired,
 };
 
 ListItem.defaultProps = {
