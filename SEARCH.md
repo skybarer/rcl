@@ -61,3 +61,4 @@ https://unsplash.com/ (free images )
 https://livebook.manning.com/book/react-quickly/chapter-8/47 (default propTypes use)
 https://www.w3.org/TR/wai-aria-practices/(a11y doc added)
 https://egghead.io/courses/react-styleguidist-essentials-627f
+https://stripe.com/docs
