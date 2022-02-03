@@ -30,11 +30,17 @@ export default {
   },
   argTypes: {
     backgroundColor: { control: 'color' },
-    
+
   }
 };
 
-const Template = (args) => <Breadcrumb {...args} />;
+
+const selected = crumb => {
+  console.log(crumb);
+}
+const crumbs = ['Home', 'Category', 'Sub Category']
+
+const Template = (args) => <Breadcrumb {...args} crumbs={crumbs} selected={selected} />;
 
 export const Basic = Template.bind({});
 Basic.parameters = {
