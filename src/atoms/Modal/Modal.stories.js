@@ -34,16 +34,20 @@ export default {
   }
 };
 
-var showFlag = false;
+var showFlag = true;
 
 const toggleModal = () => {
   showFlag = !showFlag;
+  alert(showFlag)
+
 }
 
 const Template = (args) => (
   <>
     <button onClick={toggleModal}>click me : {showFlag}</button>
-    <Modal show={showFlag} />
+    <Modal show={showFlag} >
+      <p>Some Model Content</p>
+    </Modal>
   </>
 );
 

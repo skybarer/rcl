@@ -2,8 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Modal.css'
 
-export default function Modal({ show = false }) {
+export default function Modal(props) {
 
+  const { show, children } = props;
   const [modalStatus, setModalStatus] = React.useState(show);
 
   const closeModal = () => {
@@ -14,19 +15,16 @@ export default function Modal({ show = false }) {
     <div className='modal' style={{ display: modalStatus ? "block" : "none" }}>
       <div className='modal-content'>
         <span className='close' onClick={closeModal}>&times;</span>
-        <p>Some text in the Modal..</p>
+        {children}
       </div>
     </div>
   );
 }
 
 Modal.propTypes = {
-  backgroundColor: PropTypes.string,
-  label: PropTypes.string.isRequired,
-  onClick: PropTypes.func,
+  show: PropTypes.string,
 };
 
 Modal.defaultProps = {
-  backgroundColor: null,
-  onClick: undefined,
+  show: false,
 };
