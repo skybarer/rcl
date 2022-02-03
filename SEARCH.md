@@ -54,3 +54,6 @@ https://gitlab-org.gitlab.io/gitlab-ui/ (story book components)
 https://gitlab.com/gitlab-org/gitlab-ui
 https://github.com/tuchk4/storybook-readme
 https://storybook.js.org/addons/@spring-media/storybook-addon-image-snapshots/
+https://blog.logrocket.com/building-a-custom-dropdown-menu-component-for-react-e94f02ced4a1/
+https://chakra-ui.com/
+https://unsplash.com/ (free images )
