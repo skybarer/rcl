@@ -12,7 +12,7 @@ export const Alerts = ({ label = 'Alerts', backgroundColor, onClick }) => {
           "background": "#E1FFD4",
           "fontWeight": "700",
           "fontSize": "14px",
-          "padding": "10px 20px",
+          "padding": "2px 10px",
           "marginBottom": "24px",
           "borderRadius": "0",
           backgroundColor

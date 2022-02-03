@@ -45,3 +45,16 @@ Basic.args = {
   backgroundColor: 'aliceblue',
   color: '#000000'
 };
+
+
+
+export const Danger = Template.bind({});
+Danger.parameters = {
+  layout: 'fullscreen'
+};
+
+Danger.args = {
+  label: 'Alerts',
+  backgroundColor: '#e74c3c',
+  color: '#000000'
+};

@@ -14,3 +14,7 @@
     border-radius: 50%;
     background-color: #00000038;
 }
+
+.alert-warning {
+    background-color: #e74c3c;
+}
