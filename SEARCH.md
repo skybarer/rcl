@@ -59,3 +59,4 @@ https://blog.logrocket.com/building-a-custom-dropdown-menu-component-for-react-e
 https://chakra-ui.com/
 https://unsplash.com/ (free images )
 https://livebook.manning.com/book/react-quickly/chapter-8/47 (default propTypes use)
+https://www.w3.org/TR/wai-aria-practices/(a11y doc added)
