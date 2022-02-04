@@ -13,3 +13,9 @@
     cursor: pointer;
     text-decoration: underline;
 }
+
+.open {
+    border: thin dashed black;
+    margin-left: auto;
+    order: 2;
+}

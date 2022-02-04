@@ -13,8 +13,19 @@ export const Accordion = (props) => {
 
   return (
     <React.Fragment>
-      <div className='accordion accordian-header' onClick={titleOnClikc}>
-        {title}
+      <div
+        className='accordion accordian-header'
+        onClick={titleOnClikc}
+      >
+        <sapan> {title}</sapan>
+        <span className="open">
+          {toogleBody && <svg fill="none" height="9" viewBox="0 0 14 9" width="14" xmlns="http://www.w3.org/2000/svg">
+            <path d="m1 1 6 6 6-6" stroke="#000" stroke-width="2"></path>
+          </svg>}
+          {!toogleBody && <svg fill="none" height="14" viewBox="0 0 9 14" width="9" xmlns="http://www.w3.org/2000/svg">
+            <path d="m1 13 6-6-6-6" stroke="#000" stroke-width="2"></path>
+          </svg>}
+        </span>
       </div>
       {
         toogleBody ?
@@ -29,9 +40,10 @@ export const Accordion = (props) => {
 }
 
 Accordion.propTypes = {
-  backgroundColor: PropTypes.string,
-  label: PropTypes.string.isRequired,
+  title: PropTypes.string,
+  content: PropTypes.string,
   onClick: PropTypes.func,
+  type: PropTypes.oneOf(['small', 'medium', 'large']),
 };
 
 Accordion.defaultProps = {
