@@ -1,4 +1,9 @@
 :root {
     --main-color: #1da1f2;
     --background-color: #d7d7db;
+
+    --tooltip-text-color: white;
+    --tooltip-background-color: black;
+    --tooltip-margin: 30px;
+    --tooltip-arrow-size: 6px;
 }

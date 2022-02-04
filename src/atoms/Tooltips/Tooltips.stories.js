@@ -30,15 +30,73 @@ export default {
   },
   argTypes: {
     backgroundColor: { control: 'color' },
-    
+
   }
 };
 
-const Template = (args) => <Tooltips {...args} />;
+const emojiCss = {
+  fontSize: '3rem',
+  margin: '2rem',
+  display: 'flex',
+}
+
+const Template = (args) => (
+
+  <React.Fragment>
+    <div>
+      <Tooltips content="Yee-haw!" direction="right">
+        <span style={emojiCss} role="img" aria-label="cowboy emoji">
+          🤠
+        </span>
+      </Tooltips>
+    </div>
+    <div>
+      <Tooltips content="Quack!" direction="top">
+        <span style={emojiCss} role="img" aria-label="duck emoji">
+          🦆
+        </span>
+      </Tooltips>
+    </div>
+
+    <div>
+      <Tooltips content="Quack!" direction="botom">
+        <span style={emojiCss} role="img" aria-label="duck emoji">
+          🦆
+        </span>
+      </Tooltips>
+    </div>
+    <div>
+      <Tooltips content="Quack!" direction="top">
+        <span style={emojiCss} role="img" aria-label="duck emoji">
+          🦆
+        </span>
+      </Tooltips>
+    </div>
+
+    <div>
+      <Tooltips
+        content={
+          <>
+            Bring me
+            <br />
+            to your leader
+          </>
+        }
+        direction="left"
+        delay="0"
+      >
+        <span style={emojiCss} role="img" aria-label="alien emoji">
+          👽
+        </span>
+      </Tooltips>
+    </div>
+
+  </React.Fragment>
+)
 
 export const Basic = Template.bind({});
 Basic.parameters = {
-  layout: 'fullscreen'
+  layout: 'centered',
 
 };
 
