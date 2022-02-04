@@ -3,10 +3,12 @@ import PropTypes from 'prop-types';
 import './List.css';
 import { ListItem } from './ListItem';
 
-export default function List(props) {
+export default function List({ style, ...props }) {
 
   return (
-    <ul className='rc-list' style={props?.style}>
+    <ul
+      className='rc-list'
+      style={{...style}}>
       <ListItem {...props} />
     </ul>
   );

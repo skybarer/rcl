@@ -1,0 +1,37 @@
+.rc-modal-open {
+    box-sizing: inherit;
+    opacity: 1;
+    transform: translateX(0);
+    transition-duration: 300ms;
+    visibility: visible;
+    color: black;
+}
+
+.rc-modal {
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 50%);
+    display: inline-block;
+    list-style: none;
+    margin-left: 0;
+    /* max-width: 320px;
+    min-width: 148px; */
+    opacity: 0;
+    padding: 8px 0;
+    /* position: absolute; */
+    right: 0;
+    top: 0;
+    transform: translateY(calc(-1 * 8px));
+    transition: all 100ms ease-in-out;
+    /* visibility: hidden; */
+    z-index: 1000;
+    box-sizing: inherit;
+    color: black;
+    text-align: center;
+    box-sizing: inherit;
+    opacity: 1;
+    transform: translateX(0);
+    transition-duration: 300ms;
+    visibility: visible;
+    color: black;
+}
