@@ -63,3 +63,4 @@ https://www.w3.org/TR/wai-aria-practices/(a11y doc added)
 https://egghead.io/courses/react-styleguidist-essentials-627f
 https://stripe.com/docs
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article (html article tag)
+https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow (box shadow)

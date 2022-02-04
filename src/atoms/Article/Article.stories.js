@@ -30,7 +30,10 @@ export default {
   },
   argTypes: {
     backgroundColor: { control: 'color' },
-
+    type: {
+      options: ['border', 'raised', 'none'],
+      control: { type: 'select' },
+    },
   }
 };
 
@@ -48,7 +51,5 @@ Basic.parameters = {
 };
 
 Basic.args = {
-  label: 'Article',
-  backgroundColor: 'aliceblue',
-  color: '#000000'
+  type: 'border',
 };
