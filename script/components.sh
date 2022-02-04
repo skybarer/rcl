@@ -9,40 +9,12 @@
 #COMPONENT_PATH="C:\\Users\\inkol\\code\\react\\rcl\\src\\components\\"
 
 COMPONENT_ARRAY=(
-  Alerts
-  Accordion
-  Badge
-  Breadcrumb
-  Buttons
-  Group
-  Cards
-  Carousel
-  Close
-  Button
-  Dropdowns
-  Figures
-  Images
-  List
-  Group
-  Modal
-  Navs
-  Navbar
-  Offcanvas
-  Overlays
-  Pagination
-  Placeholder
-  Popovers
-  Progress
-  Spinners
-  Table
-  Tabs
-  Tooltips
-  Toasts
+  ComponentName
 )
 
 for COMPONENT in ${COMPONENT_ARRAY[@]}; do
 
-  COMPONENT_PATH="C:\\Users\\inkol\\code\\react\\rcl\\src\\atoms\\"
+  COMPONENT_PATH="C:\\Users\\inkol\\Desktop\\code\\rcl\\src\\atoms\\"
   INDEX_JS_CONTENT="import $COMPONENT from './$COMPONENT';
 
 export {
@@ -80,7 +52,7 @@ export default {
   },
   argTypes: {
     backgroundColor: { control: 'color' },
-    
+
   }
 };
 
@@ -97,7 +69,7 @@ Basic.args = {
   color: '#000000'
 };"
 
-COMPONENT_CONTENT="import React from 'react';
+  COMPONENT_CONTENT="import React from 'react';
 import PropTypes from 'prop-types';
 
 export const $COMPONENT = ({ label = 'button', backgroundColor, onClick }) => {
@@ -122,16 +94,16 @@ $COMPONENT.defaultProps = {
   echo "Component Name : $COMPONENT"
   echo "$COMPONENT_PATH$COMPONENT"
   cd $COMPONENT_PATH
-#  mkdir $COMPONENT
+  mkdir $COMPONENT
   cd "$COMPONENT_PATH$COMPONENT"
-#  touch $COMPONENT.js
-#  touch $COMPONENT.stories.js
-#  touch index.js
-   touch $COMPONENT.css
+  touch $COMPONENT.js
+  touch $COMPONENT.stories.js
+  touch index.js
+  touch $COMPONENT.css
 
-#  echo "$COMPONENT_CONTENT" >>$COMPONENT.js
-#  echo "$STORIES_CONTENT" >>$COMPONENT.stories.js
-#  echo "$INDEX_JS_CONTENT" >>index.js
+    echo "$COMPONENT_CONTENT" >>$COMPONENT.js
+    echo "$STORIES_CONTENT" >>$COMPONENT.stories.js
+    echo "$INDEX_JS_CONTENT" >>index.js
 done
 
 sleep 5s # Waits 5 seconds.
