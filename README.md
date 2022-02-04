@@ -1,4 +1,7 @@
-# A basic componet library for React
+# Atomic level component library build for React
+
+#### Simple and flexiable compoents 
+#### component development in progress ....
 
 
 
