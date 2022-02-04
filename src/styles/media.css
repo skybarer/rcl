@@ -1,0 +1,58 @@
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+    /*--- Mobile portrait ---*/
+}
+
+@media only screen and (min-width : 480px) and (max-width : 595px) {
+    /*--- Mobile landscape ---*/
+}
+
+@media only screen and (min-width : 595px) and (max-width : 690px) {
+    /*--- Small tablet portrait ---*/
+}
+
+@media only screen and (min-width : 690px) and (max-width : 800px) {
+    /*--- Tablet portrait ---*/
+}
+
+@media only screen and (min-width : 800px) and (max-width : 1024px) {
+    /*--- Small tablet landscape ---*/
+}
+
+@media only screen and (min-width : 1024px) and (max-width : 1224px) {
+    /*--- Tablet landscape --- */
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .example {
+        background: red;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .example {
+        background: green;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .example {
+        background: blue;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .example {
+        background: orange;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .example {
+        background: pink;
+    }
+}
