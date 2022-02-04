@@ -9,19 +9,23 @@ export const Badge = ({
   backgroundColor = 'aliceblue',
   borderRadius = '10px',
   color = 'black',
-  padding
+  padding,
+  style,
+  // scale = 1,
 }) => {
   return (
     <span
       className='tip'
-      // style={{
-      //   backgroundColor,
-      //   borderRadius,
-      //   padding,
-      //   color,
-      //   textAlign: 'center',
-      //   fontSize: 'small'
-      // }}
+      style={{
+        ...style,
+        transform: 'scale(1)',
+        // backgroundColor,
+        // borderRadius,
+        // padding,
+        // color,
+        // textAlign: 'center',
+        // fontSize: 'small'
+      }}
     >
       {content}
     </span>
