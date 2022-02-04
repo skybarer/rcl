@@ -22,7 +22,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build --stats",
+    "analyze": "webpack-bundle-analyzer build/bundle-stats.json",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
@@ -76,7 +77,8 @@
     "@storybook/preset-create-react-app": "^4.0.0",
     "@storybook/react": "^6.4.16",
     "cross-env": "^7.0.3",
-    "webpack": "^5.67.0"
+    "webpack": "^5.67.0",
+    "webpack-bundle-analyzer": "^4.5.0"
   },
   "peerDependencies": {
     "react": "^17.0.1",
