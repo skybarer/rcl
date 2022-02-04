@@ -68,3 +68,4 @@ https://www.digitalocean.com/community/tutorials/react-tabs-component (tabs comp
 https://reactgo.com/react-sticky-footer/ (sticky footer)
 https://blog.bitsrc.io/3-ways-to-theme-react-components-9cfa631351e9 (react component theming)
 https://paladini.dev/posts/how-to-make-an-extremely-reusable-tooltip-component-with-react--and-nothing-else/ (tool tip component)
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout (grid layout)

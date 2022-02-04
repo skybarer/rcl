@@ -1,24 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './Alerts.css'
-export const Alerts = ({ label = 'Alerts', backgroundColor, onClick }) => {
+export const Alerts = ({ label = 'Alerts', backgroundColor, className, style }) => {
   const [visible, setVisible] = React.useState(true);
   const closeAlert = () => { setVisible(false) }
   const alertHtml = (
     <div
-      className='alert'
+      className={className}
       style={
         {
-          "background": "#E1FFD4",
-          "fontWeight": "700",
-          "fontSize": "14px",
-          "padding": "2px 10px",
-          "marginBottom": "24px",
-          "borderRadius": "0",
           backgroundColor
         }
       }>
-      {label}
+      <span> {label}</span>
       <span
         className='alert-close'
         style={{
@@ -46,6 +40,6 @@ Alerts.propTypes = {
 };
 
 Alerts.defaultProps = {
-  backgroundColor: null,
+  className: 'alert',
   onClick: undefined,
 };

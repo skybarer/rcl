@@ -30,7 +30,7 @@ export default {
   },
   argTypes: {
     backgroundColor: { control: 'color' },
-    
+
   }
 };
 
@@ -42,6 +42,7 @@ Basic.parameters = {
 
 Basic.args = {
   label: 'Alerts',
+  className: 'alert',
   backgroundColor: 'aliceblue',
   color: '#000000'
 };
@@ -55,6 +56,18 @@ Danger.parameters = {
 
 Danger.args = {
   label: 'Alerts',
+  className: 'alert',
   backgroundColor: '#e74c3c',
   color: '#000000'
+};
+
+
+export const Bottonm = Template.bind({});
+Bottonm.parameters = {
+  layout: 'fullscreen'
+};
+
+Bottonm.args = {
+  className: 'alert-bottom',
+  label: '<a href="https://www.pluralsight.com/privacy" class="svelte-10xdqkv">Learn more about your privacy</a>',
 };
