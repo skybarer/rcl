@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button} from './Button';
+import { Button } from './Button';
 import {
   Title,
   Subtitle,
@@ -30,11 +30,15 @@ export default {
   },
   argTypes: {
     backgroundColor: { control: 'color' },
-    
+
   }
 };
 
-const Template = (args) => <Button {...args} />;
+const Template = (args) => (
+  <Button {...args} style={{ color: 'black', border: 'thin solid black', backgroundColor: 'white' }}>
+    Button
+  </Button>
+);
 
 export const Basic = Template.bind({});
 Basic.parameters = {

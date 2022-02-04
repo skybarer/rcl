@@ -3,3 +3,20 @@
 .rcl-button {
     border: .1px dashed black;
 }
+
+.rcl-button1{
+    background: #F3FAFF;
+    border-color: transparent;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    color: #333333;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 6px 10px 4px 10px;
+    position: relative;
+    white-space: nowrap;
+    display: inline-flex;
+    cursor: pointer;
+}

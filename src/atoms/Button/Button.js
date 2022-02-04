@@ -4,7 +4,8 @@ import './Button.css';
 
 export const Button = (
   {
-    label = 'button',
+    children,
+    style,
     backgroundColor = 'aliceblue',
     onClick,
     borderRadius = '4px',
@@ -13,20 +14,22 @@ export const Button = (
 ) => {
   return (
     <button
-      className='rcl-button'
+      className='rcl-button1'
       disabled={disabled}
       onClick={onClick}
       style={{
         backgroundColor,
         padding: '0.7rem',
+        ...style
       }}>
-      {label}
+      {children}
     </button>
   );
 }
 
 Button.propTypes = {
-  label: PropTypes.string,
+  children: PropTypes.node,
+  style: PropTypes.object,
   backgroundColor: PropTypes.string,
   size: PropTypes.oneOf(['small', 'medium', 'large']),
   onClick: PropTypes.func,
