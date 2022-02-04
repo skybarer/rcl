@@ -22,7 +22,7 @@ export default function Modal(props) {
 }
 
 Modal.propTypes = {
-  show: PropTypes.string,
+  show: PropTypes.bool.isRequired,
 };
 
 Modal.defaultProps = {

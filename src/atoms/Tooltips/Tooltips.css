@@ -1,4 +1,5 @@
 @import url(../../styles/root.css);
+@import url(../../styles/global.css);
 
 /* Wrapping */
 .Tooltip-Wrapper {
