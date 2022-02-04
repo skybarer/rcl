@@ -30,15 +30,39 @@ export default {
   },
   argTypes: {
     backgroundColor: { control: 'color' },
-    
+
   }
 };
 
-const Template = (args) => <Tabs {...args} />;
+const Template = (args) => (
+  // <Tabs {...args} >
+  //   <Tab>
+  //     item1
+  //   </Tab>
+  //   <Tab>
+  //     item2
+  //   </Tab>
+  //   <Tab>
+  //     item3
+  //   </Tab>
+  // </Tabs>
+
+  <Tabs>
+    <div label="item1">
+      See ya later, <em>Alligator</em>!
+    </div>
+    <div label="item2">
+      After 'while, <em>Crocodile</em>!
+    </div>
+    <div label="item3">
+      Nothing to see here, this tab is <em>extinct</em>!
+    </div>
+  </Tabs>
+);
 
 export const Basic = Template.bind({});
 Basic.parameters = {
-  layout: 'fullscreen'
+  // layout: 'fullscreen'
 
 };
 

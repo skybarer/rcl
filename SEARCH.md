@@ -64,3 +64,4 @@ https://egghead.io/courses/react-styleguidist-essentials-627f
 https://stripe.com/docs
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article (html article tag)
 https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow (box shadow)
+https://www.digitalocean.com/community/tutorials/react-tabs-component (tabs component react)
