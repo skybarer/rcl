@@ -65,3 +65,5 @@ https://stripe.com/docs
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article (html article tag)
 https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow (box shadow)
 https://www.digitalocean.com/community/tutorials/react-tabs-component (tabs component react)
+https://reactgo.com/react-sticky-footer/ (sticky footer)
+https://blog.bitsrc.io/3-ways-to-theme-react-components-9cfa631351e9 (react componet theming)
