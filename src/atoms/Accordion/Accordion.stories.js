@@ -9,6 +9,9 @@ import {
   Stories,
   PRIMARY_STORY,
 } from '@storybook/addon-docs';
+import { AccordionItem } from './AccordianItem';
+import { AccordionTitle } from './AccordianTitle';
+import { AccordionContent } from './AccordianContent';
 
 export default {
   title: 'atoms/Accordion',
@@ -34,7 +37,56 @@ export default {
   }
 };
 
-const Template = (args) => <Accordion {...args} />;
+const Template = (args) => (
+  <Accordion>
+    <AccordionItem>
+      <AccordionTitle>
+        <span>What is Lorem Ipsum?</span>
+      </AccordionTitle>
+      <AccordionContent>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      </AccordionContent>
+    </AccordionItem>
+
+    <AccordionItem>
+      <AccordionTitle>
+        <span>Section 1</span>
+      </AccordionTitle>
+      <AccordionContent>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
+          laborum cupiditate possimus labore, hic temporibus velit dicta earum
+          suscipit commodi eum enim atque at? Et perspiciatis dolore iure
+          voluptatem.</p>
+      </AccordionContent>
+    </AccordionItem>
+
+    <AccordionItem>
+      <AccordionTitle>
+        <span>Section 2</span>
+      </AccordionTitle>
+      <AccordionContent>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
+          laborum cupiditate possimus labore, hic temporibus velit dicta earum
+          suscipit commodi eum enim atque at? Et perspiciatis dolore iure
+          voluptatem.</p>
+      </AccordionContent>
+    </AccordionItem>
+
+
+    <AccordionItem>
+      <AccordionTitle>
+        <span>Section 3</span>
+      </AccordionTitle>
+      <AccordionContent>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
+          laborum cupiditate possimus labore, hic temporibus velit dicta earum
+          suscipit commodi eum enim atque at? Et perspiciatis dolore iure
+          voluptatem.</p>
+      </AccordionContent>
+    </AccordionItem>
+
+  </Accordion>
+);
 
 export const Basic = Template.bind({});
 Basic.parameters = {
@@ -42,9 +94,5 @@ Basic.parameters = {
 };
 
 Basic.args = {
-  title: 'What is Lorem Ipsum?',
-  content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-  label: 'Accordion',
-  backgroundColor: 'aliceblue',
-  color: '#000000'
+
 };

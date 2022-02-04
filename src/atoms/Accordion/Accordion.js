@@ -1,41 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './Accordion.css'
+import { AccordionItem } from './AccordianItem';
 
 export const Accordion = (props) => {
-  const { title, content } = props;
-
-  const [toogleBody, setToggleBody] = React.useState(false)
-
-  const titleOnClikc = () => {
-    setToggleBody(!toogleBody);
-  }
-
+  const { children } = props;
   return (
-    <React.Fragment>
-      <div
-        className='accordion accordian-header'
-        onClick={titleOnClikc}
-      >
-        <sapan> {title}</sapan>
-        <span className="open">
-          {toogleBody && <svg fill="none" height="9" viewBox="0 0 14 9" width="14" xmlns="http://www.w3.org/2000/svg">
-            <path d="m1 1 6 6 6-6" stroke="#000" stroke-width="2"></path>
-          </svg>}
-          {!toogleBody && <svg fill="none" height="14" viewBox="0 0 9 14" width="9" xmlns="http://www.w3.org/2000/svg">
-            <path d="m1 13 6-6-6-6" stroke="#000" stroke-width="2"></path>
-          </svg>}
-        </span>
-      </div>
-      {
-        toogleBody ?
-          <div className='accordion'>
-            {content}
-          </div>
-          :
-          null
-      }
-    </React.Fragment>
+    <div className='accordian'>
+      {React.Children.map(children, (child, index) => <AccordionItem  {...child.props} />)}
+    </div>
   );
 }
 

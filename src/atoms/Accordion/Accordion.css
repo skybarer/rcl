@@ -2,20 +2,39 @@
 
 .accordion {
     display: flex;
+}
+
+.accordian-title {
+    display: flex;
     padding: 0.5rem;
-    border: .1px dashed black;
     border-collapse: collapse;
     box-sizing: border-box;
     background-color: aliceblue;
-}
-
-.accordian-header {
+    align-items: flex-start;
+    /* border-bottom: thin dashed; */
     cursor: pointer;
     text-decoration: underline;
 }
 
+.accordian-content {
+    display: flex;
+    padding: 0.5rem;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    align-items: flex-start;
+    border-bottom: thin dashed;
+    border-bottom: .1px dashed black;
+}
+
 .open {
-    border: thin dashed black;
+    /* border: thin dashed black; */
     margin-left: auto;
-    order: 2;
+    align-items: flex-end;
+    padding: 0px 16px;
+}
+
+svg {
+    display: inline-block;
+    vertical-align: center;
 }
