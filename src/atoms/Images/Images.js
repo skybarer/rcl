@@ -3,35 +3,33 @@ import PropTypes from 'prop-types';
 import './Images.css';
 import { simpleSvgPlaceholder } from './../../util/Placeholder';
 
-export default function Images(
-  { src,
-    type,
-    alt,
-    className = 'rounded',
-    style,
-    backgroundColor
-  }) {
+
+const isValid = (src) => {
+  if (src === null || src === undefined || src === '') {
+    return false;
+  }
+  return true;
+}
+
+
+
+export default function Images({ src, alt, className, style, ...props }) {
+
   return (
     <img
       className={className}
-      src={src == null ?
-        simpleSvgPlaceholder(
-          {
-            width: 200,
-            height: 200,
-            bgColor: backgroundColor
-          }) : src}
+      src={!isValid(src) ? simpleSvgPlaceholder({ ...style }) : src}
       alt={alt}
-      style={style}
+      style={{ ...style }}
     >
     </img>
   );
 }
 
 Images.propTypes = {
-  type: PropTypes.string,
+  src: PropTypes.string,
 };
 
 Images.defaultProps = {
-  type: null,
+  src: null,
 };

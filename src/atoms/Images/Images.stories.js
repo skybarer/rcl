@@ -34,7 +34,12 @@ export default {
   }
 };
 
-const Template = (args) => <Images {...args} />;
+const Template = (args) => (
+  <Images
+    style={{ width: '200px', height: '200px' }}
+    {...args}
+  />
+);
 
 export const Basic = Template.bind({});
 Basic.parameters = {
@@ -43,7 +48,6 @@ Basic.parameters = {
 
 Basic.args = {
   className: '',
-  style: { backgroundColor: 'aliceblue' }
 };
 
 export const Rounded = Template.bind({});
@@ -53,7 +57,6 @@ Rounded.parameters = {
 
 Rounded.args = {
   className: 'rounded',
-  style: { backgroundColor: 'aliceblue' }
 };
 
 export const edgeRounded = Template.bind({});
@@ -63,5 +66,4 @@ edgeRounded.parameters = {
 
 edgeRounded.args = {
   className: 'edge-rounded',
-  style: { backgroundColor: 'aliceblue' }
 };
