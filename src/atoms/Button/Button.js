@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Button.css';
 
-export const Button = (
+const Button = (
   {
     children,
     style,
@@ -42,4 +42,6 @@ Button.defaultProps = {
   onClick: undefined,
   disabled: false
 };
+
+export default Button;
 
