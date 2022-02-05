@@ -2,14 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Tooltips.css';
 
-const Tooltips = (props) => {
+const Tooltips = ({ children, direction, content, delay }) => {
+
   let timeout;
   const [active, setActive] = React.useState(false);
 
   const showTip = () => {
     timeout = setTimeout(() => {
       setActive(true);
-    }, props.delay || 400);
+    }, delay || 400);
   };
 
   const hideTip = () => {
@@ -24,12 +25,10 @@ const Tooltips = (props) => {
       onMouseEnter={showTip}
       onMouseLeave={hideTip}
     >
-      {/* Wrapping */}
-      {props.children}
+      {children}
       {active && (
-        <div className={`Tooltip-Tip ${props.direction || "top"}`}>
-          {/* Content */}
-          {props.content}
+        <div className={`Tooltip-Tip ${direction || "top"}`}>
+          {content}
         </div>
       )}
     </div>
@@ -37,9 +36,9 @@ const Tooltips = (props) => {
 };
 
 Tooltips.propTypes = {
-  backgroundColor: PropTypes.string,
-  label: PropTypes.string.isRequired,
-  onClick: PropTypes.func,
+  // backgroundColor: PropTypes.string,
+  // label: PropTypes.string.isRequired,
+  // onClick: PropTypes.func,
 };
 
 Tooltips.defaultProps = {

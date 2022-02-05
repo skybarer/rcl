@@ -1,5 +1,7 @@
 import React from 'react';
 import Tooltips from './Tooltips';
+import Button from './../Button/Button';
+
 import {
   Title,
   Subtitle,
@@ -41,58 +43,26 @@ const emojiCss = {
 }
 
 const Template = (args) => (
+  <>
+    {['left', 'right', 'top', 'bottom'].map((placement) => (
 
-  <React.Fragment>
-    <div>
-      <Tooltips content="Yee-haw!" direction="right">
-        <span style={emojiCss} role="img" aria-label="cowboy emoji">
-          🤠
-        </span>
-      </Tooltips>
-    </div>
-    <div>
-      <Tooltips content="Quack!" direction="top">
-        <span style={emojiCss} role="img" aria-label="duck emoji">
-          🦆
-        </span>
-      </Tooltips>
-    </div>
 
-    <div>
-      <Tooltips content="Quack!" direction="botom">
-        <span style={emojiCss} role="img" aria-label="duck emoji">
-          🦆
-        </span>
-      </Tooltips>
-    </div>
-    <div>
-      <Tooltips content="Quack!" direction="top">
-        <span style={emojiCss} role="img" aria-label="duck emoji">
-          🦆
-        </span>
-      </Tooltips>
-    </div>
-
-    <div>
       <Tooltips
+        direction={`${placement}`}
         content={
           <>
-            Bring me
-            <br />
-            to your leader
+            Tooltip on <strong>{placement}</strong>.
           </>
         }
-        direction="left"
-        delay="0"
       >
-        <span style={emojiCss} role="img" aria-label="alien emoji">
-          👽
-        </span>
+        <Button style={{ margin: '1rem' }}>
+          Tooltip on <strong>{placement}</strong>.
+        </Button>
       </Tooltips>
-    </div>
 
-  </React.Fragment>
-)
+    ))}
+  </>
+);
 
 export const Basic = Template.bind({});
 Basic.parameters = {
