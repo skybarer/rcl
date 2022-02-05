@@ -14,6 +14,8 @@
     /* border-bottom: thin dashed; */
     cursor: pointer;
     text-decoration: underline;
+    margin-top: -1px;
+
 }
 
 .accordian-content {
@@ -23,7 +25,8 @@
     box-sizing: border-box;
     /* background-color: aliceblue; */
     align-items: flex-start;
-    border-bottom: thin solid #ddd;
+    /* border-bottom: thin solid #ddd; */
+    
 }
 
 .open {

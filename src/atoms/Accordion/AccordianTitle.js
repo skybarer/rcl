@@ -1,14 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const AccordionTitle = ({ children, titileOnClick, svgShow, toogleBody }) => {
+const AccordionTitle = ({ children, titileOnClick, svgShow, toogleBody, style }) => {
     console.log(toogleBody)
     return (
         <div
             className='accordian-title'
             onClick={titileOnClick}
             style={{
-                borderBottom: (!toogleBody ? 'thin solid #ddd' : 'none'),
+                // borderBottom: (!toogleBody ? 'thin solid #ddd' : 'none'),
+                ...style
             }}>
             <span>{children}</span>
             <span className="open">
