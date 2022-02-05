@@ -12,6 +12,7 @@
 .alert-close {
     padding: 2px;
     cursor: pointer;
+    color: inherit;
 }
 
 .alert-close:hover {
@@ -25,7 +26,8 @@
 }
 
 .alert-bottom {
-    align-items: center;
+    /* align-items: center; */
+    justify-content: space-between;
     background: rgb(30, 36, 41);
     border-radius: 2px;
     bottom: 12px;

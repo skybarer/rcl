@@ -34,7 +34,13 @@ export default {
   }
 };
 
-const Template = (args) => <Alerts {...args} />;
+const Template = (args) => (
+  <Alerts {...args}
+    style={{ ...args.style }}
+  >
+    {args?.label}
+  </Alerts>
+);
 
 export const Basic = Template.bind({});
 Basic.parameters = {
@@ -68,6 +74,7 @@ Bottonm.parameters = {
 };
 
 Bottonm.args = {
+  style: { color: '#fff' },
   className: 'alert-bottom',
-  label: '<a href="https://www.pluralsight.com/privacy" class="svelte-10xdqkv">Learn more about your privacy</a>',
+  label: <a href="https://www.pluralsight.com/privacy" style={{ color: 'white' }}>Learn more about your privacy</a>,
 };

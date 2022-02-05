@@ -15,3 +15,4 @@ https://orbit.sharegate.design/
 https://reaviz.io/
 https://storybook.grommet.io/
 https://dialogs.github.io/
+https://design.pega.com/
