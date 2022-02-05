@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './Accordion.css'
-import { AccordionItem } from './AccordianItem';
+import AccordionItem from './AccordianItem';
 
-export const Accordion = (props) => {
+const Accordion = (props) => {
   const { children } = props;
   return (
     <div className='accordian'>
@@ -23,3 +23,5 @@ Accordion.defaultProps = {
   backgroundColor: null,
   onClick: undefined,
 };
+
+export default Accordion;

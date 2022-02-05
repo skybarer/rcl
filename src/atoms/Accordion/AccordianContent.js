@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export const AccordionContent = ({ children }) => {
+const AccordionContent = ({ children }) => {
     return (
         <span className='accordion accordian-content'>
             {children}
@@ -16,3 +16,5 @@ AccordionContent.propTypes = {
 AccordionContent.defaultProps = {
     children: null,
 }
+
+export default AccordionContent;

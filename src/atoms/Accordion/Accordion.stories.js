@@ -1,5 +1,9 @@
 import React from 'react';
-import { Accordion } from './Accordion';
+import Accordion from './Accordion';
+import AccordionItem from './AccordianItem';
+import AccordionTitle from './AccordianTitle';
+import AccordionContent from './AccordianContent';
+
 import {
   Title,
   Subtitle,
@@ -9,9 +13,7 @@ import {
   Stories,
   PRIMARY_STORY,
 } from '@storybook/addon-docs';
-import { AccordionItem } from './AccordianItem';
-import { AccordionTitle } from './AccordianTitle';
-import { AccordionContent } from './AccordianContent';
+
 
 export default {
   title: 'atoms/Accordion',

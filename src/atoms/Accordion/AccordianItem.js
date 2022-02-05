@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { AccordionContent } from './AccordianContent';
-import { AccordionTitle } from './AccordianTitle';
+import AccordionContent from './AccordianContent';
+import AccordionTitle from './AccordianTitle';
 
-export const AccordionItem = ({ children }) => {
+const AccordionItem = ({ children }) => {
 
     const [toogleBody, setToggleBody] = React.useState(false);
 
@@ -52,4 +52,6 @@ AccordionItem.propTypes = {
 AccordionItem.defaultProps = {
 
 }
+
+export default AccordionItem;
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export const AccordionTitle = ({ children, titileOnClick, svgShow, toogleBody }) => {
+const AccordionTitle = ({ children, titileOnClick, svgShow, toogleBody }) => {
     console.log(toogleBody)
     return (
         <div
@@ -26,3 +26,5 @@ AccordionTitle.propTypes = {
 AccordionTitle.defaultProps = {
     toogleIcon: false,
 }
+
+export default AccordionTitle;

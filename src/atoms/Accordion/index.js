@@ -1,5 +1,11 @@
 import Accordion from './Accordion';
+import AccordionItem from './AccordianItem';
+import AccordianTitle from './AccordianTitle';
+import AccordionContent from './AccordianContent';
 
 export {
-    Accordion
+    Accordion,
+    AccordionItem,
+    AccordianTitle,
+    AccordionContent
 };
