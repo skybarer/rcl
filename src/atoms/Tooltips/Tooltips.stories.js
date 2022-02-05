@@ -57,7 +57,7 @@ const Template = (args) => (
         }
       >
         <Button style={{ margin: '1rem' }}>
-          Tooltip {index}
+          Tooltip on <strong>{placement}</strong>.
         </Button>
       </Tooltips>
 
