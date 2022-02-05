@@ -72,3 +72,5 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout (grid layout)
 https://app.pluralsight.com/guides/how-to-set-up-graphql-in-a-react-app (how to add graphql to react app)
 https://stackoverflow.com/questions/61730527/react-create-a-horizontal-divider-with-text-in-between (divide component)
 https://stackoverflow.com/questions/6382023/changing-the-color-of-an-hr-element
+https://www.notion.so/ (for reference)
+https://codyhouse.co/ds/components (css reference)
