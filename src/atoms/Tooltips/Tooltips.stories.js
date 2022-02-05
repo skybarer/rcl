@@ -44,10 +44,11 @@ const emojiCss = {
 
 const Template = (args) => (
   <>
-    {['left', 'right', 'top', 'bottom'].map((placement) => (
+    {['left', 'top', 'bottom', 'right'].map((placement, index) => (
 
 
       <Tooltips
+        key={index}
         direction={`${placement}`}
         content={
           <>
@@ -56,7 +57,7 @@ const Template = (args) => (
         }
       >
         <Button style={{ margin: '1rem' }}>
-          Tooltip on <strong>{placement}</strong>.
+          Tooltip {index}
         </Button>
       </Tooltips>
 
