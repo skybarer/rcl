@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import './Breadcrumb.css'
 // https://codeburst.io/build-breadcrumb-component-using-react-js-458f0196d304
 
 const breadcrumb = {
@@ -9,6 +9,9 @@ const breadcrumb = {
   // borderRadius: '0.37rem'
 }
 
+//  <div id='breadcrumb'>
+//       {props.children}
+//   </div>
 
 
 export default function Breadcrumb(props) {
