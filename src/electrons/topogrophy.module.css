@@ -1,0 +1,29 @@
+:root {
+    --typography-root-font-size: 0.875em;
+    --typography-heading1-font-size: 2rem;
+    --typography-heading1-font-weight: 700;
+    --typography-heading1-line-height: 2.5714285714285716rem;
+    --typography-heading2-font-size: 1.5714285714285714rem;
+    --typography-heading2-font-weight: 700;
+    --typography-heading2-line-height: 2rem;
+    --typography-heading3-font-size: 1.2142857142857142rem;
+    --typography-heading3-font-weight: 700;
+    --typography-heading3-line-height: 1.7142857142857142rem;
+    --typography-heading4-font-size: 1rem;
+    --typography-heading4-font-weight: 700;
+    --typography-heading4-line-height: 1.4285714285714286rem;
+    --typography-body-font-size: 1rem;
+    --typography-body-font-weight: 500;
+    --typography-body-line-height: 1.4285714285714286rem;
+    --typography-heading5-font-size: 0.8571428571428571rem;
+    --typography-heading5-font-weight: 700;
+    --typography-heading5-line-height: 1.1428571428571428rem;
+    --typography-captions-font-size: 0.8571428571428571rem;
+    --typography-captions-font-weight: 500;
+    --typography-captions-line-height: 1.1428571428571428rem;
+    --typography-micro-font-size: 0.7142857142857143rem;
+    --typography-micro-font-weight: 700;
+    --typography-micro-letter-spacing: 0.03571428571428571rem;
+    --typography-micro-line-height: 1.1428571428571428rem;
+    --typography-micro-text-transform: uppercase;
+}

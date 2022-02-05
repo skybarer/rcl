@@ -1,0 +1,26 @@
+{
+    "presets": [
+        "babel-preset-env"
+    ],
+    "parser": "babel-eslint",
+    "plugins": [
+        "css-modules"
+    ],
+    "extends": [
+        "plugin:css-modules/recommended"
+    ],
+    "rules": {
+        "css-modules/no-unused-class": [
+            2,
+            {
+                "camelCase": true
+            }
+        ],
+        "css-modules/no-undef-class": [
+            2,
+            {
+                "camelCase": true
+            }
+        ]
+    }
+}

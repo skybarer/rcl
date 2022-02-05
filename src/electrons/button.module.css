@@ -1,0 +1,47 @@
+@import url(../electrons/topogrophy.module.css);
+
+:root {
+    --button-light-background-color: #fff;
+    --button-light-font-color: #000;
+    --button-dark-background-color: #000;
+    --button-dark-font-color: #fff;
+    --button-special-background-color: #f50;
+    --button-special-font-color: #fff;
+    --button-primary-background-color: #000;
+    --button-primary-font-color: #fff;
+    --button-primary-hover-font-color: hsla(0, 0%, 100%, 0.4);
+    --button-primary-disabled-background-color: rgba(0, 0, 0, 0.6);
+    --button-primary-disabled-font-color: #fff;
+    --button-primary-selected-background-color: #f3f3f3;
+    --button-primary-selected-font-color: #000;
+    --button-primary-loading-background-color: #000;
+    --button-primary-loading-font-color: hsla(0, 0%, 100%, 0.6);
+    --button-secondary-background-color: #f3f3f3;
+    --button-secondary-font-color: #000;
+    --button-secondary-hover-font-color: rgba(0, 0, 0, 0.4);
+    --button-secondary-disabled-background-color: hsla(0, 0%, 95.3%, 0.6);
+    --button-secondary-disabled-font-color: rgba(0, 0, 0, 0.6);
+    --button-secondary-selected-background-color: #f3f3f3;
+    --button-secondary-selected-font-color: #f50;
+    --button-secondary-loading-background-color: #f3f3f3;
+    --button-secondary-loading-font-color: rgba(0, 0, 0, 0.6);
+    --button-tertiary-background-color: #fff;
+    --button-tertiary-font-color: #000;
+    --button-tertiary-hover-font-color: rgba(0, 0, 0, 0.4);
+    --button-tertiary-disabled-background-color: hsla(0, 0%, 100%, 0.6);
+    --button-tertiary-disabled-font-color: rgba(0, 0, 0, 0.6);
+    --button-tertiary-selected-background-color: #fff;
+    --button-tertiary-selected-font-color: #f50;
+    --button-tertiary-loading-background-color: #fff;
+    --button-tertiary-loading-font-color: rgba(0, 0, 0, 0.6);
+
+    --button-border-default: none;
+}
+
+
+.buttton {
+    background-color: var(--button-light-background-color);
+    color: var(--button-light-font-color);
+    border: var(--button-border-default);
+    font-size: var(--typography-root-font-size);
+}

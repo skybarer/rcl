@@ -78,6 +78,9 @@
     "@storybook/react": "^6.4.16",
     "cross-env": "^7.0.3",
     "css-loader": "^6.6.0",
+    "eslint-plugin-css-modules": "^2.11.0",
+    "postcss": "^8.4.6",
+    "postcss-modules": "^4.3.0",
     "style-loader": "^3.3.1",
     "webpack": "^5.67.0",
     "webpack-bundle-analyzer": "^4.5.0"

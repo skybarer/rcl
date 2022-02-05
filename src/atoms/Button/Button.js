@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './Button.css';
+import css from '../../electrons/button.module.css';
 
 const Button = (
   {
@@ -10,12 +11,11 @@ const Button = (
     onClick,
     disabled
   }
-) => {
-  console.log(btn)
+) => {  
   return (
     <button
+      className={css.buttton}
       // className='rcl-button'
-      className={btn.red}
       disabled={disabled}
       onClick={onClick}
     // style={{ ...style }}

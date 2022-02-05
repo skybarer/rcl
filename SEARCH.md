@@ -74,3 +74,12 @@ https://stackoverflow.com/questions/61730527/react-create-a-horizontal-divider-w
 https://stackoverflow.com/questions/6382023/changing-the-color-of-an-hr-element
 https://www.notion.so/ (for reference)
 https://codyhouse.co/ds/components (css reference)
+https://purecss.io/
+https://lyft-colorbox.herokuapp.com/
+https://uxdesign.cc/defining-colors-in-your-design-system-828148e6210a
+https://tympanus.net/codrops/2021/10/25/the-process-of-building-a-css-framework/
+https://codyhouse.co/ds/globals/
+https://codyhouse.co/ds/components/
+https://codyhouse.co/ds/globals/colors
+https://codyhouse.co/ds/globals/typography
+https://codyhouse.co/ds/globals/typography
