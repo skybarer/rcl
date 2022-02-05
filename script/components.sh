@@ -9,88 +9,58 @@
 #COMPONENT_PATH="C:\\Users\\inkol\\code\\react\\rcl\\src\\components\\"
 
 COMPONENT_ARRAY=(
-  ComponentName
+  Divider
 )
 
 for COMPONENT in ${COMPONENT_ARRAY[@]}; do
 
   COMPONENT_PATH="C:\\Users\\inkol\\Desktop\\code\\rcl\\src\\atoms\\"
-  INDEX_JS_CONTENT="import $COMPONENT from './$COMPONENT';
+#####################index component data ##################
+INDEX_JS_CONTENT="import $COMPONENT from './$COMPONENT';
 
 export {
     $COMPONENT
 };"
-  STORIES_CONTENT="import React from 'react';
-import { $COMPONENT } from './$COMPONENT';
-import {
-  Title,
-  Subtitle,
-  Description,
-  Primary,
-  ArgsTable,
-  Stories,
-  PRIMARY_STORY,
-} from '@storybook/addon-docs';
+
+####################story component data ###################
+STORIES_CONTENT="import React from 'react';
+import $COMPONENT from './$COMPONENT';
 
 export default {
-  title: 'atoms/$COMPONENT/Basic',
-  component: $COMPONENT,
-  parameters: {
-    options: { selectedPanel: 'storybook/a11y/panel' },
-    docs: {
-      page: () => (
-        <>
-          <Title />
-          <Subtitle />
-          <Description />
-          <Primary />
-          <ArgsTable story={PRIMARY_STORY} />
-          <Stories />
-        </>
-      ),
-    },
-  },
-  argTypes: {
-    backgroundColor: { control: 'color' },
-
-  }
+  title: 'atoms/$COMPONENT',
+  component: $COMPONENT
 };
 
-const Template = (args) => <$COMPONENT {...args} />;
+export const Template = (args) => <$COMPONENT {...args} />;
 
-export const Basic = Template.bind({});
+const Basic = Template.bind({});
+
 Basic.parameters = {
   layout: 'fullscreen'
 };
 
-Basic.args = {
-  label: '$COMPONENT',
-  backgroundColor: 'aliceblue',
-  color: '#000000'
-};"
-
-  COMPONENT_CONTENT="import React from 'react';
+Basic.args = {};"
+####################Root component data###################
+COMPONENT_CONTENT="import React from 'react';
 import PropTypes from 'prop-types';
+import './$COMPONENT.css';
 
-export const $COMPONENT = ({ label = 'button', backgroundColor, onClick }) => {
+const $COMPONENT = (props) => {
   return (
-    <button onClick={onClick} style={{ backgroundColor, border: 'none', padding: '0.7rem', borderRadius: '4px' }}>
-      {label}
-    </button>
+    <>
+      <h1> New $COMPONENT Component </h1>
+    </>
   );
 }
 
 $COMPONENT.propTypes = {
-  backgroundColor: PropTypes.string,
-  label: PropTypes.string.isRequired,
-  onClick: PropTypes.func,
+  props: PropTypes.object
 };
+$COMPONENT.defaultProps = {};
 
-$COMPONENT.defaultProps = {
-  backgroundColor: null,
-  onClick: undefined,
-};"
-
+export default $COMPONENT;"
+##################################################
+####### file creation and template insertion #####
   echo "Component Name : $COMPONENT"
   echo "$COMPONENT_PATH$COMPONENT"
   cd $COMPONENT_PATH
@@ -100,10 +70,10 @@ $COMPONENT.defaultProps = {
   touch $COMPONENT.stories.js
   touch index.js
   touch $COMPONENT.css
-
-    echo "$COMPONENT_CONTENT" >>$COMPONENT.js
-    echo "$STORIES_CONTENT" >>$COMPONENT.stories.js
-    echo "$INDEX_JS_CONTENT" >>index.js
+  echo "$COMPONENT_CONTENT" >>$COMPONENT.js
+  echo "$STORIES_CONTENT" >>$COMPONENT.stories.js
+  echo "$INDEX_JS_CONTENT" >>index.js
+##################################################
 done
 
 sleep 5s # Waits 5 seconds.
