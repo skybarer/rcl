@@ -6,22 +6,20 @@ const Button = (
   {
     children,
     style,
-    backgroundColor = 'aliceblue',
+    size,
     onClick,
-    borderRadius = '4px',
-    disabled = false
+    disabled
   }
 ) => {
+  console.log(btn)
   return (
     <button
-      className='rcl-button1'
+      // className='rcl-button'
+      className={btn.red}
       disabled={disabled}
       onClick={onClick}
-      style={{
-        backgroundColor,
-        padding: '0.7rem',
-        ...style
-      }}>
+    // style={{ ...style }}
+    >
       {children}
     </button>
   );
@@ -30,7 +28,6 @@ const Button = (
 Button.propTypes = {
   children: PropTypes.node,
   style: PropTypes.object,
-  backgroundColor: PropTypes.string,
   size: PropTypes.oneOf(['small', 'medium', 'large']),
   onClick: PropTypes.func,
   borderRadius: PropTypes.string,

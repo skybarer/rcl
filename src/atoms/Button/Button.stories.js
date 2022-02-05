@@ -35,8 +35,8 @@ export default {
 };
 
 const Template = (args) => (
-  <Button {...args} style={{ color: 'black', border: 'thin solid black', backgroundColor: 'white' }}>
-    Button
+  <Button {...args} style={args.style} disabled={args.disabled}>
+    <strong>Button</strong>
   </Button>
 );
 
@@ -46,10 +46,18 @@ Basic.parameters = {
 };
 
 Basic.args = {
-  label: 'My Button',
-  backgroundColor: 'aliceblue',
-  color: '#000000',
-  borderRadius: '4px',
+  // label: 'My Button',
+  // backgroundColor: 'aliceblue',
+  // color: '#000000',
+  // borderRadius: '4px',
+  style: {
+    color: '#000000',
+    backgroundColor: 'aliceblue',
+    padding: '1rem 2rem',
+    border: 0,
+    borderRadius: '4px',
+    cursor: 'pointer',
+  },
   disabled: false
 };
 
