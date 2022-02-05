@@ -44,7 +44,7 @@ const Template = (args) => (
         <span>What is Lorem Ipsum?</span>
       </AccordionTitle>
       <AccordionContent>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
       </AccordionContent>
     </AccordionItem>
 
@@ -53,10 +53,10 @@ const Template = (args) => (
         <span>Section 1</span>
       </AccordionTitle>
       <AccordionContent>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
+        <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
           laborum cupiditate possimus labore, hic temporibus velit dicta earum
           suscipit commodi eum enim atque at? Et perspiciatis dolore iure
-          voluptatem.</p>
+          voluptatem.</span>
       </AccordionContent>
     </AccordionItem>
 
@@ -65,10 +65,10 @@ const Template = (args) => (
         <span>Section 2</span>
       </AccordionTitle>
       <AccordionContent>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
+        <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
           laborum cupiditate possimus labore, hic temporibus velit dicta earum
           suscipit commodi eum enim atque at? Et perspiciatis dolore iure
-          voluptatem.</p>
+          voluptatem.</span>
       </AccordionContent>
     </AccordionItem>
 
@@ -78,10 +78,10 @@ const Template = (args) => (
         <span>Section 3</span>
       </AccordionTitle>
       <AccordionContent>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
+        <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
           laborum cupiditate possimus labore, hic temporibus velit dicta earum
           suscipit commodi eum enim atque at? Et perspiciatis dolore iure
-          voluptatem.</p>
+          voluptatem.</span>
       </AccordionContent>
     </AccordionItem>
 

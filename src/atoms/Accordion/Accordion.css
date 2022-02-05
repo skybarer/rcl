@@ -9,7 +9,7 @@
     padding: 0.5rem;
     border-collapse: collapse;
     box-sizing: border-box;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     align-items: flex-start;
     /* border-bottom: thin dashed; */
     cursor: pointer;
@@ -21,10 +21,9 @@
     padding: 0.5rem;
     border-collapse: collapse;
     box-sizing: border-box;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     align-items: flex-start;
-    border-bottom: thin dashed;
-    border-bottom: .1px dashed black;
+    border-bottom: thin solid #ddd;
 }
 
 .open {

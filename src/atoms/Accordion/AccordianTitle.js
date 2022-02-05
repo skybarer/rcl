@@ -8,7 +8,7 @@ export const AccordionTitle = ({ children, titileOnClick, svgShow, toogleBody })
             className='accordian-title'
             onClick={titileOnClick}
             style={{
-                borderBottom: (!toogleBody ? 'thin dashed' : 'none'),
+                borderBottom: (!toogleBody ? 'thin solid #ddd' : 'none'),
             }}>
             <span>{children}</span>
             <span className="open">
