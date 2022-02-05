@@ -36,6 +36,8 @@ const AccordionItem = ({ children }) => {
                                 {toogleBody ? <AccordionContent {...item.props} /> : null}
                             </React.Fragment>
                         )
+                    } else {
+                        return item;
                     }
                 })
             }

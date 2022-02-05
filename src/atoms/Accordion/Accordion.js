@@ -1,13 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Accordion.css'
+import './Accordion.css';
 import AccordionItem from './AccordianItem';
 
 const Accordion = (props) => {
   const { children } = props;
   return (
     <div className='accordian'>
-      {React.Children.map(children, (child, index) => <AccordionItem  {...child.props} />)}
+      {
+        React.Children.map(children, (item, index) => {
+          if (item.type === AccordionItem) {
+            return <AccordionItem  {...item.props} />;
+          } else {
+            return item;
+          }
+        })
+      }
     </div>
   );
 }

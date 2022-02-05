@@ -3,7 +3,6 @@ import Accordion from './Accordion';
 import AccordionItem from './AccordianItem';
 import AccordionTitle from './AccordianTitle';
 import AccordionContent from './AccordianContent';
-
 import {
   Title,
   Subtitle,
@@ -13,6 +12,7 @@ import {
   Stories,
   PRIMARY_STORY,
 } from '@storybook/addon-docs';
+import Divider from '../Divider/Divider';
 
 
 export default {
@@ -50,6 +50,8 @@ const Template = (args) => (
       </AccordionContent>
     </AccordionItem>
 
+    <Divider />
+
     <AccordionItem>
       <AccordionTitle>
         <span>Section 1</span>
@@ -61,6 +63,8 @@ const Template = (args) => (
           voluptatem.</span>
       </AccordionContent>
     </AccordionItem>
+
+    <Divider />
 
     <AccordionItem>
       <AccordionTitle>
@@ -74,6 +78,7 @@ const Template = (args) => (
       </AccordionContent>
     </AccordionItem>
 
+    <Divider />
 
     <AccordionItem>
       <AccordionTitle>
