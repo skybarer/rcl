@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import css from '../../electrons/accordian.module.css';
 
 const AccordionTitle = ({ children, titileOnClick, svgShow, toogleBody, style }) => {
-    console.log(toogleBody)
+    console.log(css)
     return (
         <div
-            className='accordian-title'
+            className={css.accordianTitle}
             onClick={titileOnClick}
             style={{
                 // borderBottom: (!toogleBody ? 'thin solid #ddd' : 'none'),

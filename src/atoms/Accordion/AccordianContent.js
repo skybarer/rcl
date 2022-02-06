@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import css from '../../electrons/accordian.module.css';
 
 const AccordionContent = ({ children }) => {
     return (
-        <span className='accordion accordian-content'>
+        <span className={css.AccordionContent}>
             {children}
         </span>
     )
