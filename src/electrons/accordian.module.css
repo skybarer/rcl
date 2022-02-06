@@ -1,0 +1,44 @@
+@import url(../electrons/root.module.css);
+@import url(../electrons/colors.module.css);
+
+.accordion {
+    display: flex;
+}
+
+.accordianTitle {
+    composes: accordion;
+    padding: 0.5rem;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    /* background-color: aliceblue; */
+    align-items: flex-start;
+    /* border-bottom: thin dashed; */
+    cursor: pointer;
+    /* text-decoration: underline; */
+    margin-top: -1px;
+
+}
+
+.accordianContent {
+    composes: accordion;
+    padding: 0.5rem;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    /* background-color: aliceblue; */
+    align-items: flex-start;
+    /* border-bottom: thin solid #ddd; */
+
+}
+
+.open {
+    /* border: thin dashed black; */
+    margin-left: auto;
+    align-items: flex-end;
+    padding: 0px 16px;
+    transition: transform 100ms ease-in-out 0s;
+}
+
+svg {
+    display: inline-block;
+    vertical-align: center;
+}
