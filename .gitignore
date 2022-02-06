@@ -36,4 +36,5 @@ yarn-error.log
 /src/scss/utilities.scss
 /static/gitlab/
 .cypress_cache
+/storybook-static/
 
