@@ -1,12 +1,34 @@
 @import url(../electrons/root.module.css);
+@import url(../electrons/animations.module.css);
 @import url(../electrons/colors.module.css);
+
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+}
 
 .accordion {
     display: flex;
 }
 
+
+
+@keyframes gradient {
+    0% {
+        background-color: var(--bs-blue);
+    }
+
+    100% {
+        background-color: var(--bs-red);
+    }
+}
+
 .accordianTitle {
     composes: accordion;
+    /* composes: animatedGradientTextForeground; */
     padding: 0.5rem;
     border-collapse: collapse;
     box-sizing: border-box;
