@@ -83,3 +83,11 @@ https://codyhouse.co/ds/components/
 https://codyhouse.co/ds/globals/colors
 https://codyhouse.co/ds/globals/typography
 https://codyhouse.co/ds/globals/typography
+https://dev.to/davixyz/writing-your-first-react-ui-library-part-3-css-modules-5929 (css modules dynamic className passing from storybook)
+https://www.freecodecamp.org/news/visual-variants-for-react-components-with-styled-components-dfaff6a76273/
+(styled-component library in react)
+https://styled-components.com/
+https://bit.dev/
+https://react-data-table-component.netlify.app/
+https://paljs.com/ui/components/grid
+https://www.grapeui.com/docs/

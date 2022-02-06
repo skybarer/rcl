@@ -1,21 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './Cards.css'
+import css from '../../electrons/card.module.css';
 
-export default function Cards({ content }) {
+export default function Cards({ children, className, ...props }) {
   return (
-    <div className='rcl-card'>
-      {content}
+    <div className={className ? className : css.rclCard}>
+      {children}
     </div>
   );
 }
 
 Cards.propTypes = {
-  backgroundColor: PropTypes.string,
-  onClick: PropTypes.func,
+  // backgroundColor: PropTypes.string,
+  // onClick: PropTypes.func,
 };
 
 Cards.defaultProps = {
-  backgroundColor: null,
-  onClick: undefined,
+  // backgroundColor: null,
+  // onClick: undefined,
 };
