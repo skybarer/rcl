@@ -14,8 +14,6 @@
     display: flex;
 }
 
-
-
 @keyframes gradient {
     0% {
         background-color: var(--bs-blue);
@@ -40,6 +38,11 @@
     margin-top: -1px;
 
 }
+
+/* .accordianTitle:hover {
+    background-color: #fafafa;
+    margin-top: 0px;
+} */
 
 .accordianContent {
     composes: accordion;

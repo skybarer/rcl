@@ -3,6 +3,9 @@
 .accordion {
     display: flex;
 }
+.accordion:hover {
+    background-color: #fafafa;
+}
 
 .accordian-title {
     display: flex;
