@@ -13,3 +13,13 @@
     vertical-align: top;
     border: .1px dashed black;
 }
+
+.status-indicator_indicator__sOs1Y {
+    flex-shrink: 0;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: var(--geist-success);
+    margin: 0 7px;
+}
