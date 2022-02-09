@@ -35,10 +35,11 @@ export default {
 };
 
 const Template = (args) => (
-  <Alerts {...args}
+  <Alerts
+  className={args?.className}
     style={{ ...args.style }}
   >
-    {args?.label}
+    {args?.content}
   </Alerts>
 );
 
@@ -47,10 +48,9 @@ Basic.parameters = {
 };
 
 Basic.args = {
-  label: 'Alerts',
   className: 'alert',
-  backgroundColor: 'aliceblue',
-  color: '#000000'
+  style: {  color: '#000000', backgroundColor: 'aliceblue' },
+  content: 'This is a basic alert',
 };
 
 
@@ -61,7 +61,7 @@ Danger.parameters = {
 };
 
 Danger.args = {
-  label: 'Alerts',
+  content: 'This is a basic alert',
   className: 'alert',
   backgroundColor: '#e74c3c',
   color: '#000000'
@@ -76,5 +76,5 @@ Bottonm.parameters = {
 Bottonm.args = {
   style: { color: '#fff' },
   className: 'alert-bottom',
-  label: <a href="https://www.pluralsight.com/privacy" style={{ color: 'white' }}>Learn more about your privacy</a>,
+  content: <a href="https://www.pluralsight.com/privacy" style={{ color: 'white' }}>Learn more about your privacy</a>,
 };
