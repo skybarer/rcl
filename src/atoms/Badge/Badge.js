@@ -6,12 +6,8 @@ import './Badge.css'
 
 export const Badge = ({
   content = '5',
-  backgroundColor = 'aliceblue',
-  borderRadius = '10px',
-  color = 'black',
-  padding,
   style,
-  // scale = 1,
+  scale = 1,
 }) => {
   return (
     <span
@@ -19,12 +15,6 @@ export const Badge = ({
       style={{
         ...style,
         transform: 'scale(1)',
-        // backgroundColor,
-        // borderRadius,
-        // padding,
-        // color,
-        // textAlign: 'center',
-        // fontSize: 'small'
       }}
     >
       {content}
@@ -37,6 +27,5 @@ Badge.propTypes = {
 };
 
 Badge.defaultProps = {
-  backgroundColor: null,
-  onClick: undefined,
+  style: undefined,
 };

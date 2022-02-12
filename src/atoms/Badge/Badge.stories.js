@@ -34,7 +34,12 @@ export default {
   }
 };
 
-const Template = (args) => <Badge {...args} />;
+const Template = (args) => (
+  <Badge>
+    {args.content}
+  </Badge>
+
+);
 
 export const Basic = Template.bind({});
 Basic.parameters = {
@@ -43,8 +48,5 @@ Basic.parameters = {
 
 Basic.args = {
   content: '51+',
-  backgroundColor: 'aliceblue',
-  color: 'black',
-  padding: '2px 6px',
-  borderRadius: '1.5em'
+ 
 };
