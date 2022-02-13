@@ -95,3 +95,4 @@ https://emotion.sh/docs/introduction (css styles wiht javascript)
 https://redd.gitbook.io/atomic-layout/fundamentals/
 https://bedrock-layout.dev/
 https://www.joshwcomeau.com/css/css-variables-for-react-devs/ (variables in css using styled-components)
+https://teradata.github.io/covalent/v3/ (angular component library by teradeta)
