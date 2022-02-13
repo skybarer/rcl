@@ -30,7 +30,7 @@ export default {
   },
   argTypes: {
     backgroundColor: { control: 'color' },
-    
+
   }
 };
 let value = 'akashdhar'
@@ -40,23 +40,29 @@ const handleChange = (event) => {
 }
 
 const Template = (args) => (
-  <Input
-    {...args}
-    value={value}
-    onChange={handleChange}
+  <>
+    <Input
+      {...args}
+      value={value}
+      onChange={handleChange}
 
-  />
+    />
+    {/* <textarea>
+      {args.value}
+    </textarea> */}
+    </>
 );
 
 export const Basic = Template.bind({});
 Basic.parameters = {
-  layout: 'centered'
+  // layout: 'centered'
 
 };
 
 Basic.args = {
   label: 'My Button',
   backgroundColor: 'aliceblue',
-  color: '#000000'
+  color: '#000000',
+  // value: 'akashdhar',
 };
 
