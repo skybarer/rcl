@@ -20,7 +20,7 @@ to browse the local url [here](http://localhost:6006/)
 
 
 
-![Component Storybook View](../rcl/files/rcl-story-book.JPG)
+![Component Storybook View](https://raw.githubusercontent.com/skybarer/rcl/master/files/rcl-story-book.JPG)
 
 
 
