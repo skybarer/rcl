@@ -1,11 +1,11 @@
-# Atomic level component library build for React
+# `rcl` - `R`eact `C`omponent `L`ibrary
 
 #### Simple and flexible components 
 #### component development in progress ....
 
 
 
-To run the project
+#To run the project
 
 `git clone https://github.com/skybarer/rcl.git `
 
@@ -15,10 +15,7 @@ To run the project
 
 to browse the local url [here](http://localhost:6006/)
 
-
 #### Live version can be found [here](https://skybarer.github.io/storybook-static/index.html)
-
-
 
 ![Component Storybook View](https://raw.githubusercontent.com/skybarer/rcl/master/files/rcl-story-book.JPG)
 
