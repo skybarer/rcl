@@ -45,6 +45,7 @@ const Template = (args) => (
 
 export const Basic = Template.bind({});
 Basic.parameters = {
+  layout: 'fullscreen'
 };
 
 Basic.args = {
