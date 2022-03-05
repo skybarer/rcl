@@ -34,13 +34,23 @@ export default {
   }
 };
 
-const Template = (args) => <Close {...args} />;
+const Template = (args) => <Close {...args} className={args.className} />;
 
-export const Basic = Template.bind({});
-Basic.parameters = {
+export const Rounded = Template.bind({});
+Rounded.parameters = {
   layout: 'centered'
-
 };
 
-Basic.args = {
+Rounded.args = {
+  className: 'rcl-close'
+};
+
+export const HoverSquare = Template.bind({});
+HoverSquare.parameters = {
+  layout: 'centered',
+};
+
+
+HoverSquare.args = {
+  className: 'rcl-close-rounded'
 };
