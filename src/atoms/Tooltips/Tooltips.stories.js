@@ -52,11 +52,11 @@ const Template = (args) => (
         direction={`${placement}`}
         content={
           <>
-            Tooltip on <strong>{placement}</strong>.
+            Tooltip on <strong>{placement}</strong>.<br></br>
           </>
         }
       >
-        <Button style={{ margin: '1rem' }}>
+        <Button style={{ margin: '1rem', cursor: 'pointer' }}>
           Tooltip on <strong>{placement}</strong>.
         </Button>
       </Tooltips>
