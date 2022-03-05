@@ -56,7 +56,7 @@ const Template = (args) => (
           </>
         }
       >
-        <Button style={{ margin: '1rem', cursor: 'pointer' }}>
+        <Button className={args.className} style={args.style}>
           Tooltip on <strong>{placement}</strong>.
         </Button>
       </Tooltips>
@@ -74,5 +74,15 @@ Basic.parameters = {
 Basic.args = {
   label: 'Tooltips',
   backgroundColor: 'aliceblue',
-  color: '#000000'
+  color: '#000000',
+  className: 'rcl-button',
+  style: {
+    color: '#000000',
+    backgroundColor: 'aliceblue',
+    padding: '1rem 2rem',
+    border: 0,
+    borderRadius: '4px',
+    cursor: 'pointer',
+    margin: '10px'
+  },
 };

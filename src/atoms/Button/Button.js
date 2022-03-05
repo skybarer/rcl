@@ -5,16 +5,16 @@ import css from '../../electrons/button.module.css';
 
 const Button = (
   {
+    className,
     children,
     style,
-    size,
     onClick,
     disabled
   }
 ) => {
   return (
     <button
-      className={css.buttton}
+      className={className}
       disabled={disabled}
       onClick={onClick}
       style={{ ...style }}
