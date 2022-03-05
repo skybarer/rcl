@@ -11,14 +11,13 @@ const Button = (
     onClick,
     disabled
   }
-) => {  
+) => {
   return (
     <button
       className={css.buttton}
-      // className='rcl-button'
       disabled={disabled}
       onClick={onClick}
-    // style={{ ...style }}
+      style={{ ...style }}
     >
       {children}
     </button>
@@ -35,7 +34,7 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  backgroundColor: null,
+  className: 'rcl-button',
   onClick: undefined,
   disabled: false
 };
