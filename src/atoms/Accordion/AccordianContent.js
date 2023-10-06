@@ -4,9 +4,9 @@ import css from '../../electrons/accordian.module.css';
 
 const AccordionContent = ({ children }) => {
     return (
-        <span className={css.AccordionContent}>
+        <div className={css.accordianContent}>
             {children}
-        </span>
+        </div>
     )
 }
 

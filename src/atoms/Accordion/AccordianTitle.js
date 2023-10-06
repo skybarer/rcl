@@ -13,7 +13,7 @@ const AccordionTitle = ({ children, titileOnClick, svgShow, toogleBody, style })
                 ...style
             }}>
             <span>{children}</span>
-            <span className="open">
+            <span className={css.open}>
                 {svgShow}
             </span>
         </div>
