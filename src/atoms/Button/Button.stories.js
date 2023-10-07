@@ -9,7 +9,6 @@ import {
   Stories,
   PRIMARY_STORY,
 } from '@storybook/addon-docs';
-
 export default {
   title: 'atoms/Button',
   component: Button,
@@ -35,9 +34,13 @@ export default {
 };
 
 const Template = (args) => (
-  <Button {...args} style={args.style} disabled={args.disabled}>
-    <strong>Button</strong>
-  </Button>
+  <>
+    <Button {...args}>
+      <strong>{args?.Children}</strong>
+    </Button>
+
+  </>
+
 );
 
 export const Basic = Template.bind({});
@@ -46,18 +49,25 @@ Basic.parameters = {
 };
 
 Basic.args = {
-  // label: 'My Button',
-  // backgroundColor: 'aliceblue',
-  // color: '#000000',
-  // borderRadius: '4px',
-  style: {
-    color: '#000000',
-    backgroundColor: 'aliceblue',
-    padding: '1rem 2rem',
-    border: 0,
-    borderRadius: '4px',
-    cursor: 'pointer',
-  },
-  disabled: false
+  Children: 'My Button',
+  disabled: false,
 };
+
+
+// src/stories/Button.stories.js
+// import React from 'react';
+// import { storiesOf } from '@storybook/react';
+// import { withKnobs, boolean } from '@storybook/addons';
+// import Button from './Button';
+
+// const stories = storiesOf('Button', module);
+// stories.addDecorator(withKnobs);
+
+// stories.add('Primary', () => (
+//   <Button primary={boolean('Primary', true)}>Primary Button</Button>
+// ));
+
+// stories.add('Secondary', () => (
+//   <Button primary={boolean('Primary', false)}>Secondary Button</Button>
+// ));
 

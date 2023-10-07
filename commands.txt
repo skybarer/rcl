@@ -7,4 +7,11 @@ npm i react@latest react-dom@latest react-scripts@latest
 npx create-react-app rcl-update
 npm i @testing-library/react@latest
 
-npm install styled-components
+npm install styled-components @types/styled-components
+npx -p @storybook/cli sb init
+npm install @storybook/addon-actions @storybook/addon-links @storybook/addons @storybook/react
+
+npm update react react-dom
+
+npm install @storybook/addon-knobs  --save-dev
+

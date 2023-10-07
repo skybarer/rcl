@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import css from '../../electrons/accordian.module.css';
 
 const AccordionTitle = ({ children, titileOnClick, svgShow, toogleBody, style }) => {
-    console.log(css)
     return (
         <div
             className={css.accordianTitle}

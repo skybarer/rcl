@@ -1,6 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+// import styled from 'styled-components';
 import './Alerts.css'
+
+
+// const StyledAlert = styled.alert`
+//   padding: 2px 10px;
+//   background-color: #e1ffd4;
+//   font-weight: 700;
+//   font-size: 12px;
+// `;
+
 export const Alerts = ({ children, className, style }) => {
   const [visible, setVisible] = React.useState(true);
   const closeAlert = () => { setVisible(false) };

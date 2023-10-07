@@ -56,12 +56,12 @@ Basic.args = {
 
 
 
-export const Danger = Template.bind({});
-Danger.parameters = {
+export const Success = Template.bind({});
+Success.parameters = {
   layout: 'fullscreen'
 };
 
-Danger.args = {
+Success.args = {
   content: 'This is a basic alert',
   className: 'alert',
   backgroundColor: '#e74c3c',

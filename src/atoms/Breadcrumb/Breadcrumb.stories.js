@@ -41,25 +41,25 @@ const selected = crumb => {
 const crumbs = ['Home', 'Category', 'Sub Category']
 
 const Template = (args) => <Breadcrumb {...args} crumbs={crumbs} selected={selected} />;
-const Template1 = (args) => (
-  // copied from bread crum of m3 schools
-  <Breadcrumb>
-    <ul>
-      <li>
-        <a href="/default">Home</a>
-      </li>
-      <li>
-        <a href="/css/default">CSS</a>
-      </li>
-      <li>
-        <a href="/css/css_table">CSS Tables</a>
-      </li>
-      <li>
-        <a href="/css/css_table">breadcrum4</a>
-      </li>
-    </ul>
-  </Breadcrumb>
-)
+// const Template1 = (args) => (
+//   // copied from bread crum of m3 schools
+//   <Breadcrumb>
+//     <ul>
+//       <li>
+//         <a href="/default">Home</a>
+//       </li>
+//       <li>
+//         <a href="/css/default">CSS</a>
+//       </li>
+//       <li>
+//         <a href="/css/css_table">CSS Tables</a>
+//       </li>
+//       <li>
+//         <a href="/css/css_table">breadcrum4</a>
+//       </li>
+//     </ul>
+//   </Breadcrumb>
+// )
 
 export const Basic = Template.bind({});
 Basic.parameters = {

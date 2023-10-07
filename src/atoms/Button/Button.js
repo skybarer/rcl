@@ -1,28 +1,63 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Button.css';
-import css from '../../electrons/button.module.css';
+// import './Button.css';
+// import css from '../../electrons/button.module.css';
 
-const Button = (
-  {
-    className,
-    children,
-    style,
-    onClick,
-    disabled
+// const Button = (
+//   {
+//     className,
+//     children,
+//     style,
+//     onClick,
+//     disabled
+//   }
+// ) => {
+//   return (
+//     <button
+//       className={className}
+//       disabled={disabled}
+//       onClick={onClick}
+//       style={{ ...style }}
+//     >
+//       {children}
+//     </button>
+//   );
+// }
+
+// export default Button;
+
+// src/Button.js
+import styled from 'styled-components';
+
+const StyledButton = styled.button`
+  background-color:${({ disabled }) => disabled ? 'rgb(225, 225, 225)' : '#000000'};
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color:${({ disabled }) => disabled ? 'rgb(225, 225, 225)' : '#000000'};
   }
-) => {
+`;
+
+const Button = ({ children, onClick, disabled }) => {
   return (
-    <button
-      className={className}
-      disabled={disabled}
+    <StyledButton
       onClick={onClick}
-      style={{ ...style }}
-    >
+      disabled={disabled}>
       {children}
-    </button>
-  );
-}
+    </StyledButton>);
+};
+
+Button.defaultProps = {
+  className: 'rcl-button',
+  onClick: undefined,
+  disabled: false
+};
 
 Button.propTypes = {
   children: PropTypes.node,
@@ -33,11 +68,6 @@ Button.propTypes = {
   disabled: PropTypes.bool,
 };
 
-Button.defaultProps = {
-  className: 'rcl-button',
-  onClick: undefined,
-  disabled: false
-};
-
 export default Button;
+
 
