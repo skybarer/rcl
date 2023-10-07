@@ -2,4 +2,9 @@
 npm uninstall -g create-react-app
 npx create-react-app my-app
 npm install -g create-react-app https://create-react-app.dev/docs/updating-to-new-releases/
+npx storybook@latest init
+npm i react@latest react-dom@latest react-scripts@latest
+npx create-react-app rcl-update
+npm i @testing-library/react@latest
 
+npm install styled-components
