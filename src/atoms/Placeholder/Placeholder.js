@@ -1,21 +1,27 @@
+// Placeholder.js
 import React from 'react';
-import PropTypes from 'prop-types';
+import styled, { keyframes } from 'styled-components';
 
-export default function Placeholder({ label = 'button', backgroundColor, onClick }) {
-  return (
-    <button onClick={onClick} style={{ backgroundColor, border: 'none', padding: '0.7rem', borderRadius: '4px' }}>
-      {label}
-    </button>
-  );
-}
+const shimmer = keyframes`
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: 200px 0;
+  }
+`;
 
-Placeholder.propTypes = {
-  backgroundColor: PropTypes.string,
-  label: PropTypes.string.isRequired,
-  onClick: PropTypes.func,
+const PlaceholderWrapper = styled.div`
+  width: ${(props) => props.width || '100%'};
+  height: ${(props) => props.height || '20px'};
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200px 100%;
+  animation: ${shimmer} 1.2s infinite;
+  margin-bottom: ${(props) => props.marginBottom || '10px'};
+`;
+
+const Placeholder = ({ width, height, marginBottom }) => {
+  return <PlaceholderWrapper width={width} height={height} marginBottom={marginBottom} />;
 };
 
-Placeholder.defaultProps = {
-  backgroundColor: null,
-  onClick: undefined,
-};
+export default Placeholder;

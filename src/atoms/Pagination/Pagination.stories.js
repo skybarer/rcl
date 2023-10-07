@@ -30,11 +30,15 @@ export default {
   },
   argTypes: {
     backgroundColor: { control: 'color' },
-    
+
   }
 };
 
-const Template = (args) => <Pagination {...args} />;
+const Template = (args) => (
+  <>
+    <Pagination totalPages={5} currentPage={3} onPageChange={(pageNumber) => console.log(`Go to page ${pageNumber}`)} />
+  </>
+);
 
 export const Basic = Template.bind({});
 Basic.parameters = {

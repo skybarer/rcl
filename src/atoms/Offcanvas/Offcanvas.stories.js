@@ -30,11 +30,17 @@ export default {
   },
   argTypes: {
     backgroundColor: { control: 'color' },
-    
+
   }
 };
 
-const Template = (args) => <Offcanvas {...args} />;
+const Template = (args) => (
+  <>
+    <Offcanvas isOpen={true} onClose={() => console.log('Close button clicked')}>
+      Content goes here
+    </Offcanvas>
+  </>
+);
 
 export const Basic = Template.bind({});
 Basic.parameters = {

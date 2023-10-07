@@ -34,30 +34,17 @@ export default {
   }
 };
 
-const Template = (args) => (
-  // <Tabs {...args} >
-  //   <Tab>
-  //     item1
-  //   </Tab>
-  //   <Tab>
-  //     item2
-  //   </Tab>
-  //   <Tab>
-  //     item3
-  //   </Tab>
-  // </Tabs>
+const tabs = [
+  { label: 'Tab 1', content: 'Content for Tab 1' },
+  { label: 'Tab 2', content: 'Content for Tab 2' },
+  { label: 'Tab 3', content: 'Content for Tab 3' },
+];
 
-  <Tabs>
-    <div label="item1">
-      See ya later, <em>Alligator</em>!
-    </div>
-    <div label="item2">
-      After 'while, <em>Crocodile</em>!
-    </div>
-    <div label="item3">
-      Nothing to see here, this tab is <em>extinct</em>!
-    </div>
-  </Tabs>
+
+const Template = (args) => (
+  <>
+    <Tabs tabs={tabs} />
+  </>
 );
 
 export const Basic = Template.bind({});

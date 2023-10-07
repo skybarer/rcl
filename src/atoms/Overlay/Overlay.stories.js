@@ -1,5 +1,5 @@
 import React from 'react';
-import Toasts from './Toasts';
+import Overlay from './Overlay';
 import {
   Title,
   Subtitle,
@@ -11,8 +11,8 @@ import {
 } from '@storybook/addon-docs';
 
 export default {
-  title: 'atoms/Toasts',
-  component: Toasts,
+  title: 'atoms/Overlay',
+  component: Overlay,
   parameters: {
     options: { selectedPanel: 'storybook/a11y/panel' },
     docs: {
@@ -30,11 +30,17 @@ export default {
   },
   argTypes: {
     backgroundColor: { control: 'color' },
-    
+
   }
 };
 
-const Template = (args) => <Toasts {...args} />;
+const Template = (args) => (
+  <>
+    <Overlay onClick={() => console.log('Overlay clicked')}>
+      <div style={{ padding: '20px', background: '#fff' }}>Overlay Content</div>
+    </Overlay>
+  </>
+);
 
 export const Basic = Template.bind({});
 Basic.parameters = {
@@ -43,7 +49,7 @@ Basic.parameters = {
 };
 
 Basic.args = {
-  label: 'Toasts',
+  label: 'Overlays',
   backgroundColor: 'aliceblue',
   color: '#000000'
 };

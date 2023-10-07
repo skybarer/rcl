@@ -30,11 +30,21 @@ export default {
   },
   argTypes: {
     backgroundColor: { control: 'color' },
-    
+
   }
 };
+const headers = ['Name', 'Age', 'Country'];
+const data = [
+  ['Alice', 30, 'USA'],
+  ['Bob', 35, 'Canada'],
+  ['Eve', 25, 'UK'],
+];
 
-const Template = (args) => <Table {...args} />;
+const Template = (args) => (
+  <>
+    <Table headers={headers} data={data} />
+  </>
+);
 
 export const Basic = Template.bind({});
 Basic.parameters = {

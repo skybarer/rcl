@@ -1,67 +1,52 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Tab } from './Tab';
-import './Tabs.css';
+// Tabs.js
+import React, { useState } from 'react';
+import styled from 'styled-components';
 
+const TabsWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
 
-class Tabs extends React.Component {
-  static propTypes = {
-    children: PropTypes.instanceOf(Array).isRequired,
+const TabButton = styled.button`
+  background: ${(props) => (props.isActive ? '#007bff' : 'transparent')};
+  color: ${(props) => (props.isActive ? '#fff' : '#000')};
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.3s ease;
+
+  &:hover {
+    background: ${(props) => (props.isActive ? '#0056b3' : '#f2f2f2')};
+  }
+`;
+
+const TabContent = styled.div`
+  display: ${(props) => (props.isActive ? 'block' : 'none')};
+  margin-top: 10px;
+`;
+
+const Tabs = ({ tabs }) => {
+  const [activeTab, setActiveTab] = useState(0);
+
+  const handleTabClick = (index) => {
+    setActiveTab(index);
   };
 
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      activeTab: this.props.children[0].props.label,
-    };
-  }
-
-  onClickTabItem = (tab) => {
-    this.setState({ activeTab: tab });
-  };
-
-  render() {
-    const {
-      onClickTabItem,
-      props: { children },
-      state: { activeTab },
-    } = this;
-
-    return (
-      <div className="tabs">
-        <ol className="tab-list">
-          {children.map((child) => {
-            const { label } = child.props;
-
-            return (
-              <Tab
-                activeTab={activeTab}
-                key={label}
-                label={label}
-                onClick={onClickTabItem}
-              />
-            );
-          })}
-        </ol>
-        <div className="tab-content">
-          {children.map((child) => {
-            if (child.props.label !== activeTab) return undefined;
-            return child.props.children;
-          })}
-        </div>
-      </div>
-    );
-  }
-}
+  return (
+    <TabsWrapper>
+      {tabs.map((tab, index) => (
+        <TabButton key={index} isActive={index === activeTab} onClick={() => handleTabClick(index)}>
+          {tab.label}
+        </TabButton>
+      ))}
+      {tabs.map((tab, index) => (
+        <TabContent key={index} isActive={index === activeTab}>
+          {tab.content}
+        </TabContent>
+      ))}
+    </TabsWrapper>
+  );
+};
 
 export default Tabs;
-
-Tabs.propTypes = {
-  props: PropTypes.object,
-};
-
-Tabs.defaultProps = {
-  backgroundColor: null,
-  onClick: undefined,
-};

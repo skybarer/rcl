@@ -1,5 +1,5 @@
 import React from 'react';
-import Popovers from './Popovers';
+import ProgressBar from './ProgressBar';
 import {
   Title,
   Subtitle,
@@ -11,8 +11,8 @@ import {
 } from '@storybook/addon-docs';
 
 export default {
-  title: 'atoms/Popovers',
-  component: Popovers,
+  title: 'atoms/ProgressBar',
+  component: ProgressBar,
   parameters: {
     options: { selectedPanel: 'storybook/a11y/panel' },
     docs: {
@@ -30,11 +30,15 @@ export default {
   },
   argTypes: {
     backgroundColor: { control: 'color' },
-    
+
   }
 };
 
-const Template = (args) => <Popovers {...args} />;
+const Template = (args) => (
+  <>
+    <ProgressBar progress={50} />
+  </>
+);
 
 export const Basic = Template.bind({});
 Basic.parameters = {
@@ -43,7 +47,7 @@ Basic.parameters = {
 };
 
 Basic.args = {
-  label: 'Popovers',
+  label: 'Progress',
   backgroundColor: 'aliceblue',
   color: '#000000'
 };

@@ -30,11 +30,15 @@ export default {
   },
   argTypes: {
     backgroundColor: { control: 'color' },
-    
+
   }
 };
 
-const Template = (args) => <Placeholder {...args} />;
+const Template = (args) => (
+  <>
+    <Placeholder width="200px" height="20px" marginBottom="10px" />
+  </>
+);
 
 export const Basic = Template.bind({});
 Basic.parameters = {

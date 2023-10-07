@@ -1,5 +1,5 @@
 import React from 'react';
-import Overlays from './Overlays';
+import Popover from './Popover';
 import {
   Title,
   Subtitle,
@@ -11,8 +11,8 @@ import {
 } from '@storybook/addon-docs';
 
 export default {
-  title: 'atoms/Overlays',
-  component: Overlays,
+  title: 'atoms/Popover',
+  component: Popover,
   parameters: {
     options: { selectedPanel: 'storybook/a11y/panel' },
     docs: {
@@ -30,12 +30,18 @@ export default {
   },
   argTypes: {
     backgroundColor: { control: 'color' },
-    
+
   }
 };
 
-const Template = (args) => <Overlays {...args} />;
-
+const Template = (args) => (
+  <>
+    <Popover
+      trigger={<button>Hover or Click Me!</button>}
+      content={<div>This is the popover content</div>}
+    />
+  </>
+)
 export const Basic = Template.bind({});
 Basic.parameters = {
   layout: 'fullscreen'
@@ -43,7 +49,7 @@ Basic.parameters = {
 };
 
 Basic.args = {
-  label: 'Overlays',
+  label: 'Popovers',
   backgroundColor: 'aliceblue',
   color: '#000000'
 };
