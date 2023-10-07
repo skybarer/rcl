@@ -1,0 +1,5 @@
+// delete create react app 
+npm uninstall -g create-react-app
+npx create-react-app my-app
+npm install -g create-react-app https://create-react-app.dev/docs/updating-to-new-releases/
+
