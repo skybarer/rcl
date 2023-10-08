@@ -40,10 +40,82 @@ const Day = styled.div`
   border-collapse: collapse;
 `;
 
+const Arrow = styled.span`
+    padding: 0;
+    margin: 0;
+
+`;
+
+const singleLeftArrow = (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6"></polyline>
+    </svg>
+);
+
+const singleRightArrow = (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+    >
+        <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+);
+
+
+const doubleLeftArrow = (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round">
+        <polyline points="13 17 8 12 13 7"></polyline>
+        <polyline points="21 17 16 12 21 7"></polyline>
+    </svg>
+
+);
+
+const doubleRightArrow = (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round">
+        <polyline points="11 7 16 12 11 17"></polyline>
+        <polyline points="3 7 8 12 3 17"></polyline>
+    </svg>
+
+);
+
 const Calendar = () => {
 
     const weekDays = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'];
-    const [selectedDate, setSelectedDate] = useState(null);
+    const [selectedDate, setSelectedDate] = useState(new Date());
     const [currentMonth, setCurrentMonth] = useState(new Date());
 
     const daysInMonth = (month, year) => {
@@ -97,10 +169,10 @@ const Calendar = () => {
         <CalendarWrapper>
             <CalendarHeader>
                 <strong>{currentMonth.toLocaleString('default', { month: 'long', year: 'numeric' })}</strong>
-                <button onClick={() => changeYear(-1)}>&lt;&lt;</button>
-                <button onClick={() => changeMonth(-1)}>&lt;</button>
-                <button onClick={() => changeMonth(1)}>&gt;</button>
-                <button onClick={() => changeYear(1)}>&gt;&gt;</button>
+                <Arrow onClick={() => changeYear(-1)}>{doubleLeftArrow}</Arrow>
+                <Arrow onClick={() => changeMonth(-1)}>{singleLeftArrow}</Arrow>
+                <Arrow onClick={() => changeMonth(1)}>{singleRightArrow}</Arrow>
+                <Arrow onClick={() => changeYear(1)}>{doubleRightArrow}</Arrow>
                 {/* <button onClick={() => changeMonth(-1)}>&lt;</button>
                 <span>{currentMonth.toLocaleString('default', { month: 'long', year: 'numeric' })}</span>
                 <button onClick={() => changeMonth(1)}>&gt;</button> */}
