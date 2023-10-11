@@ -69,7 +69,7 @@ export default $COMPONENT;"
   touch $COMPONENT.js
   touch $COMPONENT.stories.js
   touch index.js
-  touch $COMPONENT.css
+  # touch $COMPONENT.css
   echo "$COMPONENT_CONTENT" >>$COMPONENT.js
   echo "$STORIES_CONTENT" >>$COMPONENT.stories.js
   echo "$INDEX_JS_CONTENT" >>index.js
