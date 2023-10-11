@@ -43,7 +43,7 @@ const Day = styled.div`
 const Arrow = styled.span`
     padding: 0;
     margin: 0;
-
+    cursor: pointer;
 `;
 
 const singleLeftArrow = (
