@@ -38,3 +38,14 @@ yarn-error.log
 .cypress_cache
 /storybook-static/
 
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+*.tgz
+__MACOSX
+.netlify
+*.tsbuildinfo
+.eslintcache
+.stylelintcache
+build-storybook.log
+
