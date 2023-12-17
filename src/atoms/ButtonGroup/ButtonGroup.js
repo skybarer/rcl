@@ -1,45 +1,43 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
+// src/components/ButtonGroup.js
 
-const ButtonWrapper = styled.div`
+import React from "react";
+import styled from "styled-components";
+
+const ButtonGroupWrapper = styled.div`
   display: flex;
-  gap: 10px;
+  justify-content: ${({ justifyContent }) => justifyContent || "flex-start"};
+  gap: ${({ gap }) => gap || "0px"};
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: 1px solid #bdbdbd;
+  border-color: #1565c0;
 `;
 
 const Button = styled.button`
-  padding: 10px 20px;
-  background-color: ${(props) => (props.primary ? '#007bff' : '#eeeeee')};
-  color: ${(props) => (props.primary ? '#ffffff' : '#333333')};
+  background-color: ${({ disabled }) =>
+    disabled ? "rgb(225, 225, 225)" : "#000000"};
+  color: #fff;
+  font-size: 16px;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
+  padding: 10px 20px;
   cursor: pointer;
-
+  transition: background-color 0.3s ease;
+  border-radius: ${({ isFirst, isLast }) =>
+    isFirst ? "4px 0 0 4px" : isLast ? "0 4px 4px 0" : "0"};
   &:hover {
-    background-color: ${(props) => (props.primary ? '#0056b3' : '#cccccc')};
+    background-color: ${({ disabled }) =>
+      disabled ? "rgb(225, 225, 225)" : "#000000"};
+    border: 1px dotted green;
   }
 `;
 
-const ButtonGroup = ({ buttons, onButtonClick }) => {
+const ButtonGroup = ({ children, justifyContent, gap }) => {
   return (
-    <ButtonWrapper>
-      {buttons.map((button, index) => (
-        <Button key={index} primary={button.primary} onClick={() => onButtonClick(button.label)}>
-          {button.label}
-        </Button>
-      ))}
-    </ButtonWrapper>
+    <ButtonGroupWrapper justifyContent={justifyContent} gap={gap}>
+      {children}
+    </ButtonGroupWrapper>
   );
 };
 
-ButtonGroup.propTypes = {
-  buttons: PropTypes.arrayOf(
-    PropTypes.shape({
-      label: PropTypes.string.isRequired,
-      primary: PropTypes.bool,
-    })
-  ).isRequired,
-  onButtonClick: PropTypes.func.isRequired,
-};
-
-export default ButtonGroup;
+export { ButtonGroup, Button };
