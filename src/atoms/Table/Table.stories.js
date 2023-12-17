@@ -30,8 +30,7 @@ export default {
   },
   argTypes: {
     backgroundColor: { control: 'color' },
-
-  }
+  },
 };
 const headers = ['Name', 'Age', 'Country'];
 const data = [
@@ -48,12 +47,9 @@ const Template = (args) => (
 
 export const Basic = Template.bind({});
 Basic.parameters = {
-  layout: 'fullscreen'
-
+  layout: 'fullscreen',
 };
 
 Basic.args = {
-  label: 'Table',
-  backgroundColor: 'aliceblue',
-  color: '#000000'
+  
 };

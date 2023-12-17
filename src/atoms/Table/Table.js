@@ -5,23 +5,36 @@ import styled from 'styled-components';
 const TableWrapper = styled.table`
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+  box-sizing: border-box;
+  text-indent: initial;
+  border-spacing: 2px;
+  border-color: gray;
 `;
 
 const TableHeader = styled.th`
-  background-color: #f2f2f2;
-  padding: 12px;
+  background-color: #f4f4f4;
+  padding: 0.45rem;
   text-align: left;
+  vertical-align: middle;
+  border-color: inherit;
+  border-top: 1px solid #e5e5e5;
+  color: #111010;
 `;
 
 const TableRow = styled.tr`
-  &:nth-child(even) {
-    background-color: #f2f2f2;
+  border-top: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+  line-height: 24px;
+  &:last-child {
+    border-bottom: 1px solid #e5e5e5;
   }
 `;
 
 const TableCell = styled.td`
-  padding: 12px;
+  border: 0;
+  padding: 0.45rem;
 `;
 
 const Table = ({ headers, data }) => {
