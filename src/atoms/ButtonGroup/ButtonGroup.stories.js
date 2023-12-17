@@ -37,7 +37,7 @@ export default {
 
 const Template = (args) => (
   <ButtonGroup {...args}>
-    <Button primary>Primary </Button>
+    <Button>Primary </Button>
     <Button>Secondary </Button>
     <Button>Another </Button>
   </ButtonGroup>

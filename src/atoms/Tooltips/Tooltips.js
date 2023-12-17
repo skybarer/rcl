@@ -1,9 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import './Tooltips.css';
+import React from "react";
+// import PropTypes from "prop-types";
+import "./Tooltips.css";
 
 const Tooltips = ({ children, direction, content, delay }) => {
-
   let timeout;
   const [active, setActive] = React.useState(false);
 
@@ -27,23 +26,21 @@ const Tooltips = ({ children, direction, content, delay }) => {
     >
       {children}
       {active && (
-        <div className={`Tooltip-Tip ${direction || "top"}`}>
-          {content}
-        </div>
+        <div className={`Tooltip-Tip ${direction || "top"}`}>{content}</div>
       )}
     </div>
   );
 };
 
-Tooltips.propTypes = {
-  // backgroundColor: PropTypes.string,
-  // label: PropTypes.string.isRequired,
-  // onClick: PropTypes.func,
-};
+// Tooltips.propTypes = {
+//   backgroundColor: PropTypes.string,
+//   label: PropTypes.string.isRequired,
+//   onClick: PropTypes.func,
+// };
 
-Tooltips.defaultProps = {
-  backgroundColor: null,
-  onClick: undefined,
-};
+// Tooltips.defaultProps = {
+//   backgroundColor: null,
+//   onClick: undefined,
+// };
 
 export default Tooltips;

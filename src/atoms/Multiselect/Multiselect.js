@@ -27,15 +27,15 @@ const Chip = styled.div`
   align-items: center;
 `;
 
-const SelectedOptions = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  min-height: 36px;
-`;
+// const SelectedOptions = styled.div`
+//   display: flex;
+//   flex-wrap: wrap;
+//   gap: 8px;
+//   padding: 8px;
+//   border: 1px solid #ccc;
+//   border-radius: 4px;
+//   min-height: 36px;
+// `;
 
 const OptionList = styled.ul`
   position: absolute;

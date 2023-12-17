@@ -34,6 +34,7 @@ const StyledButton = styled.button`
     disabled ? "rgb(225, 225, 225)" : "#000000"};
   color: #fff;
   font-size: 16px;
+  font-weight: bold;
   border: none;
   border-radius: 4px;
   padding: 10px 20px;

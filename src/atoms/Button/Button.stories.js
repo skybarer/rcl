@@ -1,5 +1,5 @@
-import React from 'react';
-import Button from './Button';
+import React from "react";
+import Button from "./Button";
 import {
   Title,
   Subtitle,
@@ -8,12 +8,12 @@ import {
   ArgsTable,
   Stories,
   PRIMARY_STORY,
-} from '@storybook/addon-docs';
+} from "@storybook/addon-docs";
 export default {
-  title: 'atoms/Button',
+  title: "atoms/Button",
   component: Button,
   parameters: {
-    options: { selectedPanel: 'storybook/a11y/panel' },
+    options: { selectedPanel: "storybook/a11y/panel" },
     docs: {
       page: () => (
         <>
@@ -28,19 +28,14 @@ export default {
     },
   },
   argTypes: {
-    backgroundColor: { control: 'color' },
-
-  }
+    backgroundColor: { control: "color" },
+  },
 };
 
 const Template = (args) => (
   <>
-    <Button {...args}>
-      <strong>{args?.Children}</strong>
-    </Button>
-
+    <Button {...args}>{args?.Children}</Button>
   </>
-
 );
 
 export const Basic = Template.bind({});
@@ -49,10 +44,9 @@ Basic.parameters = {
 };
 
 Basic.args = {
-  Children: 'My Button',
+  Children: "My Button",
   disabled: false,
 };
-
 
 // src/stories/Button.stories.js
 // import React from 'react';
@@ -70,4 +64,3 @@ Basic.args = {
 // stories.add('Secondary', () => (
 //   <Button primary={boolean('Primary', false)}>Secondary Button</Button>
 // ));
-

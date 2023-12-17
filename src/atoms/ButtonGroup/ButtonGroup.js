@@ -9,7 +9,6 @@ const ButtonGroupWrapper = styled.div`
   gap: ${({ gap }) => gap || "0px"};
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  border-right: 1px solid #bdbdbd;
   border-color: #1565c0;
 `;
 
@@ -19,12 +18,24 @@ const Button = styled.button`
   color: #fff;
   font-size: 16px;
   border: none;
-  border-radius: 4px;
   padding: 10px 20px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  border-radius: ${({ isFirst, isLast }) =>
-    isFirst ? "4px 0 0 4px" : isLast ? "0 4px 4px 0" : "0"};
+  font-weight: bold;
+  &:first-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+
+  &:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+
+  &:not(:first-child):not(:last-child) {
+    border-left: none;
+    border-right: none;
+  }
   &:hover {
     background-color: ${({ disabled }) =>
       disabled ? "rgb(225, 225, 225)" : "#000000"};

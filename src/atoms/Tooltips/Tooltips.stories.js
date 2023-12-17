@@ -1,6 +1,6 @@
-import React from 'react';
-import Tooltips from './Tooltips';
-import Button from './../Button/Button';
+import React from "react";
+import Tooltips from "./Tooltips";
+import Button from "./../Button/Button";
 
 import {
   Title,
@@ -10,13 +10,13 @@ import {
   ArgsTable,
   Stories,
   PRIMARY_STORY,
-} from '@storybook/addon-docs';
+} from "@storybook/addon-docs";
 
 export default {
-  title: 'atoms/Tooltips',
+  title: "atoms/Tooltips",
   component: Tooltips,
   parameters: {
-    options: { selectedPanel: 'storybook/a11y/panel' },
+    options: { selectedPanel: "storybook/a11y/panel" },
     docs: {
       page: () => (
         <>
@@ -31,22 +31,19 @@ export default {
     },
   },
   argTypes: {
-    backgroundColor: { control: 'color' },
-
-  }
+    backgroundColor: { control: "color" },
+  },
 };
 
-const emojiCss = {
-  fontSize: '3rem',
-  margin: '2rem',
-  display: 'flex',
-}
+// const emojiCss = {
+//   fontSize: '3rem',
+//   margin: '2rem',
+//   display: 'flex',
+// }
 
 const Template = (args) => (
   <>
-    {['left', 'top', 'bottom', 'right'].map((placement, index) => (
-
-
+    {["left", "top", "bottom", "right"].map((placement, index) => (
       <Tooltips
         key={index}
         direction={`${placement}`}
@@ -60,29 +57,27 @@ const Template = (args) => (
           Tooltip on <strong>{placement}</strong>.
         </Button>
       </Tooltips>
-
     ))}
   </>
 );
 
 export const Basic = Template.bind({});
 Basic.parameters = {
-  layout: 'centered',
-
+  layout: "centered",
 };
 
 Basic.args = {
-  label: 'Tooltips',
-  backgroundColor: 'aliceblue',
-  color: '#000000',
-  className: 'rcl-button',
+  label: "Tooltips",
+  backgroundColor: "aliceblue",
+  color: "#000000",
+  className: "rcl-button",
   style: {
-    color: '#000000',
-    backgroundColor: 'aliceblue',
-    padding: '1rem 2rem',
+    color: "#000000",
+    backgroundColor: "aliceblue",
+    padding: "1rem 2rem",
     border: 0,
-    borderRadius: '4px',
-    cursor: 'pointer',
-    margin: '10px'
+    borderRadius: "4px",
+    cursor: "pointer",
+    margin: "10px",
   },
 };
