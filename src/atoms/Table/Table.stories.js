@@ -1,5 +1,8 @@
 import React from 'react';
 import Table from './Table';
+import TableHeader from './TableHeader';
+import TableRow from './TableRow';
+import TableCell from './TableCell';
 import {
   Title,
   Subtitle,
@@ -41,7 +44,28 @@ const data = [
 
 const Template = (args) => (
   <>
-    <Table headers={headers} data={data} />
+    {/* <Table headers={headers} data={data} /> */}
+    <Table>
+      <thead>
+        <TableRow>
+          <TableHeader>Name</TableHeader>
+          <TableHeader>Age</TableHeader>
+          <TableHeader>Country</TableHeader>
+        </TableRow>
+      </thead>
+      <tbody>
+        <TableRow>
+          <TableCell>Row 1, Cell 1</TableCell>
+          <TableCell>Row 1, Cell 2</TableCell>
+          <TableCell>Row 1, Cell 3</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell>Row 2, Cell 1</TableCell>
+          <TableCell>Row 2, Cell 2</TableCell>
+          <TableCell>Row 2, Cell 3</TableCell>
+        </TableRow>
+      </tbody>
+    </Table>
   </>
 );
 
@@ -51,5 +75,5 @@ Basic.parameters = {
 };
 
 Basic.args = {
-  
+
 };
