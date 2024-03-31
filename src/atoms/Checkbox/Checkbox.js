@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React, { useState } from 'react';
+import styled from 'styled-components';
 
 const CheckboxWrapper = styled.label`
   display: flex;
@@ -15,10 +15,14 @@ const CheckboxLabel = styled.span`
   font-size: 16px;
 `;
 
-const Checkbox = ({ label, checked, onChange }) => {
+const Checkbox = ({ label, onChange }) => {
+  const [checked, setChecked] = useState(false);
+  const handleClick = () => {
+    setChecked(!checked);
+  };
   return (
-    <CheckboxWrapper>
-      <CheckboxInput type="checkbox" checked={checked} onChange={onChange} />
+    <CheckboxWrapper onClick={handleClick}>
+      <CheckboxInput type="checkbox" onChange={onChange} />
       <CheckboxLabel>{label}</CheckboxLabel>
     </CheckboxWrapper>
   );
