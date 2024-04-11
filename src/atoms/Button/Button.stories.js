@@ -41,6 +41,34 @@ const Template = (args) => (
     <Button variant="btn-secondary" {...args}>
       {args?.Children}
     </Button>
+    <p></p>
+    <Button variant="btn-success" {...args}>
+      {args?.Children}
+    </Button>
+    <p></p>
+    <Button variant="btn-info" {...args}>
+      {args?.Children}
+    </Button>
+    <p></p>
+    <Button variant="btn-danger" {...args}>
+      {args?.Children}
+    </Button>
+    <p></p>
+    <Button variant="btn-light" {...args}>
+      {args?.Children}
+    </Button>
+    <p></p>
+    <Button variant="btn-dark" {...args}>
+      {args?.Children}
+    </Button>
+    <p></p>
+    <Button variant="btn-warning" {...args}>
+      {args?.Children}
+    </Button>
+    <p></p>
+    <Button variant="btn-outline" {...args}>
+      {args?.Children}
+    </Button>
   </>
 );
 

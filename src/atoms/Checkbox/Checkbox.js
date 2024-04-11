@@ -15,14 +15,16 @@ const CheckboxLabel = styled.span`
   font-size: 16px;
 `;
 
-const Checkbox = ({ label, onChange }) => {
+const Checkbox = ({ label, onCheckChange }) => {
   const [checked, setChecked] = useState(false);
   const handleClick = () => {
-    setChecked(!checked);
+    const newChecked = !checked;
+    setChecked(newChecked);
+    onCheckChange && onCheckChange(newChecked);
   };
   return (
     <CheckboxWrapper onClick={handleClick}>
-      <CheckboxInput type="checkbox" onChange={onChange} />
+      <CheckboxInput type="checkbox" checked={checked} readOnly />
       <CheckboxLabel>{label}</CheckboxLabel>
     </CheckboxWrapper>
   );

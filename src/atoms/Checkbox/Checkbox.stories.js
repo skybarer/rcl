@@ -1,5 +1,5 @@
-import React from "react";
-import Checkbox from "./Checkbox";
+import React from 'react';
+import Checkbox from './Checkbox';
 
 import {
   Title,
@@ -9,13 +9,13 @@ import {
   ArgsTable,
   Stories,
   PRIMARY_STORY,
-} from "@storybook/addon-docs";
+} from '@storybook/addon-docs';
 
 export default {
-  title: "atoms/Checkbox",
+  title: 'atoms/Checkbox',
   component: Checkbox,
   parameters: {
-    options: { selectedPanel: "storybook/a11y/panel" },
+    options: { selectedPanel: 'storybook/a11y/panel' },
     docs: {
       page: () => (
         <>
@@ -30,20 +30,22 @@ export default {
     },
   },
   argTypes: {
-    backgroundColor: { control: "color" },
+    backgroundColor: { control: 'color' },
   },
 };
 
-const Template = (args) => <Checkbox {...args} />;
+const Template = (args) => (
+  <Checkbox label={args.label} onCheckChange={args.checked} />
+);
 
 export const Default = Template.bind({});
 Default.args = {
-  label: "Check me",
+  label: 'Check me',
   checked: false,
 };
 
 export const Checked = Template.bind({});
 Checked.args = {
-  label: "I am checked",
+  label: 'I am checked',
   checked: true,
 };
