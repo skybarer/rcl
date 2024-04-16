@@ -23,13 +23,27 @@ const Input = styled.input`
     `}
 
   ${(props) =>
-    props.multiline &&
+    props.icon &&
     css`
-      height: 80px;
-      resize: vertical;
+      padding-left: 30px;
+    `}
+`;
+
+const TextArea = styled.textarea`
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+
+  ${(props) =>
+    props.hasError &&
+    css`
+      border-color: #ff0000;
     `}
 
-   ${(props) =>
+  ${(props) =>
     props.icon &&
     css`
       padding-left: 30px;
@@ -69,15 +83,23 @@ const TextField = ({ multiline, icon, adornment, error, ...props }) => {
   return (
     <TextFieldWrapper>
       {icon && <Icon>{icon}</Icon>}
-      <Input
-        {...props}
-        multiline={multiline}
-        value={inputValue}
-        onChange={handleChange}
-        hasError={!!error}
-        rows={multiline ? '4' : undefined}
-        icon={!!icon}
-      />
+      {multiline ? (
+        <TextArea
+          {...props}
+          value={inputValue}
+          onChange={handleChange}
+          hasError={!!error}
+          icon={!!icon}
+        />
+      ) : (
+        <Input
+          {...props}
+          value={inputValue}
+          onChange={handleChange}
+          hasError={!!error}
+          icon={!!icon}
+        />
+      )}
       {adornment && <Adornment>{adornment}</Adornment>}
       {error && <ErrorMessage>{error}</ErrorMessage>}
     </TextFieldWrapper>
