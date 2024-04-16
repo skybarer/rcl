@@ -1,7 +1,7 @@
 // src/components/TextField.js
 
-import React, { useState } from "react";
-import styled, { css } from "styled-components";
+import React, { useState } from 'react';
+import styled, { css } from 'styled-components';
 
 const TextFieldWrapper = styled.div`
   position: relative;
@@ -28,6 +28,12 @@ const Input = styled.input`
       height: 80px;
       resize: vertical;
     `}
+
+   ${(props) =>
+    props.icon &&
+    css`
+      padding-left: 30px;
+    `}
 `;
 
 const Icon = styled.span`
@@ -36,6 +42,7 @@ const Icon = styled.span`
   transform: translateY(-50%);
   left: 8px;
   color: #333;
+  display: block;
 `;
 
 const Adornment = styled.span`
@@ -53,7 +60,7 @@ const ErrorMessage = styled.div`
 `;
 
 const TextField = ({ multiline, icon, adornment, error, ...props }) => {
-  const [inputValue, setInputValue] = useState("");
+  const [inputValue, setInputValue] = useState('');
 
   const handleChange = (e) => {
     setInputValue(e.target.value);
@@ -68,7 +75,8 @@ const TextField = ({ multiline, icon, adornment, error, ...props }) => {
         value={inputValue}
         onChange={handleChange}
         hasError={!!error}
-        rows={multiline ? "4" : undefined}
+        rows={multiline ? '4' : undefined}
+        icon={!!icon}
       />
       {adornment && <Adornment>{adornment}</Adornment>}
       {error && <ErrorMessage>{error}</ErrorMessage>}

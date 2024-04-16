@@ -1,7 +1,7 @@
-import React from "react";
-import TextField from "./TextField";
-import LockIcon from "../../assets/icons/LockIcon";
-import UserIcon from "../../assets/icons/UserIcon";
+import React from 'react';
+import TextField from './TextField';
+import LockIcon from '../../assets/icons/LockIcon';
+import UserIcon from '../../assets/icons/UserIcon';
 
 import {
   Title,
@@ -11,13 +11,13 @@ import {
   ArgsTable,
   Stories,
   PRIMARY_STORY,
-} from "@storybook/addon-docs";
+} from '@storybook/addon-docs';
 
 export default {
-  title: "atoms/TextField",
+  title: 'atoms/TextField',
   component: TextField,
   parameters: {
-    options: { selectedPanel: "storybook/a11y/panel" },
+    options: { selectedPanel: 'storybook/a11y/panel' },
     docs: {
       page: () => (
         <>
@@ -32,7 +32,7 @@ export default {
     },
   },
   argTypes: {
-    backgroundColor: { control: "color" },
+    backgroundColor: { control: 'color' },
   },
 };
 
@@ -40,30 +40,45 @@ const Template = (args) => <TextField {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  placeholder: "Enter text",
+  placeholder: 'Enter text',
 };
 
 export const WithIcon = Template.bind({});
 WithIcon.args = {
-  placeholder: "Username",
-  icon: <UserIcon />,
+  placeholder: 'Username',
+  icon: (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="24"
+      height="24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <circle cx="12" cy="7" r="4" />
+      <path d="M5 22s1.5-3 3-3h8c1.5 0 3 3 3 3" />
+    </svg>
+  ),
 };
 
 export const Multiline = Template.bind({});
 Multiline.args = {
-  placeholder: "Type a long text...",
+  placeholder: 'Type a long text...',
   multiline: true,
 };
 
 export const WithError = Template.bind({});
 WithError.args = {
-  placeholder: "Type something",
-  error: "This field is required",
+  placeholder: 'Type something',
+  error: 'This field is required',
 };
 
 export const WithAdornment = Template.bind({});
 WithAdornment.args = {
-  placeholder: "Password",
+  placeholder: 'Password',
   adornment: <LockIcon />,
-  type: "password",
+  type: 'password',
 };
