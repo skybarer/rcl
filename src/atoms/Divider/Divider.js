@@ -7,16 +7,16 @@ const Divider = ({ children, style }) => {
   return (
     <div className="container">
       <div className="border" />
-      <span className="content" style={{ ...style }} >
+      <span className="content" style={{ ...style }}>
         {children}
       </span>
       <div className="border" />
     </div>
   );
-}
+};
 
 Divider.propTypes = {
-  children: PropTypes.object
+  children: PropTypes.object,
 };
 Divider.defaultProps = {};
 
