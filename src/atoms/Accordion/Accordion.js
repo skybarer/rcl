@@ -1,8 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
-import "./Accordion.css";
-import css from "../../electrons/accordian.module.css";
-import AccordionItem from "./AccordianItem";
+import React from 'react';
+import './Accordion.css';
+import css from '../../electrons/accordian.module.css';
+import AccordionItem from './AccordianItem';
 
 const Accordion = (props) => {
   // console.log(css)
@@ -21,15 +20,15 @@ const Accordion = (props) => {
 };
 
 Accordion.propTypes = {
-  title: PropTypes.string,
-  content: PropTypes.string,
-  onClick: PropTypes.func,
-  type: PropTypes.oneOf(["small", "medium", "large"]),
+  // title: PropTypes.string,
+  // content: PropTypes.string,
+  // onClick: PropTypes.func,
+  // type: PropTypes.oneOf(['small', 'medium', 'large']),
 };
 
 Accordion.defaultProps = {
-  backgroundColor: null,
-  onClick: undefined,
+  // backgroundColor: null,
+  // onClick: undefined,
 };
 
 export default Accordion;
