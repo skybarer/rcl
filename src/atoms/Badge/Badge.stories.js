@@ -30,23 +30,24 @@ export default {
   },
   argTypes: {
     backgroundColor: { control: 'color' },
-    
-  }
+  },
 };
 
-const Template = (args) => (
-  <Badge>
-    {args.content}
-  </Badge>
-
-);
+const Template = (args) => {
+  return (
+    <>
+      <Badge>Default Badge</Badge>
+      <Badge color="#28a745">Success Badge</Badge>
+      <Badge color="red">51+</Badge>
+    </>
+  );
+};
 
 export const Basic = Template.bind({});
 Basic.parameters = {
-  layout: 'centered'
+  layout: 'centered',
 };
 
-Basic.args = {
-  content: '51+',
- 
-};
+// Basic.args = {
+//   content: '51+',
+// };
