@@ -14,8 +14,8 @@ Grid.propTypes = {
 };
 
 Grid.defaultProps = {
-  columns: 3,
-  gap: 10,
+  columns: 1,
+  gap: 0,
 };
 
 export default Grid;
