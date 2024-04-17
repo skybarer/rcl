@@ -4,12 +4,15 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const ColorBox = styled.div`
-  width: 100px;
-  height: 100px;
+  min-width: 2.25rem;
+  min-height: 2.25rem;
   background-color: ${(props) => props.color};
   margin: 5px;
   cursor: pointer;
   border-radius: 0.125rem;
+  resize: both;
+  max-height: fit-content; /* Adjust as needed */
+  max-width: fit-content; /* Adjust as needed */
 `;
 
 const ColorPickerWrapper = styled.div`
