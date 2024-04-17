@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    border-style: solid;
+    border-color: #e5e7eb;
 }
 
 /* html {} */
