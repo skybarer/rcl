@@ -4,17 +4,21 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const CardWrapper = styled.div`
-  width: 300px;
-  padding: 20px;
-  border-radius: 5px;
+  width: min-content;
+
+  /* width: 300px;
+  padding: 20px; */
+  resize: both;
+  border-radius: 0.5rem;
   background-color: ${(props) =>
     props.variant === 'filled' ? 'rgb(255 255 255 / 1)' : 'transparent'};
   border: ${(props) =>
-    props.variant === 'outlined' ? '1px solid #3b82f6' : 'none'};
+    props.variant === 'outlined' ? '1px solid #d7d7d8' : '0 solid #e5e7eb;'};
   color: ${(props) => (props.variant === 'filled' ? 'black' : '#3b82f6')};
-  box-shadow: var(0 0 #0000, 0 0 #0000),
-    var(0 0 #0000, 0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a),
-    var(0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a);
+  padding: 0.375rem;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  box-sizing: border-box;
+  /* border: 0 solid #e5e7eb; */
 `;
 
 const Card = ({ variant, children }) => (
