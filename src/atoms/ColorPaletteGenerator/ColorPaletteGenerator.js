@@ -8,16 +8,6 @@ const ColorPaletteGenerator = ({ initialColor }) => {
   const [hexColor, setHexColor] = useState(initialColor);
   const [colorVariants, setColorVariants] = useState([]);
 
-  //   const [rgbColor, setRgbColor] = useState(initialColor);
-
-  // Convert hexadecimal color to a number
-  const hexToNumber = (hex) => {
-    // Remove '#' if present
-    hex = hex.replace(/^#/, '');
-    // Parse hexadecimal string to a number
-    return parseInt(hex, 16);
-  };
-
   const hexToRgb = (hexColor) => {
     // Remove '#' if present
     const hexColor1 = hexColor.replace('#', '');
