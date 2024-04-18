@@ -3,5 +3,5 @@ import { storiesOf } from '@storybook/react';
 import ColorPaletteGenerator from './ColorPaletteGenerator';
 
 storiesOf('ColorPaletteGenerator', module).add('default', () => (
-  <ColorPaletteGenerator initialColor="#000000" />
+  <ColorPaletteGenerator initialColor="#d10a0a" />
 ));
