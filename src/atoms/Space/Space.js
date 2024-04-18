@@ -9,25 +9,18 @@ const defaultSpacingScale = sizes;
 // Create a styled component that uses the spacing scale for margin and padding
 const Spacing = styled.div`
   /* for margin */
-  margin: ${({ marginScale, marginSize }) => marginScale[marginSize]};
-  margin-top: ${({ marginScale, marginTopSize }) => marginScale[marginTopSize]};
-  margin-right: ${({ marginScale, marginRightSize }) =>
-    marginScale[marginRightSize]};
-  margin-bottom: ${({ marginScale, marginBottomSize }) =>
-    marginScale[marginBottomSize]};
-  margin-left: ${({ marginScale, marginLeftSize }) =>
-    marginScale[marginLeftSize]};
+  margin: ${({ scale, marginSize }) => scale[marginSize]};
+  margin-top: ${({ scale, marginTopSize }) => scale[marginTopSize]};
+  margin-right: ${({ scale, marginRightSize }) => scale[marginRightSize]};
+  margin-bottom: ${({ scale, marginBottomSize }) => scale[marginBottomSize]};
+  margin-left: ${({ scale, marginLeftSize }) => scale[marginLeftSize]};
 
   /* for pading  */
-  padding: ${({ paddingScale, paddingSize }) => paddingScale[paddingSize]};
-  padding-top: ${({ paddingScale, paddingTopSize }) =>
-    paddingScale[paddingTopSize]};
-  padding-right: ${({ paddingScale, paddingRightSize }) =>
-    paddingScale[paddingRightSize]};
-  padding-bottom: ${({ paddingScale, paddingBottomSize }) =>
-    paddingScale[paddingBottomSize]};
-  padding-left: ${({ paddingScale, paddingLeftSize }) =>
-    paddingScale[paddingLeftSize]};
+  padding: ${({ scale, paddingSize }) => scale[paddingSize]};
+  padding-top: ${({ scale, paddingTopSize }) => scale[paddingTopSize]};
+  padding-right: ${({ scale, paddingRightSize }) => scale[paddingRightSize]};
+  padding-bottom: ${({ scale, paddingBottomSize }) => scale[paddingBottomSize]};
+  padding-left: ${({ scale, paddingLeftSize }) => scale[paddingLeftSize]};
 `;
 
 // Create your Space component
@@ -50,9 +43,8 @@ const Space = ({
 
   return (
     <Spacing
-      marginScale={scale}
+      scale={scale}
       marginSize={marginSize}
-      paddingScale={scale}
       paddingSize={paddingSize}
       paddingTopSize={paddingTopSize}
       paddingRightSize={paddingRightSize}
