@@ -15,11 +15,11 @@ const customScale = {
 
 export const Default = () => (
   <>
-    <Space size={1}>
+    <Space marginSize={1}>
       <p>Your content here</p>
     </Space>
 
-    <Space size={1} customScale={customScale}>
+    <Space marginSize={1} customScale={customScale}>
       <p>Your content here</p>
     </Space>
   </>
