@@ -25,9 +25,9 @@ export const Default = () => (
           colors={['#60a5fa', '#3b82f6', '#2563eb', '#1d4ed8', '#1e40af']}
           onColorSelect={action('color selected')}
         />
-      </Grid> 
+      </Grid>
     </Card>
-    <Space size={5}></Space>
+    <Space marginSize={5}></Space>
     <Card variant="filled" width="max-content">
       <Grid>
         <ColorPicker
