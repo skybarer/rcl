@@ -1,5 +1,7 @@
 import React from 'react';
 import Button from './Button';
+import Space from './../Space/Space';
+import Grid from '../Grid/Grid';
 import {
   Title,
   Subtitle,
@@ -34,41 +36,45 @@ export default {
 
 const Template = (args) => (
   <>
-    <Button variant="btn-primary" {...args}>
-      {args?.Children}
-    </Button>
-    <p></p>
-    <Button variant="btn-secondary" {...args}>
-      {args?.Children}
-    </Button>
-    <p></p>
-    <Button variant="btn-success" {...args}>
-      {args?.Children}
-    </Button>
-    <p></p>
-    <Button variant="btn-info" {...args}>
-      {args?.Children}
-    </Button>
-    <p></p>
-    <Button variant="btn-danger" {...args}>
-      {args?.Children}
-    </Button>
-    <p></p>
-    <Button variant="btn-light" {...args}>
-      {args?.Children}
-    </Button>
-    <p></p>
-    <Button variant="btn-dark" {...args}>
-      {args?.Children}
-    </Button>
-    <p></p>
-    <Button variant="btn-warning" {...args}>
-      {args?.Children}
-    </Button>
-    <p></p>
-    <Button variant="btn-outline" {...args}>
-      {args?.Children}
-    </Button>
+    <Grid columns={9} gap={20}>
+      <Button variant="btn-primary" {...args}>
+        {args?.Children}
+      </Button>
+
+      <Button variant="btn-secondary" {...args}>
+        {args?.Children}
+      </Button>
+
+      <Button variant="btn-success" {...args}>
+        {args?.Children}
+      </Button>
+
+      <Button variant="btn-info" {...args}>
+        {args?.Children}
+      </Button>
+
+      <Button variant="btn-danger" {...args}>
+        {args?.Children}
+      </Button>
+    </Grid>
+    <Space marginSize={5}></Space>
+    <Grid columns={9} gap={20}>
+      <Button variant="btn-light" {...args}>
+        {args?.Children}
+      </Button>
+
+      <Button variant="btn-dark" {...args}>
+        {args?.Children}
+      </Button>
+
+      <Button variant="btn-warning" {...args}>
+        {args?.Children}
+      </Button>
+
+      <Button variant="btn-outline" {...args}>
+        {args?.Children}
+      </Button>
+    </Grid>
   </>
 );
 
@@ -81,20 +87,3 @@ Basic.args = {
   Children: 'My Button',
   disabled: false,
 };
-
-// src/stories/Button.stories.js
-// import React from 'react';
-// import { storiesOf } from '@storybook/react';
-// import { withKnobs, boolean } from '@storybook/addons';
-// import Button from './Button';
-
-// const stories = storiesOf('Button', module);
-// stories.addDecorator(withKnobs);
-
-// stories.add('Primary', () => (
-//   <Button primary={boolean('Primary', true)}>Primary Button</Button>
-// ));
-
-// stories.add('Secondary', () => (
-//   <Button primary={boolean('Primary', false)}>Secondary Button</Button>
-// ));

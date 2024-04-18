@@ -54,16 +54,15 @@ const buttonVariants = {
 const StyledButton = styled.button`
   font-size: 16px;
   font-weight: bold;
-  border: 0.1px solid black;
   border-radius: 4px;
-  padding: 10px 20px;
+  padding: 0.5rem 0.25rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
 
   ${({ variant }) => buttonVariants[variant] || buttonVariants.primary}
 
   &:hover {
-    border: 1px dotted black;
+    border: 0px dotted black;
   }
 `;
 
