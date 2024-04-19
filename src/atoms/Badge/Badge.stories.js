@@ -51,3 +51,18 @@ Basic.parameters = {
 // Basic.args = {
 //   content: '51+',
 // };
+
+export const Teal = () => (
+  <Badge className="badge badge-lg badge-accented teal">
+    Black Friday Sale
+  </Badge>
+);
+export const Yellow = () => (
+  <Badge className="badge badge-accented yellow">Best Seller</Badge>
+);
+export const Green = () => (
+  <Badge className="badge badge-accented green">New</Badge>
+);
+export const Default = () => (
+  <Badge className="badge badge-accented">Akash</Badge>
+);
