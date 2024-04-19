@@ -8,7 +8,7 @@ export default {
 };
 
 export const Filled = () => (
-  <Card variant="filled" width="15rem">
+  <Card variant="white" width="15rem" padding="1rem">
     Don’t want to be one of those websites that blinds people when they open it
     on their phone at 2am? Enable dark mode in your configuration file then
     throw dark: in front of any color utility to apply it when dark mode is
@@ -18,7 +18,7 @@ export const Filled = () => (
 );
 
 export const Outlined = () => (
-  <Card variant="outlined" width="15rem">
+  <Card variant="white" width="15rem" padding="1rem">
     Don’t want to be one of those websites that blinds people when they open it
     on their phone at 2am? Enable dark mode in your configuration file then
     throw dark: in front of any color utility to apply it when dark mode is
