@@ -1,7 +1,7 @@
 import React from 'react';
 import TextField from './TextField';
 import LockIcon from '../../assets/icons/LockIcon';
-import UserIcon from '../../assets/icons/UserIcon';
+import { action } from '@storybook/addon-actions';
 
 import {
   Title,
@@ -82,3 +82,13 @@ WithAdornment.args = {
   adornment: <LockIcon />,
   type: 'password',
 };
+
+export const Standard = () => (
+  <TextField variant="standard" onChange={action('changed')} />
+);
+export const Outlined = () => (
+  <TextField variant="outlined" onChange={action('changed')} />
+);
+export const Filled = () => (
+  <TextField variant="filled" onChange={action('changed')} />
+);

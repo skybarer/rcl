@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import styled, { css } from 'styled-components';
+import { PropTypes } from 'prop-types';
 
 const TextFieldWrapper = styled.div`
   position: relative;
@@ -73,18 +74,67 @@ const ErrorMessage = styled.div`
   margin-top: 4px;
 `;
 
-const TextField = ({ multiline, icon, adornment, error, ...props }) => {
+// Add these styles to your styled-components
+const OutlinedInput = styled(Input)`
+  border: none;
+  border-bottom: 1px solid #ccc;
+  &:focus {
+    outline: none;
+    border-bottom: 2px solid #3f51b5;
+  }
+`;
+
+const FilledInput = styled(Input)`
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: #f5f5f5;
+  &:focus {
+    outline: none;
+    border-bottom: 2px solid #3f51b5;
+  }
+`;
+
+const StandardInput = styled(Input)`
+  border: none;
+  border-bottom: 1px solid #ccc;
+  &:focus {
+    outline: none;
+    border-bottom: 2px solid #3f51b5;
+  }
+`;
+// Modify your TextField component
+const TextField = ({
+  variant,
+  multiline,
+  icon,
+  adornment,
+  error,
+  ...props
+}) => {
   const [inputValue, setInputValue] = useState('');
 
   const handleChange = (e) => {
     setInputValue(e.target.value);
   };
 
+  let InputComponent;
+  switch (variant) {
+    case 'outlined':
+      InputComponent = OutlinedInput;
+      break;
+    case 'filled':
+      InputComponent = FilledInput;
+      break;
+    default:
+      InputComponent = StandardInput;
+  }
+
   return (
     <TextFieldWrapper>
       {icon && <Icon>{icon}</Icon>}
       {multiline ? (
         <TextArea
+          as={InputComponent}
           {...props}
           value={inputValue}
           onChange={handleChange}
@@ -92,7 +142,7 @@ const TextField = ({ multiline, icon, adornment, error, ...props }) => {
           icon={!!icon}
         />
       ) : (
-        <Input
+        <InputComponent
           {...props}
           value={inputValue}
           onChange={handleChange}
@@ -104,6 +154,17 @@ const TextField = ({ multiline, icon, adornment, error, ...props }) => {
       {error && <ErrorMessage>{error}</ErrorMessage>}
     </TextFieldWrapper>
   );
+};
+
+// Don't forget to add the new prop to PropTypes
+TextField.propTypes = {
+  variant: PropTypes.oneOf(['standard', 'outlined', 'filled']),
+  // other PropTypes...
+};
+
+TextField.defaultProps = {
+  variant: 'standard',
+  // other default props...
 };
 
 export default TextField;
