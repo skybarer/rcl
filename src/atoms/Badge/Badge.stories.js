@@ -66,3 +66,6 @@ export const Green = () => (
 export const Default = () => (
   <Badge className="badge badge-accented">Akash</Badge>
 );
+
+export const Quest = () => <Badge type="quest">Question</Badge>;
+export const Forum = () => <Badge type="forum">Discussion</Badge>;

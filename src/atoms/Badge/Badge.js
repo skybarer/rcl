@@ -4,6 +4,19 @@ import styled from 'styled-components';
 
 // https://staxmanade.com/CssToReact/
 
+const BadgeWrapper = styled.span`
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: bold;
+  height: 16px;
+  padding: 3px 5px 3px 5px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  background-color: ${(props) =>
+    props.type === 'quest' ? '#FFAB00' : '#6554C0'};
+`;
+
 const StyledBadge = styled.span`
   display: inline-block;
   min-width: 10px;
@@ -85,10 +98,16 @@ const StyledBadge = styled.span`
   }
 `;
 
-export const Badge = ({ className, children, color }) => (
-  <StyledBadge className={className} color={color}>
-    {children}
-  </StyledBadge>
+export const Badge = ({ className, children, color, type }) => (
+  <>
+    {type === 'quest' || type === 'forum' ? (
+      <BadgeWrapper type={type}>{children}</BadgeWrapper>
+    ) : (
+      <StyledBadge className={className} color={color}>
+        {children}
+      </StyledBadge>
+    )}
+  </>
 );
 
 Badge.propTypes = {
