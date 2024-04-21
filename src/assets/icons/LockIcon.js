@@ -1,6 +1,6 @@
 // src/components/icons/LockIcon.js
 
-import React from "react";
+import React from 'react';
 
 const LockIcon = () => (
   <svg
