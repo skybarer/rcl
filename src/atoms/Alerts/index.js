@@ -1,5 +1,3 @@
-import Alerts from './Alerts';
+import Alert from './Alert';
 
-export {
-    Alerts
-};
+export { Alert };
