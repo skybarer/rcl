@@ -1,44 +1,56 @@
-// ToggleSwitch.js
-import React, { useState } from 'react';
+// Importing necessary libraries and components
+import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import SwitchButton from './SwitchButton';
 
-// Styled component for the container
-const ButtonContainer = styled.div`
-  display: grid;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #f0f8ff;
-  border-radius: 0.5rem;
-  grid-template-columns: repeat(2, 1fr);
-  height: auto;
-  margin-inline: auto;
-  position: relative;
-  width: 240px;
-  z-index: 1;
-  border: 1px solid #eae7e7;
-  opacity: 1;
+// Styled-components for the switch
+const Switch = styled.div`
+  display: inline-flex;
+  background-color: rgb(244, 244, 245);
+  padding: 4px;
+  border-radius: 8px;
+  box-shadow: rgba(9, 9, 11, 0.05) 0px 2px 4px 0px inset;
+  max-width: 216px;
+  min-width: 216px;
 `;
 
-const ToggleSwitch = () => {
-  const [activeButton, setActiveButton] = useState('Preview');
+const Option = styled.div`
+  flex: 1;
+  text-align: center;
+  padding: 4px 12px;
+  background-color: ${(props) => (props.active ? 'white' : 'transparent')};
+  border-radius: 8px;
+  z-index: ${(props) => (props.active ? 1 : 0)};
+  color: rgb(39, 39, 42) !important;
+  box-shadow: ${(props) =>
+    props.active
+      ? 'rgba(9, 9, 11, 0.1) 0px 1px 2px -1px, rgba(9, 9, 11, 0.1) 0px 1px 3px 0px'
+      : 'none'};
+  border-left: ${(props) => (props.active ? '1px solid transparent' : 0)};
+  cursor: pointer;
+`;
 
+// ToggleSwitch Component
+const ToggleSwitch = ({ options, value, onChange }) => {
   return (
-    <ButtonContainer>
-      <SwitchButton
-        active={activeButton === 'Preview'}
-        onClick={() => setActiveButton('Preview')}
-      >
-        Preview
-      </SwitchButton>
-      <SwitchButton
-        active={activeButton === 'Code'}
-        onClick={() => setActiveButton('Code')}
-      >
-        Code
-      </SwitchButton>
-    </ButtonContainer>
+    <Switch>
+      {options.map((option) => (
+        <Option
+          key={option}
+          active={value === option}
+          onClick={() => onChange(option)}
+        >
+          {option}
+        </Option>
+      ))}
+    </Switch>
   );
+};
+
+ToggleSwitch.propTypes = {
+  options: PropTypes.arrayOf(PropTypes.string).isRequired,
+  value: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
 };
 
 export default ToggleSwitch;
