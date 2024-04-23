@@ -25,7 +25,7 @@ Accordion.propTypes = {
   // onClick: PropTypes.func,
   // type: PropTypes.oneOf(['small', 'medium', 'large']),
 };
-
+s
 Accordion.defaultProps = {
   // backgroundColor: null,
   // onClick: undefined,

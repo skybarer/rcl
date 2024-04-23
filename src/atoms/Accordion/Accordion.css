@@ -3,6 +3,7 @@
 .accordion {
     display: flex;
 }
+
 .accordion:hover {
     background-color: #fafafa;
 }
@@ -29,7 +30,7 @@
     /* background-color: aliceblue; */
     align-items: flex-start;
     /* border-bottom: thin solid #ddd; */
-    
+
 }
 
 .open {
