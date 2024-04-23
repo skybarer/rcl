@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import PriceSlider from './../PriceSlider/PriceSlider';
+import PriceSlider from './PriceSlider';
 
 storiesOf('PriceSlider', module).add('Default', () => {
   const [range, setRange] = useState([20, 80]);

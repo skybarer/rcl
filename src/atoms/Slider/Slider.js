@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const SliderWrapper = styled.input.attrs({ type: 'range' })`
-  width: 100%;
+  width: 25rem;
   margin: 10px 0;
   height: 4px !important;
   -webkit-tap-highlight-color: transparent;
@@ -14,7 +14,6 @@ const SliderWrapper = styled.input.attrs({ type: 'range' })`
   height: 5px;
   outline: 0;
   position: relative;
-  width: 100%;
   background: ${(props) =>
     `linear-gradient(90deg, rgb(99, 0, 163) ${props.value}%, rgb(247, 244, 248) ${props.value}%)`};
   &::-webkit-slider-thumb {
@@ -24,7 +23,6 @@ const SliderWrapper = styled.input.attrs({ type: 'range' })`
     height: 20px;
     border-radius: 50%;
     background: ${(props) => `rgb(99, 0, 163, 1)`};
-    border: 1px solid white;
     cursor: pointer;
   }
 `;
