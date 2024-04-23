@@ -69,3 +69,4 @@ export const Default = () => (
 
 export const Quest = () => <Badge type="quest">Question</Badge>;
 export const Forum = () => <Badge type="forum">Discussion</Badge>;
+export const Round = () => <Badge type="badge badge-round">1</Badge>;

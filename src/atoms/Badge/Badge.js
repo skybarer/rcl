@@ -28,7 +28,7 @@ const StyledBadge = styled.span`
   vertical-align: middle;
   white-space: nowrap;
   text-align: center;
-  background-color: ${(props) => props.color || '#ec5252'};
+  background-color: ${(props) => props.color || '#444'};
   border-radius: 15px;
 
   &.badge-accented {
@@ -48,6 +48,16 @@ const StyledBadge = styled.span`
     top: -3px;
     z-index: -2;
     vertical-align: baseline;
+  }
+
+  &.badge-round {
+    height: 24px;
+    min-width: 24px;
+    border-radius: 50%;
+    background: var(#444) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &.badge-lg {
