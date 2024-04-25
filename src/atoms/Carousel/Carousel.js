@@ -1,7 +1,5 @@
-import React, { useEffect, useState } from "react";
-import "./Carousel.css";
-
-
+import React, { useEffect, useState } from 'react';
+import './Carousel.css';
 
 const Carousel = ({ children }) => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -17,6 +15,7 @@ const Carousel = ({ children }) => {
     setActiveIndex(newIndex);
   };
 
+  // logic to auto swipe
   useEffect(() => {
     const interval = setInterval(() => {
       if (!paused) {
@@ -48,7 +47,7 @@ const Carousel = ({ children }) => {
         style={{ transform: `translateX(-${activeIndex * 100}%)` }}
       >
         {React.Children.map(children, (child, index) => {
-          return React.cloneElement(child, { width: "100%" });
+          return React.cloneElement(child, { width: '100%' });
         })}
       </div>
       <div className="indicators">
@@ -62,7 +61,7 @@ const Carousel = ({ children }) => {
         {React.Children.map(children, (child, index) => {
           return (
             <button
-              className={`${index === activeIndex ? "active" : ""}`}
+              className={`${index === activeIndex ? 'active' : ''}`}
               onClick={() => {
                 updateIndex(index);
               }}
