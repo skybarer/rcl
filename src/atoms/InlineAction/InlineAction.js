@@ -24,7 +24,7 @@ export const InnerButton = styled.button`
   transform: translateY(-50%);
   padding: 5px 10px;
   border: none;
-  background-color: #3498db;
+  background-color: black;
   color: white;
   border-radius: 3px;
 
@@ -32,45 +32,6 @@ export const InnerButton = styled.button`
     background-color: #2980b9;
   }
 `;
-
-// Styled-components
-// const InputGroup = styled.div`
-//   display: flex;
-//   width: 100%;
-//   justify-content: space-between;
-//   align-items: center;
-//   border: 1px solid #ccc;
-//   border-radius: 5px;
-//   box-sizing: border-box;
-//   background-color: transparent;
-//   caret-color: black;
-//   color: black;
-//   margin: 0;
-//   padding: 0.6875rem;
-// `;
-
-// const Button = styled.button`
-//   display: inline-flex;
-//   height: 1.25rem;
-//   background-color: transparent;
-//   color: black;
-//   padding: 0px 0.6875rem 0px, 0px;
-//   border: none;
-//   border-radius: 5px;
-//   cursor: pointer;
-//   font-size: 16px;
-//   text-decoration: underline;
-// `;
-
-// const Input = styled.input`
-//   flex-grow: 1;
-//   font-size: 16px;
-//   border: none;
-//   padding: 0 !important;
-//   &:focus-visible {
-//     border: none !important;
-//   }
-// `;
 
 // React component
 class InlineAction extends React.Component {
