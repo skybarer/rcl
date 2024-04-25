@@ -6,6 +6,7 @@ import styled from 'styled-components';
 export const InputContainer = styled.div`
   position: relative;
   display: inline-block;
+  width: 100%;
 `;
 
 export const TextInput = styled.input`
