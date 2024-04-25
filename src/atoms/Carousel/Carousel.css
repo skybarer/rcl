@@ -24,6 +24,12 @@
 
 .indicators>button {
     margin: 5px;
+    background: #e5e7eb;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 8px;
+    list-style: none;
+    width: 8px;
 }
 
 .indicators>button.active {
