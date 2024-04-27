@@ -8,7 +8,7 @@ const CarouselItemWrapper = styled.div`
   justify-content: center;
   height: auto;
   color: black;
-  border: 0.1px dashed black;
+  /* border: 0.1px dashed black; */
   width: 100%;
   object-fit: contain;
 `;
