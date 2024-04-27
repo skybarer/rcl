@@ -25,6 +25,7 @@ const Card = ({
   padding,
   border,
   borderRadius,
+  style,
 }) => (
   <CardWrapper
     variant={variant}
@@ -33,6 +34,7 @@ const Card = ({
     padding={padding}
     border={border}
     borderRadius={borderRadius}
+    style={style}
   >
     {children}
   </CardWrapper>

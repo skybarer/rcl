@@ -1,24 +1,75 @@
-// Grid.js
+import React, { useState, useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-const Grid = styled.div`
+const breakpoints = {
+  lg: 1200,
+  md: 992,
+  sm: 768,
+  xs: 576,
+};
+
+const StyledGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(${(props) => props.columns}, 1fr);
-  grid-template-rows: repeat(${(props) => props.rows}, 1fr);
   gap: ${(props) => props.gap}px;
+  grid-template-columns: ${(props) => props.templateColumns};
 `;
+
+const Grid = ({ columns, gap, children }) => {
+  const [templateColumns, setTemplateColumns] = useState(
+    `repeat(${columns}, 1fr)`,
+  );
+
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    const updateTemplateColumns = (width) => {
+      if (width < breakpoints.xs) {
+        setTemplateColumns('1fr'); // Single-column layout for very small screens
+      } else if (width < breakpoints.sm) {
+        setTemplateColumns('repeat(2, 1fr)'); // Two-column layout for small screens
+      } else if (width < breakpoints.md) {
+        setTemplateColumns('repeat(3, 1fr)'); // Three-column layout for tablets
+      } else if (width < breakpoints.lg) {
+        setTemplateColumns(`repeat(${Math.min(columns, 6)}, 1fr)`); // Up to 6 columns for medium screens
+      } else {
+        setTemplateColumns(`repeat(${columns}, 1fr)`); // Default to full 20 columns for large screens
+      }
+    };
+
+    const resizeObserver = new ResizeObserver((entries) => {
+      if (entries.length > 0) {
+        const { contentRect } = entries[0];
+        updateTemplateColumns(contentRect.width); // Adjust layout based on observed width
+      }
+    });
+
+    if (containerRef.current) {
+      resizeObserver.observe(containerRef.current); // Start observing size changes
+    }
+
+    // Cleanup the observer when unmounting
+    return () => {
+      resizeObserver.disconnect();
+    };
+  }, [columns]);
+
+  return (
+    <StyledGrid gap={gap} templateColumns={templateColumns} ref={containerRef}>
+      {children}
+    </StyledGrid>
+  );
+};
 
 Grid.propTypes = {
   columns: PropTypes.number,
-  rows: PropTypes.number,
   gap: PropTypes.number,
+  children: PropTypes.node,
 };
 
 Grid.defaultProps = {
-  rows: 1,
-  columns: 1,
-  gap: 0,
+  columns: 3,
+  gap: 10,
 };
 
 export default Grid;
