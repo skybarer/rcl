@@ -1,0 +1,19 @@
+<svg id="Group_418" data-name="Group 418" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76" height="56" viewBox="0 0 76 56">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_198" data-name="Rectangle 198" width="76" height="56" fill="none" stroke="#17168c" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Group_417" data-name="Group 417" clip-path="url(#clip-path)">
+    <rect id="Rectangle_197" data-name="Rectangle 197" width="74" height="54" rx="7.497" transform="translate(1 1)" fill="none" stroke="#17168c" stroke-width="2"/>
+    <circle id="Ellipse_22" data-name="Ellipse 22" cx="7" cy="7" r="7" transform="translate(15.375 14.5)" fill="none" stroke="#17168c" stroke-width="2"/>
+    <path id="Path_199" data-name="Path 199" d="M9.625,41.25a12.75,12.75,0,0,1,25.5,0" fill="none" stroke="#17168c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <line id="Line_109" data-name="Line 109" x2="22" transform="translate(43 18)" fill="none" stroke="#17168c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <line id="Line_110" data-name="Line 110" x2="2" transform="translate(43 27)" fill="none" stroke="#17168c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <line id="Line_111" data-name="Line 111" x2="12.6" transform="translate(48.6 27)" fill="none" stroke="#17168c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke-dasharray="3.6 3.6"/>
+    <line id="Line_112" data-name="Line 112" x2="2" transform="translate(63 27)" fill="none" stroke="#17168c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <line id="Line_113" data-name="Line 113" x2="2" transform="translate(43 36)" fill="none" stroke="#17168c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <line id="Line_114" data-name="Line 114" x2="12.6" transform="translate(48.6 36)" fill="none" stroke="#17168c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke-dasharray="3.6 3.6"/>
+    <line id="Line_115" data-name="Line 115" x2="2" transform="translate(63 36)" fill="none" stroke="#17168c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>
