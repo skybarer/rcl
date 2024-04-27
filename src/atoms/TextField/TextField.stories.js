@@ -1,6 +1,6 @@
 import React from 'react';
 import TextField from './TextField';
-import LockIcon from '../../assets/icons/LockIcon';
+import LockIcon from '../../assets/react-svg/LockIcon';
 import { action } from '@storybook/addon-actions';
 
 import {
