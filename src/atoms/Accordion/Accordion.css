@@ -38,7 +38,7 @@
     margin-left: auto;
     align-items: flex-end;
     padding: 0px 16px;
-    transition: transform 1250ms ease-in-out 0s;
+    transition: transform 2s ease-in-out 0s;
 }
 
 svg {

@@ -157,6 +157,33 @@ const Template = (args) => (
           feedback on your work. With the Team Plan, you can add members to your
           workspace so you all share and work on the same content. It also comes
           with more permission and admin controls so you and your teammates can
+          work together securely. See the plan comparison chart for more.The
+          biggest difference is how you can collaborate with others. The free
+          Personal Plan is designed for individual use, but allows up to 5
+          unique guests. These are friends, family members, and others you can
+          invite to collaborate with you privately on any page. You can also
+          share a page publicly and turn on commenting or editing access. In the
+          Share menu at the top right, turn on "Share to web" then "Allow
+          editing." Any Notion user with the link will be able to edit your
+          page. With the Personal Pro Plan, you can invite unlimited guests for
+          private collaboration. For example, if you run your own business, you
+          can invite all your clients to provide feedback on your work. With the
+          Team Plan, you can add members to your workspace so you all share and
+          work on the same content. It also comes with more permission and admin
+          controls so you and your teammates can work together securely. See the
+          plan comparison chart for more details.The biggest difference is how
+          you can collaborate with others. The free Personal Plan is designed
+          for individual use, but allows up to 5 unique guests. These are
+          friends, family members, and others you can invite to collaborate with
+          you privately on any page. You can also share a page publicly and turn
+          on commenting or editing access. In the Share menu at the top right,
+          turn on "Share to web" then "Allow editing." Any Notion user with the
+          link will be able to edit your page. With the Personal Pro Plan, you
+          can invite unlimited guests for private collaboration. For example, if
+          you run your own business, you can invite all your clients to provide
+          feedback on your work. With the Team Plan, you can add members to your
+          workspace so you all share and work on the same content. It also comes
+          with more permission and admin controls so you and your teammates can
           work together securely. See the plan comparison chart for more
           details.
         </span>
