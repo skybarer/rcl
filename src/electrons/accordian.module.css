@@ -25,7 +25,7 @@
 }
 
 .accordianTitle {
-    composes: accordion;
+    /* composes: accordion; */
     /* composes: animatedGradientTextForeground; */
     padding: 0.5rem;
     border-collapse: collapse;
@@ -45,7 +45,7 @@
 } */
 
 .accordianContent {
-    composes: accordion;
+    /* composes: accordion; */
     padding: 0.5rem;
     border-collapse: collapse;
     box-sizing: border-box;
