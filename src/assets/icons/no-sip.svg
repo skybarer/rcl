@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="94" viewBox="0 0 120 94">
+  <defs>
+    <clipPath id="clip-Artboard_2">
+      <rect width="120" height="94"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_2" data-name="Artboard – 2" clip-path="url(#clip-Artboard_2)">
+    <rect width="120" height="94" fill="#fff"/>
+    <g id="Group_1287" data-name="Group 1287" transform="translate(-116 -286)">
+      <circle id="Ellipse_85" data-name="Ellipse 85" cx="21" cy="21" r="21" transform="translate(162 315.494)" fill="#8ab4f4"/>
+      <g id="Group_1263" data-name="Group 1263" transform="translate(163.506 307)">
+        <g id="Group_1261" data-name="Group 1261" transform="translate(1 1)">
+          <path id="Path_979" data-name="Path 979" d="M24.494,47.988A23.494,23.494,0,1,1,47.988,24.494,23.426,23.426,0,0,1,24.494,47.988Zm0-42.717A19.222,19.222,0,1,0,43.717,24.494,19.143,19.143,0,0,0,24.494,5.272Z" transform="translate(-1 -1)" fill="#0054c6"/>
+        </g>
+        <g id="Group_1262" data-name="Group 1262" transform="translate(22.358 9.543)">
+          <path id="Path_980" data-name="Path 980" d="M21.679,26.358c-.427,0-.641,0-.854-.214l-8.543-4.272A2.053,2.053,0,0,1,11,19.951V7.136A2.018,2.018,0,0,1,13.136,5a2.018,2.018,0,0,1,2.136,2.136V18.669L22.533,22.3a1.885,1.885,0,0,1,.854,2.777A1.624,1.624,0,0,1,21.679,26.358Z" transform="translate(-11 -5)" fill="#0054c6"/>
+        </g>
+      </g>
+      <circle id="Ellipse_86" data-name="Ellipse 86" cx="3.5" cy="3.5" r="3.5" transform="translate(132 331.494)" fill="#89b5f4"/>
+      <circle id="Ellipse_87" data-name="Ellipse 87" cx="1.5" cy="1.5" r="1.5" transform="translate(123 351.494)" fill="#8ab4f4"/>
+      <circle id="Ellipse_88" data-name="Ellipse 88" cx="2.5" cy="2.5" r="2.5" transform="translate(224 346.494)" fill="#8ab4f4"/>
+    </g>
+  </g>
+</svg>

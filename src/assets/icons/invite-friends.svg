@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25.212" height="26.187" viewBox="0 0 25.212 26.187">
+    <defs>
+        <style>
+            .cls-2{fill:#0054c6}
+        </style>
+    </defs>
+    <g id="Group_1070" transform="translate(-51 -759.259)">
+        <path id="Path_445" fill="#b7d3f8" d="M1.667 11847.82v-16.264h-17.982v16.264z" transform="translate(67.315 -11062.375)"/>
+        <g id="Group_703" transform="translate(51.815 759.259)">
+            <g id="Group_644" transform="translate(2.218 11.09)">
+                <path id="Path_401" d="M21.852 24.307H4.109A1.108 1.108 0 0 1 3 23.2V12.109a1.109 1.109 0 1 1 2.218 0v9.981h15.525v-9.981a1.109 1.109 0 1 1 2.218 0V23.2a1.108 1.108 0 0 1-1.109 1.107z" class="cls-2" transform="translate(-3 -11)"/>
+            </g>
+            <g id="Group_645" transform="translate(0 5.545)">
+                <path id="Path_402" d="M24.288 13.763H2.109A1.109 1.109 0 0 1 1 12.654V7.109A1.109 1.109 0 0 1 2.109 6h22.179A1.109 1.109 0 0 1 25.4 7.109v5.545a1.109 1.109 0 0 1-1.112 1.109zm-21.07-2.218h19.961V8.218H3.218z" class="cls-2" transform="translate(-1 -6)"/>
+            </g>
+            <g id="Group_646" transform="translate(11.09 11.155)">
+                <path id="Path_403" d="M12.109 19.242c-.613 0-1.109-.348-1.109-.779V6.779c0-.43.5-.779 1.109-.779s1.109.349 1.109.779v11.684c0 .431-.496.779-1.109.779z" class="cls-2" transform="translate(-11 -6)"/>
+            </g>
+            <g id="Group_647" transform="translate(3.327)">
+                <path id="Path_404" d="M12.872 8.763H7.881a3.881 3.881 0 0 1 0-7.763c4.736 0 6.026 6.174 6.078 6.436a1.109 1.109 0 0 1-1.088 1.326zM7.881 3.218a1.663 1.663 0 0 0 0 3.327h3.5c-.523-1.376-1.6-3.327-3.5-3.327z" class="cls-2" transform="translate(-4 -1)"/>
+            </g>
+            <g id="Group_648" transform="translate(11.09)">
+                <path id="Path_405" d="M17.1 8.763h-4.99a1.109 1.109 0 0 1-1.087-1.326C11.074 7.174 12.364 1 17.1 1a3.881 3.881 0 1 1 0 7.763zm-3.5-2.218h3.5a1.663 1.663 0 0 0 0-3.327c-1.9 0-2.976 1.951-3.5 3.327z" class="cls-2" transform="translate(-11 -1)"/>
+            </g>
+        </g>
+    </g>
+</svg>

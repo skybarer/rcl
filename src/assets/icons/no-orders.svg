@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="94" viewBox="0 0 120 94">
+  <defs>
+    <clipPath id="clip-Artboard_3">
+      <rect width="120" height="94"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_3" data-name="Artboard – 3" clip-path="url(#clip-Artboard_3)">
+    <rect width="120" height="94" fill="#fff"/>
+    <g id="Group_1288" data-name="Group 1288" transform="translate(-134 -288.554)">
+      <g id="Group_1270" data-name="Group 1270" transform="translate(1)">
+        <path id="Rectangle_210" data-name="Rectangle 210" d="M0,0H36a0,0,0,0,1,0,0V30a3,3,0,0,1-3,3H3a3,3,0,0,1-3-3V0A0,0,0,0,1,0,0Z" transform="translate(164 327)" fill="#8bb2f4"/>
+        <g id="Group_1269" data-name="Group 1269" transform="translate(164.686 308.554)">
+          <g id="Group_1266" data-name="Group 1266" transform="translate(2 1)">
+            <path id="Path_981" data-name="Path 981" d="M38.235,47.892H8.394A6.28,6.28,0,0,1,2,41.5V11.657a3.029,3.029,0,0,1,.426-1.279L8.821,1.853A1.939,1.939,0,0,1,10.526,1H36.1a1.939,1.939,0,0,1,1.705.853L44.2,10.378a3.029,3.029,0,0,1,.426,1.279V41.5A6.28,6.28,0,0,1,38.235,47.892ZM6.263,12.3V41.5a2.014,2.014,0,0,0,2.131,2.131h29.84A2.014,2.014,0,0,0,40.366,41.5V12.3L35.037,5.263H11.592Z" transform="translate(-2 -1)" fill="#0e4fc6"/>
+          </g>
+          <g id="Group_1267" data-name="Group 1267" transform="translate(2 9.526)">
+            <path id="Path_982" data-name="Path 982" d="M42.5,9.263H4.131A2.014,2.014,0,0,1,2,7.131,2.014,2.014,0,0,1,4.131,5H42.5a2.014,2.014,0,0,1,2.131,2.131A2.014,2.014,0,0,1,42.5,9.263Z" transform="translate(-2 -5)" fill="#0e4fc6"/>
+          </g>
+          <g id="Group_1268" data-name="Group 1268" transform="translate(12.657 18.052)">
+            <path id="Path_983" data-name="Path 983" d="M17.657,21.789A10.554,10.554,0,0,1,7,11.131,2.014,2.014,0,0,1,9.131,9a2.014,2.014,0,0,1,2.131,2.131,6.28,6.28,0,0,0,6.394,6.394,6.28,6.28,0,0,0,6.394-6.394,2.131,2.131,0,0,1,4.263,0A10.554,10.554,0,0,1,17.657,21.789Z" transform="translate(-7 -9)" fill="#0e4fc6"/>
+          </g>
+        </g>
+      </g>
+      <circle id="Ellipse_90" data-name="Ellipse 90" cx="3.5" cy="3.5" r="3.5" transform="translate(229 339.494)" fill="#89b5f4"/>
+      <circle id="Ellipse_89" data-name="Ellipse 89" cx="1.5" cy="1.5" r="1.5" transform="translate(243 358.494)" fill="#8ab4f4"/>
+      <circle id="Ellipse_91" data-name="Ellipse 91" cx="2.5" cy="2.5" r="2.5" transform="translate(142 330.494)" fill="#8ab4f4"/>
+    </g>
+  </g>
+</svg>
