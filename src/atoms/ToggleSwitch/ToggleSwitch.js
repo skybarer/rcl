@@ -28,6 +28,9 @@ const Option = styled.div`
       : 'none'};
   border-left: ${(props) => (props.active ? '1px solid transparent' : 0)};
   cursor: pointer;
+  &:hover {
+    background: ${(props) => (props.active ? 'white' : 'rgb(0, 0, 0, 0.05)')};
+  }
 `;
 
 // ToggleSwitch Component
