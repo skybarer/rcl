@@ -10,8 +10,8 @@ const Switch = styled.div`
   padding: 4px;
   border-radius: 8px;
   box-shadow: rgba(9, 9, 11, 0.05) 0px 2px 4px 0px inset;
-  max-width: 216px;
-  min-width: 216px;
+  /* max-width: 216px;
+  min-width: 216px; */
 `;
 
 const Option = styled.div`
