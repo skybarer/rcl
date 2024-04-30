@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import Card from './../Card/Card';
 import Grid from './../Grid/Grid';
 import Table from '../../atoms/Table/Table';
 import TableHeader from '../../atoms/Table/TableHeader';

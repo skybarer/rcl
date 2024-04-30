@@ -35,12 +35,12 @@ export default {
     backgroundColor: { control: 'color' },
   },
 };
-const headers = ['Name', 'Age', 'Country'];
-const data = [
-  ['Alice', 30, 'USA'],
-  ['Bob', 35, 'Canada'],
-  ['Eve', 25, 'UK'],
-];
+// const headers = ['Name', 'Age', 'Country'];
+// const data = [
+//   ['Alice', 30, 'USA'],
+//   ['Bob', 35, 'Canada'],
+//   ['Eve', 25, 'UK'],
+// ];
 
 const Template = (args) => (
   <>
@@ -74,6 +74,4 @@ Basic.parameters = {
   layout: 'fullscreen',
 };
 
-Basic.args = {
-
-};
+Basic.args = {};

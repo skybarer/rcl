@@ -45,7 +45,7 @@ class InlineAction extends React.Component {
 
   render() {
     const { placeholder, buttonLabel, onButtonClick } = this.props;
-    const { inputValue } = this.state;
+    // const { inputValue } = this.state;
 
     return (
       <InputContainer>

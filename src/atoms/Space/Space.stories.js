@@ -2,7 +2,7 @@
 import React from 'react';
 import Space from './Space';
 import sizes from '../../json/sizes.json';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import Table from './../Table/Table';
 import TableRow from './../Table/TableRow';
 import TableHeader from './../Table/TableHeader';
@@ -18,11 +18,11 @@ const customScale = {
   // ... add the rest of your scale here
 };
 
-const paddingVarients = {
-  'pd-*': css`
-    padding: ${({ marginScale, marginSize }) => marginScale[marginSize]};
-  `,
-};
+// const paddingVarients = {
+//   'pd-*': css`
+//     padding: ${({ marginScale, marginSize }) => marginScale[marginSize]};
+//   `,
+// };
 
 const SpaceBox = styled.div`
   box-sizing: border-box;

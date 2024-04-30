@@ -1,19 +1,19 @@
 // src/ColorPalette.stories.js
 import React from 'react';
 import ColorPalette from '../colors/colorPalette'; // Import your color palette object
-import styled from 'styled-components';
+// import styled from 'styled-components';
 import colorJson from './colors.json';
 import Table from '../../atoms/Table/Table';
 import TableHeader from '../../atoms/Table/TableHeader';
 import TableRow from '../../atoms/Table/TableRow';
 import TableCell from '../../atoms/Table/TableCell';
 
-const ColorSwatch = styled.div`
-  width: 100px;
-  height: 50px;
-  margin: 8px;
-  background-color: ${(props) => props.color};
-`;
+// const ColorSwatch = styled.div`
+//   width: 100px;
+//   height: 50px;
+//   margin: 8px;
+//   background-color: ${(props) => props.color};
+// `;
 
 export default {
   title: 'Design System/Color Palette',
@@ -26,7 +26,6 @@ export default {
 
 export const TestColors = () => (
   <div>
-
     {/* {Object.keys(colorJson).map((colorItem) => (
       <Table>
         <thead>
@@ -52,7 +51,7 @@ export const TestColors = () => (
       </Table>
 
     ))} */}
-  </div >
+  </div>
 );
 
 export const BaseColors = () => (
@@ -75,12 +74,14 @@ export const BaseColors = () => (
             <TableCell>{colorKey}</TableCell>
             <TableCell>bs-{colorKey}</TableCell>
             <TableCell>{colorJson.baseColors[colorKey]}</TableCell>
-            <TableCell style={{ backgroundColor: colorJson.baseColors[colorKey] }} ></TableCell>
+            <TableCell
+              style={{ backgroundColor: colorJson.baseColors[colorKey] }}
+            ></TableCell>
           </TableRow>
         ))}
       </tbody>
     </Table>
-  </div >
+  </div>
 );
 
 export const TextColors = () => (
@@ -102,7 +103,9 @@ export const TextColors = () => (
             <TableCell>{index}</TableCell>
             <TableCell>{colorKey}</TableCell>
             <TableCell>{colorJson.textColors[colorKey]}</TableCell>
-            <TableCell style={{ backgroundColor: colorJson.textColors[colorKey] }} ></TableCell>
+            <TableCell
+              style={{ backgroundColor: colorJson.textColors[colorKey] }}
+            ></TableCell>
           </TableRow>
         ))}
       </tbody>
@@ -128,7 +131,9 @@ export const BorderColors = () => (
             <TableCell>{index}</TableCell>
             <TableCell>{colorKey}</TableCell>
             <TableCell>{colorJson.borderColors[colorKey]}</TableCell>
-            <TableCell style={{ backgroundColor: colorJson.borderColors[colorKey] }} ></TableCell>
+            <TableCell
+              style={{ backgroundColor: colorJson.borderColors[colorKey] }}
+            ></TableCell>
           </TableRow>
         ))}
       </tbody>
@@ -154,7 +159,9 @@ export const ButtonColors = () => (
             <TableCell>{index}</TableCell>
             <TableCell>{colorKey}</TableCell>
             <TableCell>{colorJson.buttonColors[colorKey]}</TableCell>
-            <TableCell style={{ backgroundColor: colorJson.buttonColors[colorKey] }} ></TableCell>
+            <TableCell
+              style={{ backgroundColor: colorJson.buttonColors[colorKey] }}
+            ></TableCell>
           </TableRow>
         ))}
       </tbody>
@@ -180,7 +187,9 @@ export const AdditionalColors = () => (
             <TableCell>{index}</TableCell>
             <TableCell>{colorKey}</TableCell>
             <TableCell>{colorJson.additionalColors[colorKey]}</TableCell>
-            <TableCell style={{ backgroundColor: colorJson.additionalColors[colorKey] }} ></TableCell>
+            <TableCell
+              style={{ backgroundColor: colorJson.additionalColors[colorKey] }}
+            ></TableCell>
           </TableRow>
         ))}
       </tbody>
