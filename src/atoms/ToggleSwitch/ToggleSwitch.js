@@ -5,13 +5,13 @@ import styled from 'styled-components';
 
 // Styled-components for the switch
 const Switch = styled.div`
-  display: inline-flex;
+  display: flex;
+  flex-direction: ${(props) =>
+    props.orientation === 'vertical' ? 'column' : 'row'};
   background-color: rgb(244, 244, 245);
   padding: 4px;
   border-radius: 8px;
   box-shadow: rgba(9, 9, 11, 0.05) 0px 2px 4px 0px inset;
-  /* max-width: 216px;
-  min-width: 216px; */
 `;
 
 const Option = styled.div`
@@ -34,9 +34,14 @@ const Option = styled.div`
 `;
 
 // ToggleSwitch Component
-const ToggleSwitch = ({ options, value, onChange }) => {
+const ToggleSwitch = ({
+  options,
+  value,
+  onChange,
+  orientation = 'horizontal',
+}) => {
   return (
-    <Switch>
+    <Switch orientation={orientation}>
       {options.map((option) => (
         <Option
           key={option}
@@ -54,6 +59,7 @@ ToggleSwitch.propTypes = {
   options: PropTypes.arrayOf(PropTypes.string).isRequired,
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
+  orientation: PropTypes.oneOf(['horizontal', 'vertical']),
 };
 
 export default ToggleSwitch;

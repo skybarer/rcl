@@ -25,6 +25,18 @@ storiesOf('ToggleSwitch', module)
       />
     );
   })
+  .add('triplet-vertical', () => {
+    const [value, setValue] = useState('Public');
+
+    return (
+      <ToggleSwitch
+        orientation="vertical"
+        options={['Public', 'Private', 'Default']}
+        value={value}
+        onChange={setValue}
+      />
+    );
+  })
   .add('multiple', () => {
     const [value, setValue] = useState('Public');
 
