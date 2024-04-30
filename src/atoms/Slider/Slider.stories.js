@@ -4,11 +4,6 @@ import Slider from './Slider'; // Adjust the import path according to your proje
 export default {
   title: 'Slider',
   component: Slider,
-  argTypes: {
-    min: { control: 'number', defaultValue: 0 },
-    max: { control: 'number', defaultValue: 100 },
-    value: { control: 'number', defaultValue: 50 },
-  },
 };
 
 const Template = (args) => {
@@ -18,7 +13,14 @@ const Template = (args) => {
     setSliderValue(parseInt(e.target.value, 10));
   };
 
-  return <Slider {...args} value={sliderValue} onChange={handleChange} />;
+  return (
+    <>
+      {args.min}{' '}
+      <Slider {...args} value={sliderValue} onChange={handleChange} />{' '}
+      {args.max}
+      <p>{sliderValue}</p>
+    </>
+  );
 };
 
 export const Default = Template.bind({});

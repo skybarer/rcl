@@ -15,7 +15,7 @@ const SliderWrapper = styled.input.attrs({ type: 'range' })`
   outline: 0;
   position: relative;
   background: ${(props) =>
-    `linear-gradient(90deg, rgb(99, 0, 163) ${props.value}%, rgb(247, 244, 248) ${props.value}%)`};
+    `linear-gradient(90deg, rgb(99, 0, 163) ${props.percentage}%, rgb(247, 244, 248) ${props.percentage}%)`};
   &::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
@@ -27,9 +27,17 @@ const SliderWrapper = styled.input.attrs({ type: 'range' })`
   }
 `;
 
-const Slider = ({ value, onChange, min, max }) => {
+const Slider = ({ value, onChange, min = 0, max = 100 }) => {
+  // Convert the value to a percentage
+  const percentage = ((value - min) / (max - min)) * 100;
+
   return (
-    <SliderWrapper value={value} onChange={onChange} min={min} max={max} />
+    <SliderWrapper
+      percentage={percentage}
+      onChange={onChange}
+      min={min}
+      max={max}
+    />
   );
 };
 

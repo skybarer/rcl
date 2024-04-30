@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-// Styled components for the slider and the track
 const SliderWrapper = styled.div`
   position: relative;
   width: 25rem;
@@ -54,7 +53,7 @@ const SliderThumb = styled.input.attrs({ type: 'range' })`
     border-radius: 50%;
     background: rgb(99, 0, 163);
     cursor: pointer;
-    z-index: 2; // Changed from -10000 to 2
+    z-index: 2;
   }
 
   &::-webkit-slider-runnable-track {
