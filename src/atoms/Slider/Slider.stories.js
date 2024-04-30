@@ -1,26 +1,50 @@
 import React, { useState } from 'react';
-import { storiesOf } from '@storybook/react';
-import PriceSlider from './../PriceSlider/PriceSlider';
+import Slider from './Slider'; // Adjust the import path according to your project structure
 
-storiesOf('PriceSlider', module).add('Default', () => {
-  const [range, setRange] = useState([20, 80]);
+export default {
+  title: 'Slider',
+  component: Slider,
+  argTypes: {
+    min: { control: 'number', defaultValue: 0 },
+    max: { control: 'number', defaultValue: 100 },
+    value: { control: 'number', defaultValue: 50 },
+  },
+};
 
-  const handleRangeChange = (min, max) => {
-    setRange([min, max]);
+const Template = (args) => {
+  const [sliderValue, setSliderValue] = useState(args.value);
+
+  const handleChange = (e) => {
+    setSliderValue(parseInt(e.target.value, 10));
   };
 
-  return (
-    <div>
-      <PriceSlider
-        min={0}
-        max={100}
-        minValue={range[0]}
-        maxValue={range[1]}
-        onChange={handleRangeChange}
-      />
-      <div>
-        Selected range: {range[0]} - {range[1]}
-      </div>
-    </div>
-  );
-});
+  return <Slider {...args} value={sliderValue} onChange={handleChange} />;
+};
+
+export const Default = Template.bind({});
+Default.args = {
+  min: 0,
+  max: 100,
+  value: 50,
+};
+
+export const MinValue = Template.bind({});
+MinValue.args = {
+  min: 0,
+  max: 100,
+  value: 0,
+};
+
+export const MaxValue = Template.bind({});
+MaxValue.args = {
+  min: 0,
+  max: 100,
+  value: 100,
+};
+
+export const CustomRange = Template.bind({});
+CustomRange.args = {
+  min: 0,
+  max: 200,
+  value: 150,
+};
