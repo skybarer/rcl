@@ -9,7 +9,7 @@ const StyledSvg = styled.svg`
 
 const StyledCircle = styled.circle`
   fill: none;
-  stroke: #e6e6e6;
+  stroke: rgba(145, 158, 171, 0.16);
   stroke-width: 4;
 `;
 
