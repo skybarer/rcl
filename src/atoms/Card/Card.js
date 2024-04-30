@@ -10,7 +10,6 @@ const CardWrapper = styled.div`
   background-color: ${(props) => props.variant || 'rgb(255 255 255 / 1)'};
   border-radius: ${(props) => props.borderRadius || '0.5rem'};
   border: ${(props) => props.border || '1px solid #d7d7d8'};
-
   color: ${(props) => props.color || 'black'};
   padding: ${(props) => props.padding || '0.75rem'};
   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
