@@ -15,3 +15,78 @@
 :root {
     --top-height: 0px;
 } */
+
+/*https: //stackoverflow.com/questions/6370690/media-queries-how-to-target-desktop-tablet-and-mobile */
+/* https: //css-tricks.com/snippets/css/retina-display-media-query/ */
+
+:root {
+    /* Extra Small Devices (XS) */
+    --breakpoint-xs: 576px;
+
+    /* Small Devices (SM) */
+    --breakpoint-sm: 577px;
+
+    /* Medium Devices (MD) */
+    --breakpoint-md: 769px;
+
+    /* Large Devices (LG) */
+    --breakpoint-lg: 993px;
+
+    /* Extra Large Devices (XL) */
+    --breakpoint-xl: 1201px;
+
+    /* Extra Extra Large Devices (XXL) */
+    --breakpoint-xxl: 1400px;
+
+
+    /* Major Desktop Screen Sizes */
+    --screen-desktop-small: 1366px;
+    /* Common for smaller desktops and laptops */
+    --screen-desktop-standard: 1440px;
+    /* Standard desktop resolution */
+    --screen-desktop-large: 1600px;
+    /* Larger desktop monitors */
+    --screen-desktop-ultrawide: 1920px;
+    /* Full HD monitors */
+    --screen-desktop-ultrawide-plus: 2560px;
+    /* Widescreen monitors (e.g., 2560x1080 or 2560x1440) */
+    --screen-desktop-ultrawide-ultra: 3440px;
+    /* UltraWide monitors (e.g., 3440x1440) */
+    --screen-desktop-4k: 3840px;
+    /* 4K monitors */
+
+    /* Major Laptop Screen Sizes */
+    --screen-laptop-small: 1024px;
+    /* Common for smaller laptops and older tablets */
+    --screen-laptop-standard: 1280px;
+    /* Standard laptop size (e.g., MacBook Air) */
+    --screen-laptop-large: 1366px;
+    /* Common for larger laptops (e.g., many Windows laptops) */
+
+    /* Major Tablet Screen Sizes */
+    --screen-tablet-small: 600px;
+    /* Smaller tablets and large phones in landscape mode */
+    --screen-tablet-standard: 768px;
+    /* Standard tablet size (e.g., iPad Mini, Galaxy Tab) */
+    --screen-tablet-large: 1024px;
+    /* Larger tablets (e.g., iPad, iPad Pro) */
+
+
+    /* Smartphones, iPhone, portrait 480x320 phones */
+    --phone: only screen and (min-width: 320px);
+
+    /* Portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+    --small-tablet: only screen and (min-width: 481px);
+
+    /* Portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+    --tablet: only screen and (min-width: 641px);
+
+    /* Tablet, landscape iPad, lo-res laptops and desktops */
+    --small-desktop: only screen and (min-width: 961px);
+
+    /* Big landscape tablets, laptops, and desktops */
+    --desktop: only screen and (min-width: 1025px);
+
+    /* Hi-res laptops and desktops */
+    --large-desktop: only screen and (min-width: 1281px);
+}

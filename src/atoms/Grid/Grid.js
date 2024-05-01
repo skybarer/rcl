@@ -15,7 +15,7 @@ const StyledGrid = styled.div`
   grid-template-columns: ${(props) => props.templateColumns};
 `;
 
-const Grid = ({ columns, gap, children }) => {
+const Grid = ({ columns, gap, children, style }) => {
   const [templateColumns, setTemplateColumns] = useState(
     `repeat(${columns}, 1fr)`,
   );
@@ -55,7 +55,12 @@ const Grid = ({ columns, gap, children }) => {
   }, [columns]);
 
   return (
-    <StyledGrid gap={gap} templateColumns={templateColumns} ref={containerRef}>
+    <StyledGrid
+      gap={gap}
+      templateColumns={templateColumns}
+      ref={containerRef}
+      style={{ ...style }}
+    >
       {children}
     </StyledGrid>
   );

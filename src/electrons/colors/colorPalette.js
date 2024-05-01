@@ -1,10 +1,10 @@
 const colors = {
-  primary: "#3498db", // Blue
-  secondary: "#2ecc71", // Green
-  accent: "#e74c3c", // Red
-  background: "#ecf0f1", // Light Gray
-  text: "#2c3e50", // Dark Gray
-  border: "#bdc3c7", // Border Color
+  primary: '#3498db', // Blue
+  secondary: '#2ecc71', // Green
+  accent: '#e74c3c', // Red
+  background: '#ecf0f1', // Light Gray
+  text: '#2c3e50', // Dark Gray
+  border: '#bdc3c7', // Border Color
 };
 
 const colorPalette = {
@@ -17,13 +17,13 @@ const colorPalette = {
 
   // Text Colors
   textPrimary: colors.text,
-  textSecondary: "#7f8c8d", // Light Gray
+  textSecondary: '#7f8c8d', // Light Gray
   textAccent: colors.accent,
 
   // Border Colors
   border: colors.border,
-  borderLight: "#d7dbdb", // Lighter Gray
-  borderDark: "#95a5a6", // Darker Gray
+  borderLight: '#d7dbdb', // Lighter Gray
+  borderDark: '#95a5a6', // Darker Gray
 
   // Button Colors
   buttonPrimary: colors.primary,
@@ -31,9 +31,9 @@ const colorPalette = {
   buttonAccent: colors.accent,
 
   // Additional Colors
-  success: "#27ae60", // Success Green
-  warning: "#f39c12", // Warning Yellow
-  error: "#e74c3c", // Error Red
+  success: '#27ae60', // Success Green
+  warning: '#f39c12', // Warning Yellow
+  error: '#e74c3c', // Error Red
 };
 
 export default colorPalette;
