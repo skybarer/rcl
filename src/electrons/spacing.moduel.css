@@ -22,4 +22,19 @@ html[data-theme~="spacing:spacing"] {
     --ds-space-negative-250: -1.25rem;
     --ds-space-negative-300: -1.5rem;
     --ds-space-negative-400: -2rem;
+
+    --linaria-theme_spacing-macro16px: 16px;
+    --linaria-theme_spacing-macro24px: 24px;
+    --linaria-theme_spacing-macro32px: 32px;
+    --linaria-theme_spacing-macro40px: 40px;
+    --linaria-theme_spacing-macro48px: 48px;
+    --linaria-theme_spacing-macro64px: 64px;
+    --linaria-theme_spacing-macro80px: 80px;
+    --linaria-theme_spacing-micro2px: 2px;
+    --linaria-theme_spacing-micro4px: 4px;
+    --linaria-theme_spacing-micro8px: 8px;
+    --linaria-theme_spacing-micro12px: 12px;
+    --linaria-theme_spacing-micro16px: 16px;
+    --linaria-theme_spacing-micro24px: 24px;
+    --linaria-theme_spacing-micro32px: 32px;
 }

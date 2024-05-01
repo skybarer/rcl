@@ -84,4 +84,72 @@ html[data-theme~="typography:typography-minor3"] {
         --ds-font-heading-medium: normal 700 1rem/1.25rem ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu,
             system-ui, "Helvetica Neue", sans-serif;
     }
+
+
+    --linaria-theme_typography-font-family-cereal-font-family: 'Circular',
+    -apple-system,
+    'BlinkMacSystemFont',
+    'Roboto',
+    'Helvetica Neue',
+    sans-serif;
+    --linaria-theme_typography-special-display-medium_40_44-font-size: 2.5rem;
+    --linaria-theme_typography-special-display-medium_40_44-line-height: 2.75rem;
+    --linaria-theme_typography-special-display-medium_40_44-letter-spacing: normal;
+    --linaria-theme_typography-special-display-medium_40_44-font-weight: 600;
+    --linaria-theme_typography-special-display-medium_48_54-font-size: 3rem;
+    --linaria-theme_typography-special-display-medium_48_54-line-height: 3.375rem;
+    --linaria-theme_typography-special-display-medium_48_54-letter-spacing: normal;
+    --linaria-theme_typography-special-display-medium_48_54-font-weight: 600;
+    --linaria-theme_typography-special-display-medium_60_68-font-size: 3.75rem;
+    --linaria-theme_typography-special-display-medium_60_68-line-height: 4.25rem;
+    --linaria-theme_typography-special-display-medium_60_68-letter-spacing: normal;
+    --linaria-theme_typography-special-display-medium_60_68-font-weight: 600;
+    --linaria-theme_typography-special-display-medium_72_74-font-size: 4.5rem;
+    --linaria-theme_typography-special-display-medium_72_74-line-height: 4.625rem;
+    --linaria-theme_typography-special-display-medium_72_74-letter-spacing: normal;
+    --linaria-theme_typography-special-display-medium_72_74-font-weight: 600;
+    --linaria-theme_typography-title-extra-small18px-font-size: 1.125rem;
+    --linaria-theme_typography-title-extra-small18px-line-height: 1.375rem;
+    --linaria-theme_typography-title-extra-small18px-letter-spacing: normal;
+    --linaria-theme_typography-title-small22px-font-size: 1.375rem;
+    --linaria-theme_typography-title-small22px-line-height: 1.625rem;
+    --linaria-theme_typography-title-small22px-letter-spacing: normal;
+    --linaria-theme_typography-title-medium26px-font-size: 1.625rem;
+    --linaria-theme_typography-title-medium26px-line-height: 1.875rem;
+    --linaria-theme_typography-title-medium26px-letter-spacing: normal;
+    --linaria-theme_typography-title-large32px-font-size: 2rem;
+    --linaria-theme_typography-title-large32px-line-height: 2.25rem;
+    --linaria-theme_typography-title-large32px-letter-spacing: normal;
+    --linaria-theme_typography-base-extra-small10px-font-size: 0.625rem;
+    --linaria-theme_typography-base-extra-small10px-line-height: 0.75rem;
+    --linaria-theme_typography-base-extra-small10px-letter-spacing: normal;
+    --linaria-theme_typography-base-small12px-font-size: 0.75rem;
+    --linaria-theme_typography-base-small12px-line-height: 1rem;
+    --linaria-theme_typography-base-small12px-letter-spacing: normal;
+    --linaria-theme_typography-base-medium14px-font-size: 0.875rem;
+    --linaria-theme_typography-base-medium14px-line-height: 1.125rem;
+    --linaria-theme_typography-base-medium14px-letter-spacing: normal;
+    --linaria-theme_typography-base-medium-tall14px-font-size: 0.875rem;
+    --linaria-theme_typography-base-medium-tall14px-line-height: 1.25rem;
+    --linaria-theme_typography-base-medium-tall14px-letter-spacing: normal;
+    --linaria-theme_typography-base-large16px-font-size: 1rem;
+    --linaria-theme_typography-base-large16px-line-height: 1.25rem;
+    --linaria-theme_typography-base-large16px-letter-spacing: normal;
+    --linaria-theme_typography-base-large-tall16px-font-size: 1rem;
+    --linaria-theme_typography-base-large-tall16px-line-height: 1.5rem;
+    --linaria-theme_typography-base-large-tall16px-letter-spacing: normal;
+    --linaria-theme_typography-base-extra-large18px-font-size: 1.125rem;
+    --linaria-theme_typography-base-extra-large18px-line-height: 1.5rem;
+    --linaria-theme_typography-base-extra-large18px-letter-spacing: normal;
+    --linaria-theme_typography-base-extra-large-tall18px-font-size: 1.125rem;
+    --linaria-theme_typography-base-extra-large-tall18px-line-height: 1.75rem;
+    --linaria-theme_typography-base-extra-large-tall18px-letter-spacing: normal;
+    --linaria-theme_typography-caption12px-font-size: 0.75rem;
+    --linaria-theme_typography-caption12px-line-height: 1rem;
+    --linaria-theme_typography-caption12px-letter-spacing: normal;
+    --linaria-theme_typography-weight-book400: 400;
+    --linaria-theme_typography-weight-medium600: 600;
+    --linaria-theme_typography-weight-bold800: 800;
+    --linaria-theme_typography-tracking-normal-letter-spacing: normal;
+    --linaria-theme_typography-tracking-wide-letter-spacing: 0.04em;
 }

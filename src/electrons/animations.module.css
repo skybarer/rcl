@@ -1,5 +1,5 @@
 :root {
-    --padding : 0.05em;
+    --padding: 0.05em;
     --start-color: #007cf0;
     --end-color: #00dfd8;
 }
@@ -56,5 +56,25 @@
     position: relative;
     z-index: 1;
     animation: color-change 1s infinite;
-    
+
+}
+
+@keyframes ac4h-disclaimer-enter-d19t22n9 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes animation-64e8c8 {
+    from {
+        opacity: 0.09049773755656108;
+    }
+
+    to {
+        opacity: 0.03619909502262444;
+    }
 }

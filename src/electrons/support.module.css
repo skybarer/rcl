@@ -1,0 +1,28 @@
+@supports (object-fit: cover) {
+    .i9if2t0[class][class] {
+        height: 100%;
+        width: 100%;
+        position: static;
+    }
+}
+
+@supports not (aspect-ratio: 1 / 1) {
+    .a1gfdmjw[class][class] {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+    }
+
+    .dir.a1gfdmjw[class][class] {
+        left: 0;
+        right: 0;
+    }
+}
+
+@supports (aspect-ratio: 1 / 1) {
+    .p1um1s0u[class][class] {
+        height: 100%;
+        width: 100%;
+    }
+}
+

@@ -1,0 +1,17 @@
+/* @import 'colors.less';
+
+@screen-sm-min: 768px;
+@screen-mobile-landscape: 480px;
+@screen-tablet-portrait: 768px;
+@screen-tablet-landscape: 992px;
+@screen-tablet-basic: 1024px;
+@screen-laptop: 1200px;
+@screen-desktop: 1440px;
+@screen-desktop-wide: 1800px;
+@img-url: '/www/hola/pub/img/';
+
+@scrollbar-width: 4px;
+
+:root {
+    --top-height: 0px;
+} */
