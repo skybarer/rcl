@@ -1,13 +1,37 @@
+:root {
+    font-family: "Inter", sans-serif;
+}
+
 * {
     box-sizing: border-box;
     border-style: solid;
     border-color: #e5e7eb;
 }
 
-/* html {} */
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+strong,
+b {
+    font-weight: 700;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+    -webkit-print-color-scheme: light;
+    color-scheme: light;
+}
 
 body {
-    font-family: "Nunito Sans", -apple-system, ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "InterVariable", sans-serif;
+    font-optical-sizing: auto;
+    /* font-family: "Nunito Sans", -apple-system, ".SFNSText-Regular", "San Francisco", BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif; */
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
