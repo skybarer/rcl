@@ -111,7 +111,7 @@ const ColorPaletteGenerator = ({ initialColor }) => {
           </thead>
           <tbody>
             {colorVariants.map((colorVariant, index) => (
-              <TableRow>
+              <TableRow key={index}>
                 <TableCell>{index}</TableCell>
                 <TableCell>{colorVariant}</TableCell>
                 <TableCell>
