@@ -14,8 +14,23 @@ const NodeWrapper = styled.div`
   height: ${(props) => props.height}px;
 
   &:hover {
-    border-color: blue; // Change color on hover to indicate interactive
+    border-color: blue;
   }
+`;
+
+// Styled-component for the delete icon
+const DeleteIcon = styled.div`
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: red;
+  color: white;
+  padding: 3px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 12px;
+  text-align: center;
+  line-height: 1;
 `;
 
 // Styled-component for the resize handle
@@ -29,7 +44,16 @@ const ResizeHandle = styled.div`
   right: 0;
 `;
 
-const Node = ({ x, y, initialWidth, initialHeight, label, onResize }) => {
+const Node = ({
+  id,
+  x,
+  y,
+  initialWidth,
+  initialHeight,
+  label,
+  onDelete,
+  onConfigChange,
+}) => {
   const [position, setPosition] = useState({ x, y });
   const [size, setSize] = useState({
     width: initialWidth,
@@ -44,7 +68,7 @@ const Node = ({ x, y, initialWidth, initialHeight, label, onResize }) => {
   };
 
   const handleResizeStart = (e) => {
-    e.stopPropagation(); // Prevent event propagation to avoid conflicts
+    e.stopPropagation();
     const startX = e.clientX;
     const startY = e.clientY;
     const startWidth = size.width;
@@ -58,7 +82,7 @@ const Node = ({ x, y, initialWidth, initialHeight, label, onResize }) => {
 
     const handleResizeEnd = () => {
       document.removeEventListener('mousemove', handleResize);
-      document.removeEventListener('mouseup', handleResizeEnd);
+      document.removeventListener('mouseup', handleResizeEnd);
     };
 
     document.addEventListener('mousemove', handleResize);
@@ -74,17 +98,20 @@ const Node = ({ x, y, initialWidth, initialHeight, label, onResize }) => {
       onDragEnd={handleDragEnd}
     >
       <strong>{label}</strong>
+      <DeleteIcon onClick={() => onDelete(id)}>X</DeleteIcon>
       <ResizeHandle onMouseDown={handleResizeStart} />
     </NodeWrapper>
   );
 };
 
 Node.propTypes = {
+  id: PropTypes.string.isRequired,
   x: PropTypes.number.isRequired,
   y: PropTypes.number.isRequired,
   initialWidth: PropTypes.number.isRequired,
   initialHeight: PropTypes.number.isRequired,
   label: PropTypes.string.isRequired,
+  onDelete: PropTypes.func.isRequired,
 };
 
 export default Node;

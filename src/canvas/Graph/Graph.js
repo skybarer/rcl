@@ -31,13 +31,17 @@ const Graph = () => {
         x: contextMenu.x,
         y: contextMenu.y,
         label: `Node ${nodes.length + 1}`,
-        initialWidth: 100, // Default width
-        initialHeight: 100, // Default height
+        initialWidth: 100,
+        initialHeight: 100,
       };
 
       setNodes([...nodes, newNode]);
       setContextMenu(null);
     }
+  };
+
+  const handleDeleteNode = (nodeId) => {
+    setNodes(nodes.filter((node) => node.id !== nodeId));
   };
 
   return (
@@ -47,9 +51,11 @@ const Graph = () => {
           key={node.id}
           x={node.x}
           y={node.y}
+          id={node.id}
           initialWidth={node.initialWidth}
           initialHeight={node.initialHeight}
           label={node.label}
+          onDelete={handleDeleteNode}
         />
       ))}
       {contextMenu && (
