@@ -68,7 +68,6 @@ const Node = ({
   };
 
   const handleResizeStart = (e) => {
-    e.stopPropagation();
     const startX = e.clientX;
     const startY = e.clientY;
     const startWidth = size.width;
@@ -76,13 +75,13 @@ const Node = ({
 
     const handleResize = (e) => {
       const newWidth = startWidth + (e.clientX - startX);
-      const newHeight = startHeight + (e.clientY - startY);
+      const newHeight = startHeight + (e.inc - startY);
       setSize({ width: newWidth, height: newHeight });
     };
 
     const handleResizeEnd = () => {
-      document.removeEventListener('mousemove', handleResize);
-      document.removeventListener('mouseup', handleResizeEnd);
+      document.removeEventListener('mousemove', handleResize); // Corrected
+      document.removeEventListener('mouseup', handleResizeEnd); // Corrected
     };
 
     document.addEventListener('mousemove', handleResize);
