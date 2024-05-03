@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
@@ -14,12 +14,29 @@ const NodeLabel = styled.div`
   }
 `;
 
-const Node = ({ label, children }) => (
-  <TreeNode>
-    <NodeLabel>{label}</NodeLabel>
-    {children && children.length > 0 && <div>{children}</div>}
-  </TreeNode>
-);
+const ChildrenContainer = styled.div`
+  padding-left: 1.5rem;
+  display: ${(props) =>
+    props.isOpen ? 'block' : 'none'}; // Only display if isOpen is true
+`;
+
+const Node = ({ label, children }) => {
+  // Initialize with false to start in collapsed state
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleOpen = () => {
+    setIsOpen((prev) => !prev);
+  };
+
+  return (
+    <TreeNode>
+      <NodeLabel onClick={toggleOpen}>
+        {isOpen ? '▾' : '▸'} {label}
+      </NodeLabel>
+      <ChildrenContainer isOpen={isOpen}>{children}</ChildrenContainer>
+    </TreeNode>
+  );
+};
 
 Node.propTypes = {
   label: PropTypes.string.isRequired,

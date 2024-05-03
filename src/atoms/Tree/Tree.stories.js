@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import Tree from './Tree';
 import Node from './Node';
 
-// Create a tree structure with nested tags
+// Create a tree structure with open/close functionality
 const MyTree = () => (
   <Tree>
     <Node label="Root">
@@ -22,4 +22,4 @@ const MyTree = () => (
 );
 
 // Story for the Tree component in Storybook
-storiesOf('Tree', module).add('With Nested Tags', () => <MyTree />);
+storiesOf('Tree', module).add('With Open/Close', () => <MyTree />);
