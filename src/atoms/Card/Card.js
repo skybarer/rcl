@@ -33,7 +33,7 @@ const Card = ({
     padding={padding}
     border={border}
     borderRadius={borderRadius}
-    style={style}
+    style={{ ...style }}
   >
     {children}
   </CardWrapper>
