@@ -10,9 +10,13 @@ const StyleBox = styled.div`
   grid-column-end: span ${(props) => props.colSpan};
 `;
 
-const Box = ({ style, children, className }) => {
+const Box = ({ style, children, className, colSpan }) => {
   return (
-    <StyleBox className={{ ...className }} style={{ ...style }}>
+    <StyleBox
+      className={{ ...className }}
+      style={{ ...style }}
+      colSpan={colSpan}
+    >
       {children}
     </StyleBox>
   );
