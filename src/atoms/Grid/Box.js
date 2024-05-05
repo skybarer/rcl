@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const StyleBox = styled.div`
+  display: flex;
   border: 1px solid #ddd;
   padding: 20px;
   text-align: center;
