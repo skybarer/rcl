@@ -45,3 +45,81 @@
     border: var(--button-border-default);
     font-size: var(--typography-root-font-size);
 }
+
+.paper-button[elevation="1"] {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.paper-button[elevation="2"] {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
+}
+
+.paper-button[elevation="3"] {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.4);
+}
+
+.paper-button[elevation="4"] {
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+}
+
+.paper-button[elevation="5"] {
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+.paper-button[hidden] {
+    display: none !important;
+}
+
+.paper-button[raised].keyboard-focus {
+    font-weight: bold;
+}
+
+.paper-button:not([raised]).keyboard-focus {
+    background-color: var(--paper-button-flat-keyboard-focus-background-color);
+    font-weight: var(--paper-button-flat-keyboard-focus-font-weight, bold);
+    outline: var(--paper-button-flat-keyboard-focus-outline);
+}
+
+.paper-button[disabled] {
+    background: none;
+    color: #a8a8a8;
+    cursor: auto;
+    pointer-events: none;
+}
+
+.paper-button[disabled][raised] {
+    background: #eaeaea;
+}
+
+.paper-button[animated] {
+    transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.paper-ripple.paper-button {
+    color: var(--paper-button-ink-color);
+}
+
+.paper-tooltip {
+    display: block;
+    position: absolute;
+    outline: none;
+    z-index: 1002;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+.paper-tooltip[style-target=tooltip] {
+    display: block;
+    outline: none;
+    font-family: "Roboto", "Noto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 10px;
+    line-height: 1;
+    background-color: var(--paper-tooltip-background, #616161);
+    color: var(--paper-tooltip-text-color, white);
+    padding: 8px;
+    border-radius: 2px;
+}

@@ -296,6 +296,84 @@
     }
 }
 
+@keyframes keyFrameScaleUp {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+@keyframes keyFrameScaleDown {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+
+}
+
+@keyframes keyFrameFadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: var(--paper-tooltip-opacity, 0.9);
+    }
+
+}
+
+@keyframes keyFrameFadeOutOpacity {
+    0% {
+        opacity: var(--paper-tooltip-opacity, 0.9);
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+}
+
+@keyframes keyFrameSlideDownIn {
+    0% {
+        transform: translateY(-2000px);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.2;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: var(--paper-tooltip-opacity, 0.9);
+    }
+
+}
+
+@keyframes keyFrameSlideDownOut {
+    0% {
+        transform: translateY(0);
+        opacity: var(--paper-tooltip-opacity, 0.9);
+    }
+
+    10% {
+        opacity: 0.2;
+    }
+
+    100% {
+        transform: translateY(-2000px);
+        opacity: 0;
+    }
+
+}
+
 ._9i5RwVv0f00JLPQL7I\+Y8Q\=\= {
     width: 360px;
     height: calc(100vh - 50px);
@@ -580,5 +658,19 @@
     to {
         height: 8px;
         min-height: 8px
+    }
+}
+
+.created_05ad3f37 {
+    animation: spin_05ad3f37 1.1s infinite linear
+}
+
+@keyframes spin_05ad3f37 {
+    0% {
+        transform: rotate(0)
+    }
+
+    100% {
+        transform: rotate(360deg)
     }
 }

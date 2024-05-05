@@ -697,3 +697,329 @@
     src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
+.ms-fontSize-68 {
+    font-size: 68px
+}
+
+.ms-fontSize-42 {
+    font-size: 42px
+}
+
+.ms-fontSize-32 {
+    font-size: 32px
+}
+
+.ms-fontSize-28 {
+    font-size: 28px
+}
+
+.ms-fontSize-24 {
+    font-size: 24px
+}
+
+.ms-fontSize-20 {
+    font-size: 20px
+}
+
+.ms-fontSize-18 {
+    font-size: 18px
+}
+
+.ms-fontSize-16 {
+    font-size: 16px
+}
+
+.ms-fontSize-14 {
+    font-size: 14px
+}
+
+.ms-fontSize-12 {
+    font-size: 12px
+}
+
+.ms-fontSize-10 {
+    font-size: 10px
+}
+
+.ms-fontWeight-regular {
+    font-weight: 400
+}
+
+.ms-fontWeight-semibold {
+    font-weight: 600
+}
+
+.ms-fontWeight-bold {
+    font-weight: 700
+}
+
+.ms-font-su {
+    font-size: 42px;
+    font-weight: 100
+}
+
+.ms-font-xxl {
+    font-size: 28px;
+    font-weight: 100
+}
+
+.ms-font-xl-plus {
+    font-size: 24px;
+    font-weight: 100
+}
+
+.ms-font-xl {
+    font-size: 21px;
+    font-weight: 100
+}
+
+.ms-font-l {
+    font-size: 17px;
+    font-weight: 300
+}
+
+.ms-font-m-plus {
+    font-size: 15px;
+    font-weight: 400
+}
+
+.ms-font-m {
+    font-size: 14px;
+    font-weight: 400
+}
+
+.ms-font-s-plus {
+    font-size: 13px;
+    font-weight: 400
+}
+
+.ms-font-s {
+    font-size: 12px;
+    font-weight: 400
+}
+
+.ms-font-xs {
+    font-size: 11px;
+    font-weight: 400
+}
+
+.ms-font-mi {
+    font-size: 10px;
+    font-weight: 600
+}
+
+.ms-fontWeight-light {
+    font-weight: 100
+}
+
+.ms-fontWeight-semilight {
+    font-weight: 300
+}
+
+.ms-fontSize-su {
+    font-size: 42px
+}
+
+.ms-fontSize-xxl {
+    font-size: 28px
+}
+
+.ms-fontSize-xlPlus {
+    font-size: 24px
+}
+
+.ms-fontSize-xl {
+    font-size: 21px
+}
+
+.ms-fontSize-l {
+    font-size: 17px
+}
+
+.ms-fontSize-mPlus {
+    font-size: 15px
+}
+
+.ms-fontSize-m {
+    font-size: 14px
+}
+
+.ms-fontSize-sPlus {
+    font-size: 13px
+}
+
+.ms-fontSize-s {
+    font-size: 12px
+}
+
+.ms-fontSize-xs {
+    font-size: 11px
+}
+
+.ms-fontSize-mi {
+    font-size: 10px
+}
+
+.ms-fontSize-68 {
+    font-size: 68px
+}
+
+.ms-fontSize-42 {
+    font-size: 42px
+}
+
+.ms-fontSize-32 {
+    font-size: 32px
+}
+
+.ms-fontSize-28 {
+    font-size: 28px
+}
+
+.ms-fontSize-24 {
+    font-size: 24px
+}
+
+.ms-fontSize-20 {
+    font-size: 20px
+}
+
+.ms-fontSize-18 {
+    font-size: 18px
+}
+
+.ms-fontSize-16 {
+    font-size: 16px
+}
+
+.ms-fontSize-14 {
+    font-size: 14px
+}
+
+.ms-fontSize-12 {
+    font-size: 12px
+}
+
+.ms-fontSize-10 {
+    font-size: 10px
+}
+
+.ms-fontWeight-regular {
+    font-weight: 400
+}
+
+.ms-fontWeight-semibold {
+    font-weight: 600
+}
+
+.ms-fontWeight-bold {
+    font-weight: 700
+}
+
+.ms-font-su {
+    font-size: 42px;
+    font-weight: 100
+}
+
+.ms-font-xxl {
+    font-size: 28px;
+    font-weight: 100
+}
+
+.ms-font-xl-plus {
+    font-size: 24px;
+    font-weight: 100
+}
+
+.ms-font-xl {
+    font-size: 21px;
+    font-weight: 100
+}
+
+.ms-font-l {
+    font-size: 17px;
+    font-weight: 300
+}
+
+.ms-font-m-plus {
+    font-size: 15px;
+    font-weight: 400
+}
+
+.ms-font-m {
+    font-size: 14px;
+    font-weight: 400
+}
+
+.ms-font-s-plus {
+    font-size: 13px;
+    font-weight: 400
+}
+
+.ms-font-s {
+    font-size: 12px;
+    font-weight: 400
+}
+
+.ms-font-xs {
+    font-size: 11px;
+    font-weight: 400
+}
+
+.ms-font-mi {
+    font-size: 10px;
+    font-weight: 600
+}
+
+.ms-fontWeight-light {
+    font-weight: 100
+}
+
+.ms-fontWeight-semilight {
+    font-weight: 300
+}
+
+.ms-fontSize-su {
+    font-size: 42px
+}
+
+.ms-fontSize-xxl {
+    font-size: 28px
+}
+
+.ms-fontSize-xlPlus {
+    font-size: 24px
+}
+
+.ms-fontSize-xl {
+    font-size: 21px
+}
+
+.ms-fontSize-l {
+    font-size: 17px
+}
+
+.ms-fontSize-mPlus {
+    font-size: 15px
+}
+
+.ms-fontSize-m {
+    font-size: 14px
+}
+
+.ms-fontSize-sPlus {
+    font-size: 13px
+}
+
+.ms-fontSize-s {
+    font-size: 12px
+}
+
+.ms-fontSize-xs {
+    font-size: 11px
+}
+
+.ms-fontSize-mi {
+    font-size: 10px
+}
