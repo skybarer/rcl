@@ -103,3 +103,482 @@
         transform: rotate(359deg)
     }
 }
+
+.fade-in {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: .1s
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+.fade-out {
+    opacity: 0;
+    animation-name: fadeOutOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: .3s
+}
+
+@keyframes fadeOutOpacity {
+    0% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes flexPane-fadeIn {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear
+    }
+
+    to {
+        visibility: visible;
+        opacity: 1
+    }
+}
+
+@keyframes flexPane-fadeIn {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear
+    }
+
+    to {
+        visibility: visible;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes flexPane-fadeOut {
+    0% {
+        visibility: visible;
+        opacity: 1;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear
+    }
+
+    to {
+        visibility: hidden;
+        opacity: 0
+    }
+}
+
+@keyframes flexPane-fadeOut {
+    0% {
+        visibility: visible;
+        opacity: 1;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear
+    }
+
+    to {
+        visibility: hidden;
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes flexPane-slideRightIn {
+    0% {
+        -webkit-transform: translate(80px);
+        -ms-transform: translate(80px);
+        transform: translate(80px)
+    }
+
+    to {
+        -webkit-transform: translate(0);
+        -ms-transform: translate(0);
+        transform: translate(0)
+    }
+}
+
+@keyframes flexPane-slideRightIn {
+    0% {
+        -webkit-transform: translate(80px);
+        -ms-transform: translate(80px);
+        transform: translate(80px)
+    }
+
+    to {
+        -webkit-transform: translate(0);
+        -ms-transform: translate(0);
+        transform: translate(0)
+    }
+}
+
+@-webkit-keyframes flexPane-slideRightOut {
+    0% {
+        -webkit-transform: translate(0);
+        -ms-transform: translate(0);
+        transform: translate(0)
+    }
+
+    to {
+        -webkit-transform: translate(80px);
+        -ms-transform: translate(80px);
+        transform: translate(80px)
+    }
+}
+
+@keyframes flexPane-slideRightOut {
+    0% {
+        -webkit-transform: translate(0);
+        -ms-transform: translate(0);
+        transform: translate(0)
+    }
+
+    to {
+        -webkit-transform: translate(80px);
+        -ms-transform: translate(80px);
+        transform: translate(80px)
+    }
+}
+
+@-webkit-keyframes flexPaneItem-slideContentIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate(80px);
+        -ms-transform: translate(80px);
+        transform: translate(80px)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate(0);
+        -ms-transform: translate(0);
+        transform: translate(0)
+    }
+}
+
+@keyframes flexPaneItem-slideContentIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate(80px);
+        -ms-transform: translate(80px);
+        transform: translate(80px)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate(0);
+        -ms-transform: translate(0);
+        transform: translate(0)
+    }
+}
+
+@keyframes contextMenu-slideIn {
+    0% {
+        opacity: 0;
+        transform: scaleY(.93)
+    }
+
+    to {
+        opacity: 1;
+        transform: scaleY(1)
+    }
+}
+
+._9i5RwVv0f00JLPQL7I\+Y8Q\=\= {
+    width: 360px;
+    height: calc(100vh - 50px);
+    overflow: hidden;
+    position: fixed;
+    z-index: 1000000;
+    top: 50px;
+    right: 0;
+    pointer-events: none
+}
+
+.X6jmOJbtPxrdLcpMF7gbRg\=\= iframe {
+    height: 1000px !important;
+    overflow: hidden;
+    position: absolute
+}
+
+.mdn3zwUjEpxe5XhvWdUUVg\=\= {
+    height: calc(100vh - 48px);
+    top: 48px
+}
+
+.f3ZNvJ3t0PnWAgoWv5LY2g\=\= {
+    height: calc(100vh - 8px);
+    top: 8px
+}
+
+@-moz-document url-prefix() {
+    .XlKf\+hNIUsKJ42S9ybY7rg\=\=:focus {
+        outline: 1px dotted
+    }
+}
+
+.o365cs-base .fHsS8WIbhHVDlPRycq1MWw\=\= {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    z-index: 1000000;
+    width: 320px;
+    border-style: solid;
+    pointer-events: all;
+    border-width: 0 0 0 1px;
+    box-sizing: content-box
+}
+
+.o365cs-base .xRFEaPmwULXdFRg6xb0jHA\=\= {
+    border-color: #000;
+    border-left-width: 1px !important
+}
+
+.o365cs-base ._0um\+0lXKfaqA\+25RpmAufw\=\= {
+    height: 100%
+}
+
+.o365cs-base .Pq9Aph\+WaJhC6xHpxryKyw\=\= {
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden
+}
+
+.o365cs-base .WtohaYWvzS3cfEoZF4BuZA\=\= {
+    -ms-flex: 1;
+    flex: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    height: 100%
+}
+
+.o365cs-base .WtohaYWvzS3cfEoZF4BuZA\=\=:not(:-webkit-any-link) {
+    box-sizing: border-box
+}
+
+.o365cs-base .XlKf\+hNIUsKJ42S9ybY7rg\=\= {
+    margin: 0 auto 1px
+}
+
+.o365cs-base .ABsUeIawNiAydZM8TZ9GHg\=\= {
+    height: 40px;
+    width: 40px;
+    min-width: 0;
+    position: absolute;
+    top: 12px;
+    left: calc(100% - 44px);
+    padding: 5px;
+    border-width: 0;
+    background-color: transparent;
+    text-align: center;
+    cursor: pointer
+}
+
+.o365cs-base .ABsUeIawNiAydZM8TZ9GHg\=\=:focus {
+    outline: 1px dotted;
+    outline: 1px auto -webkit-focus-ring-color;
+    outline-style: auto
+}
+
+.o365cs-base .jt1UvlCr1DTxe8MYybrikA\=\= {
+    -webkit-animation-name: flexPane-fadeIn, flexPane-slideRightIn;
+    animation-name: flexPane-fadeIn, flexPane-slideRightIn;
+    -webkit-animation-duration: .28s;
+    animation-duration: .28s;
+    -webkit-animation-timing-function: cubic-bezier(.8, 0, .2, 1);
+    animation-timing-function: cubic-bezier(.8, 0, .2, 1)
+}
+
+.o365cs-base ._8OLH5zBoaL4dWYE73YqcfA\=\= {
+    -webkit-animation-name: flexPane-fadeOut, flexPane-slideRightOut;
+    animation-name: flexPane-fadeOut, flexPane-slideRightOut;
+    -webkit-animation-duration: .16s;
+    animation-duration: .16s;
+    -webkit-animation-timing-function: cubic-bezier(.8, 0, .2, 1);
+    animation-timing-function: cubic-bezier(.8, 0, .2, 1);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+
+.o365cs-base ._2\/XVFgy7oOJ2PRdV0nb7xg\=\= {
+    visibility: hidden
+}
+
+
+
+.o365cs-base .JQUzjR1BqzgYWBFcHEPQkQ\=\= {
+    -webkit-animation-name: flexPaneItem-slideContentIn;
+    animation-name: flexPaneItem-slideContentIn;
+    -webkit-animation-duration: .28s;
+    animation-duration: .28s;
+    -webkit-animation-timing-function: cubic-bezier(.8, 0, .2, 1);
+    animation-timing-function: cubic-bezier(.8, 0, .2, 1);
+    -webkit-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+    -webkit-animation-delay: .04s;
+    animation-delay: .04s
+}
+
+.o365cs-base .hjnv9tRBywIVLOVT0rwOpA\=\= {
+    -webkit-animation-name: flexPane-fadeOut, flexPane-slideRightOut;
+    animation-name: flexPane-fadeOut, flexPane-slideRightOut;
+    -webkit-animation-duration: .16s;
+    animation-duration: .16s;
+    -webkit-animation-timing-function: cubic-bezier(.8, 0, .2, 1);
+    animation-timing-function: cubic-bezier(.8, 0, .2, 1);
+    -webkit-animation-fill-mode: backwards;
+    animation-fill-mode: backwards
+}
+
+.o365cs-base .qLbnXrrpb1JPt\+x0quZ\+QQ\=\=:nth-child(2) {
+    animation-duration: .05s
+}
+
+.o365cs-base .qLbnXrrpb1JPt\+x0quZ\+QQ\=\=:nth-child(3) {
+    animation-duration: 67ms
+}
+
+.o365cs-base .qLbnXrrpb1JPt\+x0quZ\+QQ\=\=:nth-child(n+4) {
+    animation-duration: 83ms
+}
+
+@-webkit-keyframes headerSlideInFrames {
+    0% {
+        height: 8px;
+        opacity: 0;
+        -webkit-transform: scale(.95);
+        -ms-transform: scale(.95);
+        transform: scale(.95)
+    }
+
+    to {
+        height: 48px;
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@keyframes headerSlideInFrames {
+    0% {
+        height: 8px;
+        opacity: 0;
+        -webkit-transform: scale(.95);
+        -ms-transform: scale(.95);
+        transform: scale(.95)
+    }
+
+    to {
+        height: 48px;
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@-webkit-keyframes headerSlideOutFrames {
+    0% {
+        visibility: visible;
+        display: flex;
+        height: 48px;
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1)
+    }
+
+    to {
+        visibility: hidden;
+        display: none;
+        height: 8px;
+        opacity: 0;
+        -webkit-transform: scale(.95);
+        -ms-transform: scale(.95);
+        transform: scale(.95)
+    }
+}
+
+@keyframes headerSlideOutFrames {
+    0% {
+        visibility: visible;
+        display: flex;
+        height: 48px;
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1)
+    }
+
+    to {
+        visibility: hidden;
+        display: none;
+        height: 8px;
+        opacity: 0;
+        -webkit-transform: scale(.95);
+        -ms-transform: scale(.95);
+        transform: scale(.95)
+    }
+}
+
+@-webkit-keyframes workloadDivSlideInFrames {
+    0% {
+        height: 8px;
+        min-height: 8px
+    }
+
+    to {
+        height: 48px;
+        min-height: 48px
+    }
+}
+
+@keyframes workloadDivSlideInFrames {
+    0% {
+        height: 8px;
+        min-height: 8px
+    }
+
+    to {
+        height: 48px;
+        min-height: 48px
+    }
+}
+
+@-webkit-keyframes workloadDivSlideOutFrames {
+    0% {
+        height: 48px;
+        min-height: 48px
+    }
+
+    to {
+        height: 8px;
+        min-height: 8px
+    }
+}
+
+@keyframes workloadDivSlideOutFrames {
+    0% {
+        height: 48px;
+        min-height: 48px
+    }
+
+    to {
+        height: 8px;
+        min-height: 8px
+    }
+}
