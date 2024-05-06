@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Page Title</title>
+        <style>
+            ol,
+            ul {
+                list-style: none;
+            }
+
+            .product-details-one-box ul {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+            }
+
+            input[type="radio" i] {
+                background-color: initial;
+                cursor: default;
+                appearance: auto;
+                box-sizing: border-box;
+                margin: 3px 3px 0px 5px;
+                padding: initial;
+                border: initial;
+            }
+
+            .custom-radios input[type=radio] {
+                display: none;
+            }
+
+            .product-details-one-box li.radio-selection .custom-radios input[type="radio"]+label span {
+                margin: 5px 2px;
+            }
+
+            .custom-radios input[type=radio]+label span {
+                display: inline-block;
+                width: 47px;
+                height: 47px;
+                margin: -1px 4px 0 0;
+                vertical-align: middle;
+                cursor: pointer;
+                border-radius: 50%;
+                border: 2px solid #ffffff;
+                box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+                background-repeat: no-repeat;
+                background-position: center;
+                text-align: center;
+                line-height: 39px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="product-details-one-box">
+            <ul>
+                <li class="radio-selection">
+                    <div class="custom-radios">
+                        <div class="title">COLOR :<label style="color: rgb(97, 95, 95); margin-left: 5px;">Pickle
+                                green
+                            </label></div>
+                        <div class="">
+                            <div>
+                                <input type="radio" id="Pickle green" name="color" readonly=""
+                                    value="Pickle green"><label for="Pickle green"><span
+                                        style="background-color: rgb(139, 143, 103);border: 2px solid rgb(81, 204, 204);">
+                                    </span>
+                                </label>
+                            </div>
+                            <div>
+                                <input type="radio" id="Rust Orange" name="color" readonly="" value="Rust Orange"><label
+                                    for="Rust Orange"><span style="background-color: rgb(212, 131, 88);">
+                                    </span>
+                                </label>
+                            </div>
+                            <div>
+                                <input type="radio" id="Navy Blue" name="color" readonly="" value="Navy Blue"><label
+                                    for="Navy Blue"><span style="background-color: rgb(35, 43, 97);">
+                                    </span>
+                                </label>
+                            </div>
+                            <div>
+                                <input type="radio" id="Dark Grey" name="color" readonly="" value="Dark Grey"><label
+                                    for="Dark Grey"><span style="background-color: rgb(87, 84, 87);">
+                                    </span>
+                                </label>
+                            </div>
+                            <div>
+                                <input type="radio" id="Burgundy" name="color" readonly="" value="Burgundy"><label
+                                    for="Burgundy"><span style="background-color: rgb(109, 23, 49);">
+                                    </span>
+                                </label>
+                            </div>
+                            <div>
+                                <input type="radio" id="Black" name="color" readonly="" value="Black"><label
+                                    for="Black"><span style="background-color: rgb(0, 0, 0);">
+                                    </span>
+                                </label>
+                            </div>
+                            <div>
+                                <input type="radio" id="Ocean Green" name="color" readonly="" value="Ocean Green"><label
+                                    for="Ocean Green"><span style="background-color: rgb(25, 58, 65);">
+                                    </span>
+                                </label>
+                            </div>
+                            <div>
+                                <input type="radio" id="Bottle Green" name="color" readonly=""
+                                    value="Bottle Green"><label for="Bottle Green"><span
+                                        style="background-color: rgb(15, 38, 31);">
+                                    </span>
+                                </label>
+                            </div>
+                            <div>
+                                <input type="radio" id="Dark Violet" name="color" readonly="" value="Dark Violet"><label
+                                    for="Dark Violet"><span style="background-color: rgb(76, 60, 88);">
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </body>
+
+</html>
