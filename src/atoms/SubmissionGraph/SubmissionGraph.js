@@ -12,7 +12,6 @@ const GraphContainer = styled.div`
 
 const MonthRow = styled.div`
   display: flex;
-  flex-direction: column;
 `;
 
 const DaySquare = styled.div`
