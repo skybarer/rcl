@@ -5,7 +5,7 @@ import Card from './../atoms/Card/Card';
 storiesOf('molecules/CardList', module).add('default', () => {
   return (
     <>
-      <Card style={{ border: 0, 'border-radius': 0 }}>divider</Card>
+      <Card>divider</Card>
     </>
   );
 });

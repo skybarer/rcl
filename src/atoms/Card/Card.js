@@ -17,6 +17,7 @@ const CardWrapper = styled.div`
 `;
 
 const Card = ({
+  className,
   variant,
   children,
   width,
@@ -27,6 +28,7 @@ const Card = ({
   style,
 }) => (
   <CardWrapper
+    className={className}
     variant={variant}
     width={width}
     height={height}
