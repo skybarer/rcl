@@ -22,37 +22,37 @@ const Grid = ({ columns, gap, children, style }) => {
 
   const containerRef = useRef(null);
 
-  useEffect(() => {
-    const updateTemplateColumns = (width) => {
-      if (width < breakpoints.xs) {
-        setTemplateColumns('1fr'); // Single-column layout for very small screens
-      } else if (width < breakpoints.sm) {
-        setTemplateColumns('repeat(2, 1fr)'); // Two-column layout for small screens
-      } else if (width < breakpoints.md) {
-        setTemplateColumns('repeat(3, 1fr)'); // Three-column layout for tablets
-      } else if (width < breakpoints.lg) {
-        setTemplateColumns(`repeat(${Math.min(columns, 6)}, 1fr)`); // Up to 6 columns for medium screens
-      } else {
-        setTemplateColumns(`repeat(${columns}, 1fr)`); // Default to full 20 columns for large screens
-      }
-    };
+  // useEffect(() => {
+  //   const updateTemplateColumns = (width) => {
+  //     if (width < breakpoints.xs) {
+  //       setTemplateColumns('1fr'); // Single-column layout for very small screens
+  //     } else if (width < breakpoints.sm) {
+  //       setTemplateColumns('repeat(2, 1fr)'); // Two-column layout for small screens
+  //     } else if (width < breakpoints.md) {
+  //       setTemplateColumns('repeat(3, 1fr)'); // Three-column layout for tablets
+  //     } else if (width < breakpoints.lg) {
+  //       setTemplateColumns(`repeat(${Math.min(columns, 6)}, 1fr)`); // Up to 6 columns for medium screens
+  //     } else {
+  //       setTemplateColumns(`repeat(${columns}, 1fr)`); // Default to full 20 columns for large screens
+  //     }
+  //   };
 
-    const resizeObserver = new ResizeObserver((entries) => {
-      if (entries.length > 0) {
-        const { contentRect } = entries[0];
-        updateTemplateColumns(contentRect.width); // Adjust layout based on observed width
-      }
-    });
+  //   const resizeObserver = new ResizeObserver((entries) => {
+  //     if (entries.length > 0) {
+  //       const { contentRect } = entries[0];
+  //       updateTemplateColumns(contentRect.width); // Adjust layout based on observed width
+  //     }
+  //   });
 
-    if (containerRef.current) {
-      resizeObserver.observe(containerRef.current); // Start observing size changes
-    }
+  //   if (containerRef.current) {
+  //     resizeObserver.observe(containerRef.current); // Start observing size changes
+  //   }
 
-    // Cleanup the observer when unmounting
-    return () => {
-      resizeObserver.disconnect();
-    };
-  }, [columns]);
+  //   // Cleanup the observer when unmounting
+  //   return () => {
+  //     resizeObserver.disconnect();
+  //   };
+  // }, [columns]);
 
   return (
     <StyledGrid
@@ -69,6 +69,7 @@ const Grid = ({ columns, gap, children, style }) => {
 Grid.propTypes = {
   columns: PropTypes.number,
   gap: PropTypes.number,
+  templateColumns: PropTypes.number,
   children: PropTypes.node,
 };
 
