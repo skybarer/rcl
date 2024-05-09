@@ -4,20 +4,25 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 // Styled components for the graph
-const GraphContainer = styled.div`
+const GraphContainer = styled.span`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
+  justify-content: center;
 `;
 
-const MonthRow = styled.div`
-  display: flex;
+const MonthRow = styled.span`
+  display: grid;
+  grid-template-columns: repeat(4, 15px);
+  margin-right: 0.5rem;
 `;
 
-const DaySquare = styled.div`
-  width: 10px;
-  height: 10px;
-  margin: 2px;
+const DaySquare = styled.span`
+  width: 12px;
+  height: 12px;
+  margin: 1px;
+  border-radius: 3px;
+  cursor: pointer;
 `;
 
 // Define colors based on submission status
