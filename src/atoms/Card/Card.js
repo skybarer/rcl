@@ -4,8 +4,8 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const CardWrapper = styled.div`
-  width: ${(props) => props.width || 'auto'};
-  height: ${(props) => props.height || 'auto'};
+  width: ${(props) => props.width || 'min-content'};
+  height: ${(props) => props.height || 'min-content'};
   resize: both;
   background-color: ${(props) => props.variant || 'rgb(255 255 255 / 1)'};
   border-radius: ${(props) => props.borderRadius || '0.5rem'};
@@ -53,8 +53,8 @@ Card.propTypes = {
 
 Card.defaultProps = {
   variant: 'white',
-  width: 'auto',
-  height: 'auto',
+  width: 'min-content',
+  height: 'min-content',
   padding: 0,
   background: 'white',
   color: 'black',
