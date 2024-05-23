@@ -25,6 +25,19 @@ const DaySquare = styled.span`
   cursor: pointer;
 `;
 
+const MonthLabel = styled.span`
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+`;
+
+const MonthContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+`;
+
 // Define colors based on submission status
 const getColor = (status) => {
   switch (status) {
@@ -56,12 +69,15 @@ Day.propTypes = {
 };
 
 // Create Month component
-const Month = ({ days }) => (
-  <MonthRow>
-    {days.map((dayStatus, index) => (
-      <Day key={index} status={dayStatus} />
-    ))}
-  </MonthRow>
+const Month = ({ monthName, days }) => (
+  <MonthContainer>
+    <MonthRow>
+      {days.map((dayStatus, index) => (
+        <Day key={index} status={dayStatus} />
+      ))}
+    </MonthRow>
+    <MonthLabel>{monthName}</MonthLabel>
+  </MonthContainer>
 );
 
 Month.propTypes = {
@@ -72,7 +88,11 @@ Month.propTypes = {
 const SubmissionGraph = ({ data }) => (
   <GraphContainer>
     {data.map((monthData, index) => (
-      <Month key={index} days={monthData.days} />
+      <Month
+        key={index}
+        days={monthData.days}
+        monthName={monthData.monthName}
+      />
     ))}
   </GraphContainer>
 );
