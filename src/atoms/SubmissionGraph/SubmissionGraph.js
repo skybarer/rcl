@@ -15,6 +15,7 @@ const MonthRow = styled.span`
   display: grid;
   grid-template-columns: repeat(4, 15px);
   margin-right: 0.5rem;
+  min-height: 120px;
 `;
 
 const DaySquare = styled.span`
