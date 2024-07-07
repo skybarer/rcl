@@ -8,7 +8,15 @@ import { Tooltip } from '../Tooltip';
 const SVGViewer = ({ srcs }) => (
   <Grid columns={12} gap={0}>
     {srcs.map((src, index) => (
-      <Card variant="beige" key={index} style={{ 'text-align': 'center' }}>
+      <Card
+        width={'max-width'}
+        height={'max-width'}
+        variant="beige"
+        key={index}
+        style={{
+          'text-align': 'center',
+        }}
+      >
         <Tooltip key={index} content={src.name}>
           <img
             src={src.path}
