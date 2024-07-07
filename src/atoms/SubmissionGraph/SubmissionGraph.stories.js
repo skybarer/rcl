@@ -5,17 +5,17 @@ import SubmissionGraph from './SubmissionGraph';
 // Sample data for the past year
 const sampleData = [
   { monthName: 'May', days: Array(31).fill('noSubmission') }, // May
-  { monthName: 'June', days: Array(30).fill('active') }, // June
-  { monthName: 'July', days: Array(31).fill('maxStreak') }, // July
-  { monthName: 'August', days: Array(31).fill('currentStreak') }, // August
-  { monthName: 'September', days: Array(30).fill('noSubmission') }, // September
-  { monthName: 'October', days: Array(31).fill('active') }, // October
-  { monthName: 'November', days: Array(30).fill('maxStreak') }, // November
-  { monthName: 'December', days: Array(31).fill('currentStreak') }, // December
-  { monthName: 'January', days: Array(31).fill('noSubmission') }, // January
-  { monthName: 'February', days: Array(28).fill('active') }, // February
-  { monthName: 'March', days: Array(31).fill('maxStreak') }, // March
-  { monthName: 'April', days: Array(30).fill('currentStreak') }, // April
+  { monthName: 'Jun', days: Array(30).fill('active') }, // June
+  { monthName: 'Jul', days: Array(31).fill('maxStreak') }, // July
+  { monthName: 'Aug', days: Array(31).fill('currentStreak') }, // August
+  { monthName: 'Sep', days: Array(30).fill('noSubmission') }, // September
+  { monthName: 'Oct', days: Array(31).fill('active') }, // October
+  { monthName: 'Nov', days: Array(30).fill('maxStreak') }, // November
+  { monthName: 'Dec', days: Array(31).fill('currentStreak') }, // December
+  { monthName: 'Jan', days: Array(31).fill('noSubmission') }, // January
+  { monthName: 'Feb', days: Array(28).fill('active') }, // February
+  { monthName: 'Mar', days: Array(31).fill('maxStreak') }, // March
+  { monthName: 'Apr', days: Array(30).fill('currentStreak') }, // April
 ];
 
 storiesOf('SubmissionGraph', module).add('default', () => (
