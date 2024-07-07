@@ -12,7 +12,7 @@ const style = {
 storiesOf('molecules/CardList', module).add('default', () => {
   return (
     <>
-      <Card>
+      <Card width={'100%'} height={'auto'}>
         <Grid columns={2} templateColumns={2}>
           <Box style={style}>
             <img src={image1} alt="image1" style={{ width: '22rem' }}></img>
