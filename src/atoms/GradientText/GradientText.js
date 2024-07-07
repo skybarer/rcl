@@ -37,14 +37,14 @@ const Text = styled.span`
 `;
 
 const Text1 = styled(Text)`
-  background: linear-gradient(
+  /* background: linear-gradient(
     135deg,
     #5335cf 0%,
     #de005e 25%,
     #f66e48 50%,
     #de005e 75%,
     #000 100%
-  );
+  ) !important; */
   animation: ${animate1} 8s linear infinite;
   animation-delay: 2s;
 `;
