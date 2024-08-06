@@ -10,7 +10,8 @@
 
 .accordian-title {
     display: flex;
-    padding: 0.5rem;
+    padding: 0rem;
+    margin-top: 16px;
     border-collapse: collapse;
     box-sizing: border-box;
     /* background-color: aliceblue; */
@@ -24,7 +25,8 @@
 
 .accordian-content {
     display: flex;
-    padding: 0.5rem;
+    /* padding: 0.7rem; */
+    /* margin: 16px 0px; */
     border-collapse: collapse;
     box-sizing: border-box;
     /* background-color: aliceblue; */
