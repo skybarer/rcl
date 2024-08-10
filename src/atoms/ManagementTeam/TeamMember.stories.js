@@ -3,7 +3,7 @@ import React from 'react';
 import ManagementTeam from './ManagementTeam';
 
 export default {
-  title: 'Components/ManagementTeam',
+  title: 'ManagementTeam',
   component: ManagementTeam,
 };
 
