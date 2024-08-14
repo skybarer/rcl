@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
@@ -32,16 +32,27 @@ const SwitchInput = styled.input`
 `;
 
 const Switch = ({ checked, onChange }) => {
-    return (
-        <SwitchWrapper>
-            <SwitchInput type="checkbox" checked={checked} onChange={onChange} />
-        </SwitchWrapper>
-    );
+  const [isChecked, setIsChecked] = useState(checked);
+
+  const handleChange = (e) => {
+    setIsChecked(e.target.checked);
+    onChange(e);
+  };
+
+  return (
+    <SwitchWrapper>
+      <SwitchInput
+        type="checkbox"
+        checked={isChecked}
+        onChange={handleChange}
+      />
+    </SwitchWrapper>
+  );
 };
 
 Switch.propTypes = {
-    checked: PropTypes.bool.isRequired,
-    onChange: PropTypes.func.isRequired,
+  checked: PropTypes.bool.isRequired,
+  onChange: PropTypes.func.isRequired,
 };
 
 export default Switch;
