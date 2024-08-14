@@ -56,11 +56,12 @@ const StyledButton = styled.button`
   font-weight: bold;
   border-radius: 4px;
   padding: 0.5rem 0.25rem;
+  padding: 8px 16px;
+  width: 140px;
+  height: 40px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-
   ${({ variant }) => buttonVariants[variant] || buttonVariants.primary}
-
   &:hover {
     border: 0px dotted black;
   }
