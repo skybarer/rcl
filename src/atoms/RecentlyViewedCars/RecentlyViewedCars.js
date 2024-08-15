@@ -15,6 +15,13 @@ const Container = styled.div`
   position: relative;
   width: 100%;
   cursor: pointer;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  /* gap: 16px; */
+  margin-bottom: 70px;
+  /* padding: 5px 0px 5px 3px; */
 `;
 
 const Card = styled.div`
