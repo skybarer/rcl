@@ -30,26 +30,24 @@ export default {
   },
   argTypes: {
     backgroundColor: { control: 'color' },
-
-  }
+  },
 };
 
 const Template = (args) => (
   <>
     <Overlay onClick={() => console.log('Overlay clicked')}>
-      <div style={{ padding: '20px', background: '#fff' }}>Overlay Content</div>
+      <div>Overlay Content</div>
     </Overlay>
   </>
 );
 
 export const Basic = Template.bind({});
 Basic.parameters = {
-  layout: 'fullscreen'
-
+  layout: 'fullscreen',
 };
 
 Basic.args = {
   label: 'Overlays',
   backgroundColor: 'aliceblue',
-  color: '#000000'
+  color: '#000000',
 };
