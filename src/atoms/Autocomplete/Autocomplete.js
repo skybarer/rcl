@@ -1,7 +1,7 @@
 // src/components/Autocomplete.js
 
-import React, { useState } from "react";
-import styled from "styled-components";
+import React, { useState } from 'react';
+import styled from 'styled-components';
 
 const AutocompleteWrapper = styled.div`
   position: relative;
@@ -12,6 +12,15 @@ const Input = styled.input`
   width: 100%;
   padding: 8px;
   font-size: 16px;
+  border: 1px solid #b0b0b0;
+  color: fieldtext !important;
+  /* -webkit-box-shadow: 0 0 0 30px white inset; */
+  background-image: none !important;
+  background-color: light-dark(
+    rgb(232, 240, 254),
+    rgba(70, 90, 126, 0.4)
+  ) !important;
+  border-radius: 4px;
 `;
 
 const SuggestionsList = styled.ul`
@@ -37,7 +46,7 @@ const SuggestionItem = styled.li`
 `;
 
 const Autocomplete = ({ suggestions, onSelect }) => {
-  const [inputValue, setInputValue] = useState("");
+  const [inputValue, setInputValue] = useState('');
   const [filteredSuggestions, setFilteredSuggestions] = useState([]);
 
   const handleInputChange = (e) => {
@@ -46,7 +55,7 @@ const Autocomplete = ({ suggestions, onSelect }) => {
 
     // Filter suggestions based on input value
     const filtered = suggestions.filter((suggestion) =>
-      suggestion.toLowerCase().includes(inputValue.toLowerCase())
+      suggestion.toLowerCase().includes(inputValue.toLowerCase()),
     );
 
     setFilteredSuggestions(filtered);
