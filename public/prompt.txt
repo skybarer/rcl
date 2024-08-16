@@ -1,0 +1,4 @@
+create a component similar to given image 
+using react, storybook, styled components and prop types
+make position of the elements as accurate as possible 
+dummy images can be used as now 
