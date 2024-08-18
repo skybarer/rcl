@@ -110,6 +110,10 @@
 #### https://docs.spirokit.com/?path=/story/dashboard--page
 #### https://5d559397bae39100201eedc1-qjapksdcvo.chromatic.com/
 
+#### https://www.framer.com/motion/
+#### https://react-hook-form.com/
+#### https://typescale.com/
+#### https://heroicons.com/
 
 
 
