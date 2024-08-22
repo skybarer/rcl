@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 const AutocompleteWrapper = styled.div`
   position: relative;
-  width: 300px;
+  /* width: 300px; */
 `;
 
 const Input = styled.input`
@@ -16,10 +16,10 @@ const Input = styled.input`
   color: fieldtext !important;
   /* -webkit-box-shadow: 0 0 0 30px white inset; */
   background-image: none !important;
-  background-color: light-dark(
+  /* background-color: light-dark(
     rgb(232, 240, 254),
     rgba(70, 90, 126, 0.4)
-  ) !important;
+  ) !important; */
   border-radius: 4px;
 `;
 
