@@ -1,5 +1,5 @@
-import React from "react";
-import Autocomplete from "./Autocomplete";
+import React from 'react';
+import Autocomplete from './Autocomplete';
 
 import {
   Title,
@@ -9,13 +9,13 @@ import {
   ArgsTable,
   Stories,
   PRIMARY_STORY,
-} from "@storybook/addon-docs";
+} from '@storybook/addon-docs';
 
 export default {
-  title: "atoms/Autocomplete",
+  title: 'Form/Autocomplete',
   component: Autocomplete,
   parameters: {
-    options: { selectedPanel: "storybook/a11y/panel" },
+    options: { selectedPanel: 'storybook/a11y/panel' },
     docs: {
       page: () => (
         <>
@@ -30,7 +30,7 @@ export default {
     },
   },
   argTypes: {
-    backgroundColor: { control: "color" },
+    backgroundColor: { control: 'color' },
   },
 };
 
@@ -38,6 +38,6 @@ const Template = (args) => <Autocomplete {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  suggestions: ["Apple", "Banana", "Cherry", "Date", "Grape"],
+  suggestions: ['Apple', 'Banana', 'Cherry', 'Date', 'Grape'],
   onSelect: (selected) => console.log(`Selected: ${selected}`),
 };

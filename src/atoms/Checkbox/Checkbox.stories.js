@@ -12,7 +12,7 @@ import {
 } from '@storybook/addon-docs';
 
 export default {
-  title: 'atoms/Checkbox',
+  title: 'Form/Checkbox',
   component: Checkbox,
   parameters: {
     options: { selectedPanel: 'storybook/a11y/panel' },

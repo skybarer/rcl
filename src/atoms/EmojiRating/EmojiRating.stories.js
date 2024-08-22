@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import EmojiRating from './EmojiRating';
 
 export default {
-  title: 'Atoms/EmojiRating',
+  title: 'Form/EmojiRating',
   component: EmojiRating,
 };
 

@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react';
 import InlineAction from './InlineAction';
 
 // Stories
-storiesOf('InlineAction', module).add('Default', () => (
+storiesOf('Form/InlineAction', module).add('Default', () => (
   <InlineAction
     action={(inputValue) => alert(`Input Value: ${inputValue}`)}
     buttonLabel="Submit"

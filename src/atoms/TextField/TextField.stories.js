@@ -14,7 +14,7 @@ import {
 } from '@storybook/addon-docs';
 
 export default {
-  title: 'atoms/TextField',
+  title: 'Form/TextField',
   component: TextField,
   parameters: {
     options: { selectedPanel: 'storybook/a11y/panel' },

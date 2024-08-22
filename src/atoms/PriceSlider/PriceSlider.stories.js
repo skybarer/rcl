@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PriceSlider from './PriceSlider'; // Adjust path to where your component is located
 
 export default {
-  title: 'PriceSlider', // Title determines where the story appears in Storybook's sidebar
+  title: 'Form/PriceSlider', // Title determines where the story appears in Storybook's sidebar
   component: PriceSlider,
 };
 

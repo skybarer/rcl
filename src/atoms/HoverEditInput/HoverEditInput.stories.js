@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import HoverEditInput from './HoverEditInput';
 
 export default {
-  title: 'HoverEditInput',
+  title: 'Form/HoverEditInput',
   component: HoverEditInput,
 };
 

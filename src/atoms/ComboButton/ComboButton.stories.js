@@ -2,7 +2,7 @@ import React from 'react';
 import ComboButton from './ComboButton';
 
 export default {
-  title: 'ComboButton',
+  title: 'Form/ComboButton',
   component: ComboButton,
 };
 

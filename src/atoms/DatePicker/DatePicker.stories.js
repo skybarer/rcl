@@ -3,7 +3,7 @@ import { action } from '@storybook/addon-actions';
 import DatePicker from './DatePicker';
 
 export default {
-  title: 'DatePicker',
+  title: 'Form/DatePicker',
   component: DatePicker,
 };
 

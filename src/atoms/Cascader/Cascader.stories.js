@@ -2,7 +2,7 @@ import React from 'react';
 import { Cascader } from './Cascader';
 
 export default {
-  title: 'Cascader',
+  title: 'Form/Cascader',
   component: Cascader,
 };
 

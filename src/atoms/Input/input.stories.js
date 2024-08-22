@@ -11,7 +11,7 @@ import {
 } from '@storybook/addon-docs';
 
 export default {
-  title: 'atoms/Input',
+  title: 'Form/Input',
   component: Input,
   parameters: {
     options: { selectedPanel: 'storybook/a11y/panel' },
@@ -30,33 +30,26 @@ export default {
   },
   argTypes: {
     backgroundColor: { control: 'color' },
-
-  }
+  },
 };
-let value = 'akashdhar'
+let value = 'akashdhar';
 
 const handleChange = (event) => {
-  console.log('Input change event fired :', event)
-}
+  console.log('Input change event fired :', event);
+};
 
 const Template = (args) => (
   <>
-    <Input
-      {...args}
-      value={value}
-      onChange={handleChange}
-
-    />
+    <Input {...args} value={value} onChange={handleChange} />
     {/* <textarea>
       {args.value}
     </textarea> */}
-    </>
+  </>
 );
 
 export const Basic = Template.bind({});
 Basic.parameters = {
   // layout: 'centered'
-
 };
 
 Basic.args = {
@@ -65,4 +58,3 @@ Basic.args = {
   color: '#000000',
   // value: 'akashdhar',
 };
-

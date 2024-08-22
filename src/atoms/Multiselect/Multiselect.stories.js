@@ -1,5 +1,5 @@
-import React from "react";
-import Multiselect from "./Multiselect";
+import React from 'react';
+import Multiselect from './Multiselect';
 
 import {
   Title,
@@ -9,13 +9,13 @@ import {
   ArgsTable,
   Stories,
   PRIMARY_STORY,
-} from "@storybook/addon-docs";
+} from '@storybook/addon-docs';
 
 export default {
-  title: "atoms/Multiselect",
+  title: 'Form/Multiselect',
   component: Multiselect,
   parameters: {
-    options: { selectedPanel: "storybook/a11y/panel" },
+    options: { selectedPanel: 'storybook/a11y/panel' },
     docs: {
       page: () => (
         <>
@@ -30,7 +30,7 @@ export default {
     },
   },
   argTypes: {
-    backgroundColor: { control: "color" },
+    backgroundColor: { control: 'color' },
   },
 };
 
@@ -38,7 +38,7 @@ const Template = (args) => <Multiselect {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  options: ["Option 1", "Option 2", "Option 3", "Option 4"],
+  options: ['Option 1', 'Option 2', 'Option 3', 'Option 4'],
   onChange: (selectedOptions) =>
-    console.log("Selected options:", selectedOptions),
+    console.log('Selected options:', selectedOptions),
 };

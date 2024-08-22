@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import RadioGroup from './RadioGroup';
 
 export default {
-  title: 'RadioGroup',
+  title: 'Form/RadioGroup',
   component: RadioGroup,
 };
 

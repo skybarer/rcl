@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import DateOfBirth from './DateOfBirth';
 
 export default {
-  title: 'DateOfBirth',
+  title: 'Form/DateOfBirth',
   component: DateOfBirth,
 };
 

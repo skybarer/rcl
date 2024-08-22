@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Slider from './Slider'; // Adjust the import path according to your project structure
 
 export default {
-  title: 'Slider',
+  title: 'Form/Slider',
   component: Slider,
 };
 

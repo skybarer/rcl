@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import TimePicker from './TimePicker';
 
 export default {
-  title: 'TimePicker',
+  title: 'Form/TimePicker',
   component: TimePicker,
 };
 

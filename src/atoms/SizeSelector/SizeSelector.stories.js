@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import SizeSelector from './SizeSelector';
 
 export default {
-  title: 'SizeSelector',
+  title: 'Form/SizeSelector',
   component: SizeSelector,
 };
 

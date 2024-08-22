@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { QuantitySelector } from './QuantitySelector';
 
 export default {
-  title: 'QuantitySelector',
+  title: 'Form/QuantitySelector',
   component: QuantitySelector,
 };
 

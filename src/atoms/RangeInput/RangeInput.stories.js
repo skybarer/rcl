@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { RangeInput } from './RangeInput';
 
 export default {
-  title: 'RangeInput',
+  title: 'Form/RangeInput',
   component: RangeInput,
 };
 

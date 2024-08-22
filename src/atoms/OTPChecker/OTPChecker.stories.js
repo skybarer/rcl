@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import OTPChecker from './OTPChecker';
 
 export default {
-  title: 'OTPChecker',
+  title: 'Form/OTPChecker',
   component: OTPChecker,
 };
 
