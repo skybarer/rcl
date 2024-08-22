@@ -54,7 +54,7 @@ export const Default = () => (
       </thead>
       <tbody>
         {Object.keys(sizes).map((spaceKey, index) => (
-          <TableRow>
+          <TableRow key={index}>
             {/* <TableCell>{index}</TableCell> */}
             <TableCell>{spaceKey}</TableCell>
             <TableCell>space.{spaceKey}</TableCell>
