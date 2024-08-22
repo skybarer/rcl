@@ -15,6 +15,9 @@ export const TextInput = styled.input`
   border: 1px solid #ccc;
   border-radius: 4px;
   width: 100%;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  font-weight: 400;
 `;
 
 export const InnerButton = styled.button`
