@@ -5,7 +5,7 @@ import styled from 'styled-components';
 // Styled Components
 const QuantityWrapper = styled.div`
   display: flex;
-  padding: 8px;
+  padding: 4px;
   border-radius: 8px;
   align-items: center;
   justify-content: center;
@@ -22,6 +22,7 @@ const Button = styled.button`
   cursor: pointer;
   transition: background-color 0.3s;
   box-sizing: border-box;
+  flex: 1;
   &:hover {
     /* background-color: ${(props) =>
       props.hoverColor || 'rgb(242 244 245 /1)'}; */
@@ -35,7 +36,8 @@ const Button = styled.button`
 `;
 
 const ValueDisplay = styled.span`
-  margin: 0 15px;
+  flex: 1;
+  /* margin: 0 15px; */
   font-size: 18px;
   min-width: 40px;
   text-align: center;
