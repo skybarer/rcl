@@ -5,24 +5,32 @@ import styled from 'styled-components';
 // Styled Components
 const QuantityWrapper = styled.div`
   display: flex;
+  padding: 8px;
+  border-radius: 8px;
   align-items: center;
   justify-content: center;
+  background-color: rgb(242 244 245 /1);
+  /* height: 32px; */
 `;
 
 const Button = styled.button`
-  background-color: ${(props) => props.bgColor || '#4CAF50'};
-  color: white;
+  width: auto;
+  /* background-color: ${(props) => props.bgColor || 'rgb(242 244 245 /1)'}; */
+  color: black;
   border: none;
-  padding: 10px 20px;
   font-size: 18px;
   cursor: pointer;
   transition: background-color 0.3s;
+  box-sizing: border-box;
   &:hover {
-    background-color: ${(props) => props.hoverColor || '#45a049'};
+    /* background-color: ${(props) =>
+      props.hoverColor || 'rgb(242 244 245 /1)'}; */
   }
   &:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
+    /* background-color: #ccc; */
+    /* cursor: not-allowed; */
+    color: #d0d2d3;
+    cursor: default;
   }
 `;
 
@@ -55,7 +63,23 @@ export const QuantitySelector = ({
         bgColor={bgColor}
         hoverColor={hoverColor}
       >
-        -
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="transition"
+          data-testid="icon-minus-sign"
+          stroke="none"
+        >
+          <path
+            d="M7 12H12H17"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          ></path>
+        </svg>
       </Button>
       <ValueDisplay>{value}</ValueDisplay>
       <Button
@@ -64,7 +88,23 @@ export const QuantitySelector = ({
         bgColor={bgColor}
         hoverColor={hoverColor}
       >
-        +
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="transition"
+          data-testid="icon-plus-sign"
+          stroke="none"
+        >
+          <path
+            d="M12 7V12M12 12V17M12 12H7M12 12H17"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          ></path>
+        </svg>
       </Button>
     </QuantityWrapper>
   );
