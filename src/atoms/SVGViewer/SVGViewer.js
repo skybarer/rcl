@@ -6,7 +6,7 @@ import Card from './../Card/Card';
 import { Tooltip } from '../Tooltip';
 
 const SVGViewer = ({ srcs }) => (
-  <Grid columns={12} gap={0}>
+  <Grid columns={6} gap={0}>
     {srcs.map((src, index) => (
       <Card
         width={'max-width'}
