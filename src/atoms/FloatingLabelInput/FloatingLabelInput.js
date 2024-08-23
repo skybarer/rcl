@@ -1,4 +1,3 @@
-// src/AirbnbInput.js
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
@@ -43,7 +42,7 @@ const InputField = styled.input`
   color: #000000;
 `;
 
-const AirbnbInput = ({ label, placeholder, value, onChange }) => {
+const FloatingLabelInput = ({ label, placeholder, value, onChange }) => {
   const [isFocused, setIsFocused] = useState(false);
 
   return (
@@ -66,11 +65,11 @@ const AirbnbInput = ({ label, placeholder, value, onChange }) => {
   );
 };
 
-AirbnbInput.propTypes = {
+FloatingLabelInput.propTypes = {
   label: PropTypes.string,
   placeholder: PropTypes.string,
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
 };
 
-export default AirbnbInput;
+export default FloatingLabelInput;

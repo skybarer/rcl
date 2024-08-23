@@ -1,16 +1,15 @@
-// src/AirbnbInput.stories.js
 import React, { useState } from 'react';
-import AirbnbInput from './AirbnbInput';
+import FloatingLabelInput from './FloatingLabelInput';
 
 export default {
-  title: 'Form/AirbnbInput',
-  component: AirbnbInput,
+  title: 'Form/FloatingLabelInput',
+  component: FloatingLabelInput,
 };
 
 export const Default = () => {
   const [value, setValue] = useState('');
   return (
-    <AirbnbInput
+    <FloatingLabelInput
       label="Name"
       placeholder=""
       value={value}
