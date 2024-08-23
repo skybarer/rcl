@@ -1,36 +1,9 @@
 import React from 'react';
 import SearchBar from './SearchBar';
-import {
-  Title,
-  Subtitle,
-  Description,
-  Primary,
-  ArgsTable,
-  Stories,
-  PRIMARY_STORY,
-} from '@storybook/addon-docs';
 
 export default {
   title: 'Form/SearchBar',
   component: SearchBar,
-  parameters: {
-    options: { selectedPanel: 'storybook/a11y/panel' },
-    docs: {
-      page: () => (
-        <>
-          <Title />
-          <Subtitle />
-          <Description />
-          <Primary />
-          <ArgsTable story={PRIMARY_STORY} />
-          <Stories />
-        </>
-      ),
-    },
-  },
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
 };
 
 const Template = (args) => (
@@ -41,7 +14,7 @@ const Template = (args) => (
 
 export const Circular = Template.bind({});
 Circular.parameters = {
-  layout: 'centered',
+  // layout: 'centered',
 };
 
 Circular.args = {

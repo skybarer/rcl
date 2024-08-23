@@ -1,32 +1,82 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const SearchBox = styled.div`
+  display: flex;
+  /* background-color: rgb(242 244 245/1); */
+  /* border: 1px solid #cacaca; */
+  flex-direction: row;
+  gap: 16px;
+  position: relative;
+  /* flex: 1 1 0%; */
+  /* border-radius: 6px; */
+`;
+
+const SvgBox = styled.svg`
+  width: 20px;
+  height: 20px;
+  /* color: rgb(111 112 113 / 1); */
+  position: absolute;
+  /* display: block; */
+  left: 18px;
+  top: 12px;
+  vertical-align: middle;
+`;
+
 const SearchInput = styled.input`
-  padding: 10px;
-  appearance: none;
-  border: 1px solid #cacaca;
-  border-radius: 6px;
-  box-shadow: none;
-  box-sizing: border-box;
   color: black;
-  height: 50px;
-  letter-spacing: 0;
-  line-height: 20px;
   line-height: 18px;
-  outline: 0;
-  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 35rem;
-
-  &:hover {
-    border: 1px solid #b180d1;
+  width: 100%;
+  letter-spacing: 1px;
+  padding-right: 16px;
+  padding-left: 48px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: rgb(242 244 245/1);
+  border-radius: 12px;
+  /* border-width: 1px; */
+  border-style: solid;
+  overflow: hidden;
+  &:focus {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
   }
 `;
 
 const SearchBar = ({ placeholder, onChange }) => {
   return (
-    <SearchInput type="text" placeholder={placeholder} onChange={onChange} />
+    <SearchBox>
+      <SvgBox
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        class="absolute left-[18px] top-xs-s text-text-tertiary"
+        data-testid="icon-search"
+        stroke="none"
+      >
+        <path
+          d="M20 20L16.05 16.05M18 11C18 14.866 14.866 18 11 18C7.13401 18 4 14.866 4 11C4 7.13401 7.13401 4 11 4C14.866 4 18 7.13401 18 11Z"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+        ></path>
+      </SvgBox>
+      <SearchInput
+        name="search"
+        type="search"
+        role="searchbox"
+        autocomplete="off"
+        data-testid="search-input"
+        placeholder={placeholder}
+        onChange={onChange}
+      />
+    </SearchBox>
   );
 };
 
