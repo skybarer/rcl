@@ -47,9 +47,9 @@ const ComboButton = ({ icon, label, primary }) => {
           >
             <path
               stroke="black"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="1.5"
               d="M6 8l4 4 4-4"
             />
           </svg>
