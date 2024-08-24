@@ -78,8 +78,8 @@ export const QuantitySelector = ({
           <path
             d="M7 12H12H17"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
+            strokeWidth="2"
+            strokeLinecap="round"
           ></path>
         </svg>
       </Button>
@@ -103,8 +103,8 @@ export const QuantitySelector = ({
           <path
             d="M12 7V12M12 12V17M12 12H7M12 12H17"
             stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
+            strokeWidth="2"
+            strokeLinecap="round"
           ></path>
         </svg>
       </Button>

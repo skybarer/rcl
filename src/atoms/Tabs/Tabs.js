@@ -5,12 +5,13 @@ import styled from 'styled-components';
 const TabsWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  border: 1px solid black;
 `;
 
 const TabButton = styled.button`
   background: ${(props) => (props.isActive ? '#007bff' : 'transparent')};
   color: ${(props) => (props.isActive ? '#fff' : '#000')};
-  border: none;
+  border: 1px solid black;
   padding: 10px 20px;
   cursor: pointer;
   outline: none;
@@ -34,18 +35,24 @@ const Tabs = ({ tabs }) => {
   };
 
   return (
-    <TabsWrapper>
+    <>
       {tabs.map((tab, index) => (
-        <TabButton key={index} isActive={index === activeTab} onClick={() => handleTabClick(index)}>
+        <TabButton
+          key={index}
+          isActive={index === activeTab}
+          onClick={() => handleTabClick(index)}
+        >
           {tab.label}
         </TabButton>
       ))}
-      {tabs.map((tab, index) => (
-        <TabContent key={index} isActive={index === activeTab}>
-          {tab.content}
-        </TabContent>
-      ))}
-    </TabsWrapper>
+      <TabsWrapper>
+        {tabs.map((tab, index) => (
+          <TabContent key={index} isActive={index === activeTab}>
+            {tab.content}
+          </TabContent>
+        ))}
+      </TabsWrapper>
+    </>
   );
 };
 
