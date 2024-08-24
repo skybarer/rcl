@@ -1,5 +1,4 @@
-import React from 'react';
-import { action } from '@storybook/addon-actions';
+import React, { useState } from 'react';
 import DatePicker from './DatePicker';
 
 export default {
@@ -7,9 +6,20 @@ export default {
   component: DatePicker,
 };
 
-export const Default = () => (
-  <DatePicker
-    selectedDate="2024-04-19"
-    handleDateChange={action('date-changed')}
-  />
-);
+export const Default = () => {
+  const [selectedDate, setSelectedDate] = useState('');
+
+  const handleDateChange = (date) => {
+    setSelectedDate(date);
+    console.log('Selected date:', date); // This will be in YYYY-MM-DD format
+  };
+
+  return (
+    <>
+      <DatePicker
+        selectedDate={selectedDate}
+        handleDateChange={handleDateChange}
+      />
+    </>
+  );
+};

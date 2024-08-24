@@ -1,5 +1,5 @@
-// Calendar.js
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const CalendarWrapper = styled.div`
@@ -59,9 +59,9 @@ const singleLeftArrow = (
     viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
-    stroke-width="2"
-    stroke-linecap="round"
-    stroke-linejoin="round"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
   >
     <polyline points="15 18 9 12 15 6"></polyline>
   </svg>
@@ -75,9 +75,9 @@ const singleRightArrow = (
     viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
-    stroke-width="2"
-    stroke-linecap="round"
-    stroke-linejoin="round"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
   >
     <polyline points="9 18 15 12 9 6"></polyline>
   </svg>
@@ -91,9 +91,9 @@ const doubleLeftArrow = (
     viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
-    stroke-width="2"
-    stroke-linecap="round"
-    stroke-linejoin="round"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
   >
     <polyline points="13 17 8 12 13 7"></polyline>
     <polyline points="21 17 16 12 21 7"></polyline>
@@ -108,17 +108,16 @@ const doubleRightArrow = (
     viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
-    stroke-width="2"
-    stroke-linecap="round"
-    stroke-linejoin="round"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
   >
     <polyline points="11 7 16 12 11 17"></polyline>
     <polyline points="3 7 8 12 3 17"></polyline>
   </svg>
 );
 
-const Calendar = () => {
-  //   const weekDays = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'];
+const Calendar = ({ onDateSelect }) => {
   const weekDays = ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'];
   const [selectedDate, setSelectedDate] = useState(new Date());
   const [currentMonth, setCurrentMonth] = useState(new Date());
@@ -128,7 +127,6 @@ const Calendar = () => {
   };
 
   const getFirstDayOfMonth = (month, year) => {
-    // return new Date(year, month, 1).getDay();
     return (new Date(year, month, 1).getDay() + 6) % 7;
   };
 
@@ -155,9 +153,13 @@ const Calendar = () => {
 
   const handleDayClick = (day) => {
     if (day) {
-      setSelectedDate(
-        new Date(currentMonth.getFullYear(), currentMonth.getMonth(), day),
+      const selected = new Date(
+        currentMonth.getFullYear(),
+        currentMonth.getMonth(),
+        day,
       );
+      setSelectedDate(selected);
+      onDateSelect(selected); // Pass the selected date to the parent component
     }
   };
 
@@ -192,9 +194,6 @@ const Calendar = () => {
         <Arrow onClick={() => changeMonth(-1)}>{singleLeftArrow}</Arrow>
         <Arrow onClick={() => changeMonth(1)}>{singleRightArrow}</Arrow>
         <Arrow onClick={() => changeYear(1)}>{doubleRightArrow}</Arrow>
-        {/* <button onClick={() => changeMonth(-1)}>&lt;</button>
-                <span>{currentMonth.toLocaleString('default', { month: 'long', year: 'numeric' })}</span>
-                <button onClick={() => changeMonth(1)}>&gt;</button> */}
       </CalendarHeader>
       <CalendarBody>
         {weekDays.map((day, index) => (
@@ -213,6 +212,10 @@ const Calendar = () => {
       </CalendarBody>
     </CalendarWrapper>
   );
+};
+
+Calendar.propTypes = {
+  onDateSelect: PropTypes.func.isRequired,
 };
 
 export default Calendar;
