@@ -47,31 +47,34 @@ const SearchInput = styled.input`
   }
 `;
 
+const Svg = () => (
+  <SvgBox
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    data-testid="icon-search"
+    stroke="none"
+  >
+    <path
+      d="M20 20L16.05 16.05M18 11C18 14.866 14.866 18 11 18C7.13401 18 4 14.866 4 11C4 7.13401 7.13401 4 11 4C14.866 4 18 7.13401 18 11Z"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+    ></path>
+  </SvgBox>
+);
+
 const SearchBar = ({ placeholder, onChange }) => {
   return (
     <SearchBox>
-      <SvgBox
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        class="absolute left-[18px] top-xs-s text-text-tertiary"
-        data-testid="icon-search"
-        stroke="none"
-      >
-        <path
-          d="M20 20L16.05 16.05M18 11C18 14.866 14.866 18 11 18C7.13401 18 4 14.866 4 11C4 7.13401 7.13401 4 11 4C14.866 4 18 7.13401 18 11Z"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-        ></path>
-      </SvgBox>
+      <Svg />
       <SearchInput
         name="search"
         type="search"
         role="searchbox"
-        autocomplete="off"
+        autoComplete="off"
         data-testid="search-input"
         placeholder={placeholder}
         onChange={onChange}
