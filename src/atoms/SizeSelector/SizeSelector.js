@@ -10,15 +10,15 @@ const SizeSelectorContainer = styled.div`
 const SizeButton = styled.label`
   display: inline-block;
   padding: 8px 16px;
-  border: 1px solid #ccc;
+  /* border: 1px solid #e5e7eb; */
   border-radius: 4px;
-  background-color: ${(props) => (props.selected ? '#007bff' : '#f8f9fa')};
+  background-color: ${(props) => (props.selected ? 'black' : '#e5e7eb')};
   color: ${(props) => (props.selected ? '#fff' : '#000')};
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
 
   &:hover {
-    background-color: ${(props) => (props.selected ? '#0056b3' : '#e2e6ea')};
+    background-color: ${(props) => (props.selected ? 'black' : '#e2e6ea')};
   }
 `;
 
