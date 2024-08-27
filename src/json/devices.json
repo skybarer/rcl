@@ -1,0 +1,14 @@
+{
+    "mobileXS": "280px",
+    "mobileS": "320px",
+    "mobileM": "375px",
+    "mobileL": "425px",
+    "tabletS": "600px",
+    "tablet": "768px",
+    "laptop": "1024px",
+    "laptopM": "1366px",
+    "laptopL": "1440px",
+    "desktopS": "1920px",
+    "desktop": "2560px",
+    "desktopL": "3840px"
+}
