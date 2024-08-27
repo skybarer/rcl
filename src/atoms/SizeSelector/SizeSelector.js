@@ -9,16 +9,20 @@ const SizeSelectorContainer = styled.div`
 
 const SizeButton = styled.label`
   display: inline-block;
-  padding: 8px 16px;
+  padding: 4px 16px;
   /* border: 1px solid #e5e7eb; */
-  border-radius: 4px;
-  background-color: ${(props) => (props.selected ? 'black' : '#e5e7eb')};
+  border-radius: 8px;
+  background-color: ${(props) => (props.selected ? 'black' : '#f2f2f2')};
   color: ${(props) => (props.selected ? '#fff' : '#000')};
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
-
+  /* font-family: 'Roboto', 'Arial', sans-serif; */
+  /* font-size: 1.4rem; */
+  /* line-height: 2rem; */
+  /* font-weight: 500; */
   &:hover {
     background-color: ${(props) => (props.selected ? 'black' : '#e2e6ea')};
+    transition: background-color 0.5s cubic-bezier(0.05, 0, 0, 1);
   }
 `;
 
