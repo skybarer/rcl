@@ -15,6 +15,7 @@ const SVGViewer = ({ srcs }) => (
         key={index}
         style={{
           'text-align': 'center',
+           'cursor': 'pointer'
         }}
       >
         <Tooltip key={index} content={src.name}>
