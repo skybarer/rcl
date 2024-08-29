@@ -13,6 +13,7 @@ const svgFiles = reqSvgs.keys().map((path) => ({
 storiesOf('SVGViewer', module).add('SvgList', () => (
   <>
     <div>{reqSvgs}</div>
+    <div>svg files: {svgFiles.length}</div>
     <SVGViewer srcs={svgFiles} />
   </>
 ));
