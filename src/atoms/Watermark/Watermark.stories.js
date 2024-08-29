@@ -7,15 +7,15 @@ export default {
   component: Watermark,
 };
 
-const Content = styled.div`
-  width: 400px;
-  height: 300px;
-  background-color: #f0f0f0;
-  text-align: center;
-  line-height: 300px;
-  position: relative;
-  overflow: hidden;
-`;
+// const Content = styled.div`
+//   width: 400px;
+//   height: 300px;
+//   background-color: #f0f0f0;
+//   text-align: center;
+//   line-height: 300px;
+//   position: relative;
+//   overflow: hidden;
+// `;
 
 const FullPageContent = styled.div`
   width: 100vw;
