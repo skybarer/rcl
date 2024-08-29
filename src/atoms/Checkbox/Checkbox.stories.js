@@ -20,7 +20,7 @@ export default {
       page: () => (
         <>
           <Title />
-          <Subtitle />
+          <Subtitle />  
           <Description />
           <Primary />
           <ArgsTable story={PRIMARY_STORY} />
@@ -34,8 +34,15 @@ export default {
   },
 };
 
+const handleCheckboxChange = (isChecked) => {
+  console.log("Checkbox checked:", isChecked);
+};
+
 const Template = (args) => (
-  <Checkbox label={args.label} onCheckChange={args.checked} />
+  <Checkbox
+    label={args.label}
+    onCheckChange={handleCheckboxChange} // Make sure this is defined and a function
+  />
 );
 
 export const Default = Template.bind({});

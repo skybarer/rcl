@@ -15,17 +15,24 @@ const CheckboxLabel = styled.span`
   font-size: 16px;
 `;
 
-const Checkbox = ({ label, onCheckChange }) => {
+const Checkbox = ({ label, onCheckChange = () => { } }) => {
   const [checked, setChecked] = useState(false);
-  const handleClick = () => {
-    const newChecked = !checked;
+
+  const handleChange = (e) => {
+    const newChecked = e.target.checked;
     setChecked(newChecked);
-    onCheckChange && onCheckChange(newChecked);
+    onCheckChange(newChecked); // This is safe now
   };
+
   return (
-    <CheckboxWrapper onClick={handleClick}>
-      <CheckboxInput type="checkbox" checked={checked} readOnly />
-      <CheckboxLabel>{label}</CheckboxLabel>
+    <CheckboxWrapper>
+      <CheckboxInput
+        type="checkbox"
+        checked={checked}
+        onChange={handleChange}
+        id="custom-checkbox"
+      />
+      <CheckboxLabel htmlFor="custom-checkbox">{label}</CheckboxLabel>
     </CheckboxWrapper>
   );
 };
