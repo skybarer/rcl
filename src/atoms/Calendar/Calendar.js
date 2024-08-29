@@ -21,7 +21,8 @@ const CalendarHeader = styled.div`
   justify-content: space-between;
   color: #000000;
   padding: 10px;
-  padding-bottom: 0px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(5, 5, 5, 0.06);
 `;
 
 const CalendarBody = styled.div`
@@ -50,6 +51,9 @@ const Arrow = styled.span`
   margin: 0;
   cursor: pointer;
 `;
+const ArrowWrapper = styled.div`
+
+`
 
 const singleLeftArrow = (
   <svg
@@ -184,16 +188,20 @@ const Calendar = ({ onDateSelect }) => {
   return (
     <CalendarWrapper>
       <CalendarHeader>
+        <ArrowWrapper>
+          <Arrow onClick={() => changeYear(-1)}>{doubleLeftArrow}</Arrow>
+          <Arrow onClick={() => changeMonth(-1)}>{singleLeftArrow}</Arrow>
+        </ArrowWrapper>
         <strong>
           {currentMonth.toLocaleString('default', {
             month: 'long',
             year: 'numeric',
           })}
         </strong>
-        <Arrow onClick={() => changeYear(-1)}>{doubleLeftArrow}</Arrow>
-        <Arrow onClick={() => changeMonth(-1)}>{singleLeftArrow}</Arrow>
-        <Arrow onClick={() => changeMonth(1)}>{singleRightArrow}</Arrow>
-        <Arrow onClick={() => changeYear(1)}>{doubleRightArrow}</Arrow>
+        <ArrowWrapper>
+          <Arrow onClick={() => changeMonth(1)}>{singleRightArrow}</Arrow>
+          <Arrow onClick={() => changeYear(1)}>{doubleRightArrow}</Arrow>
+        </ArrowWrapper>
       </CalendarHeader>
       <CalendarBody>
         {weekDays.map((day, index) => (
