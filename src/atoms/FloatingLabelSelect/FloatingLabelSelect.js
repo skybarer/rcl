@@ -44,6 +44,27 @@ const SelectField = styled.select`
   cursor: pointer;
 `;
 
+const RightPlaceholder = styled.div`
+    position: absolute;
+    right: 5px; 
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 5px 10px;
+    border: none;
+    color: white;
+    border-radius: 3px;
+`;
+
+const SVGViewer = styled.svg`
+    display: block; 
+    fill: none;
+    height: 16px; 
+    width: 16px;
+    stroke: black; 
+    stroke-width: 4;
+    overflow: visible;
+`;
+
 // Main component
 const FloatingLabelSelect = ({ label, options, value, onChange }) => {
     const [isFocused, setIsFocused] = useState(false);
@@ -72,6 +93,13 @@ const FloatingLabelSelect = ({ label, options, value, onChange }) => {
                     </option>
                 ))}
             </SelectField>
+            <RightPlaceholder>
+                <SVGViewer xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation"
+                    focusable="false">
+                    <path fill="none" d="M28 12 16.7 23.3a1 1 0 0 1-1.4 0L4 12"></path>
+                </SVGViewer>
+            </RightPlaceholder>
+
         </SelectWrapper>
     );
 };
