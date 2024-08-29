@@ -34,8 +34,8 @@ storiesOf('SVGViewer', module).add('SvgList', () => {
         'justify-content': 'flex-start',
         'padding': '10px'
       }}>
-        svg files: {filteredSvgFiles.length}
-      </div >
+        <bold>Total </bold> : {svgFiles.length}  &nbsp; <bold>Selected</bold> : {filteredSvgFiles.length}
+      </div>
       <SVGViewer srcs={filteredSvgFiles} />
     </>
   );
