@@ -1,8 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Spinners.css'
+import './Spinners.css';
 
-export default function Spinners({ label = 'button', backgroundColor, onClick }) {
+export default function Spinners({
+  label = 'button',
+  backgroundColor,
+  onClick,
+}) {
   return (
     <div className="page-overlay active">
       <div className="rcl-loader"></div>

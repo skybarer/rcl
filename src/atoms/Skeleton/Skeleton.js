@@ -24,12 +24,12 @@ const SkeletonContainer = styled.div`
 `;
 
 const Skeleton = ({ width, height }) => {
-    return <SkeletonContainer width={width} height={height} />;
+  return <SkeletonContainer width={width} height={height} />;
 };
 
 Skeleton.propTypes = {
-    width: PropTypes.string,
-    height: PropTypes.string,
+  width: PropTypes.string,
+  height: PropTypes.string,
 };
 
 export default Skeleton;
