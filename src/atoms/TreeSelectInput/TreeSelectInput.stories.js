@@ -2,7 +2,7 @@ import React from 'react';
 import { TreeSelectInput } from './TreeSelectInput';
 
 export default {
-  title: 'TreeSelectInput',
+  title: 'Form/TreeSelectInput',
   component: TreeSelectInput,
 };
 
