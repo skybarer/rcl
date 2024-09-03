@@ -34,9 +34,9 @@ const SpaceBox = styled.div`
 
 export const Default = () => (
   <>
-    <Space marginSize={1}>
+    {/* <Space marginSize={1}>
       <p>Your content here</p>
-    </Space>
+    </Space> */}
 
     <Space marginSize={1} customScale={customScale}>
       <p>Your content here</p>
