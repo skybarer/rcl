@@ -1,18 +1,15 @@
-// src/stories/TimePicker.stories.js
-import React, { useState } from 'react';
+// src/components/TimePicker.stories.js
+import React from 'react';
 import TimePicker from './TimePicker';
 
 export default {
-  title: 'Form/TimePicker',
+  title: 'TimePicker',
   component: TimePicker,
 };
 
-const Template = (args) => {
-  const [time, setTime] = useState(args.value);
-  return <TimePicker {...args} value={time} onChange={setTime} />;
-};
+const Template = (args) => <TimePicker {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  value: '12:00',
+  onChange: (time) => console.log('Selected time:', time),
 };
