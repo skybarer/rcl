@@ -9,13 +9,13 @@ const Word = styled.span`
   margin: 5px;
   font-size: ${({ size }) => size}px;
   color: ${({ color }) => color};
+  flex: 1 1 auto;
 `;
 
 // Styled component for the word cloud container with rectangular layout
 const CloudContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
   max-width: 100%;
   padding: 20px;
 `;
