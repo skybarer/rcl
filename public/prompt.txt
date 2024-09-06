@@ -2,3 +2,7 @@ create a component similar to given image
 using react, storybook, styled components and prop types
 make position of the elements as accurate as possible 
 dummy images can be used as now 
+
+create a word cloud component
+using react, storybook, styled components and prop types
+dont use any third part librareis 
