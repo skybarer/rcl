@@ -36,7 +36,7 @@ const AccordionItem = ({ children }) => {
   };
 
   return (
-    <React.Fragment>
+    <>
       {React.Children.map(children, (item, innerIndex) => {
         if (item.type === AccordionTitle) {
           // console.log(toogleBody)
@@ -50,15 +50,13 @@ const AccordionItem = ({ children }) => {
           );
         } else if (item.type === AccordionContent) {
           return (
-            <React.Fragment>
-              {toogleBody ? <AccordionContent {...item.props} /> : null}
-            </React.Fragment>
+            <>{toogleBody ? <AccordionContent {...item.props} /> : null}</>
           );
         } else {
           return item;
         }
       })}
-    </React.Fragment>
+    </>
   );
 };
 
