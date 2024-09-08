@@ -1,0 +1,437 @@
+[
+    {
+        "name": "BreatheAnimation"
+    },
+    {
+        "name": "PulseAnimation"
+    },
+    {
+        "name": "SpinAnimation"
+    },
+    {
+        "name": "FadeInOutAnimation"
+    },
+    {
+        "name": "BounceAnimation"
+    },
+    {
+        "name": "ShakeAnimation"
+    },
+    {
+        "name": "PopAnimation"
+    },
+    {
+        "name": "SlideInAnimation"
+    },
+    {
+        "name": "SlideOutAnimation"
+    },
+    {
+        "name": "FlipAnimation"
+    },
+    {
+        "name": "JellyAnimation"
+    },
+    {
+        "name": "WobbleAnimation"
+    },
+    {
+        "name": "RubberBandAnimation"
+    },
+    {
+        "name": "FadeUpAnimation"
+    },
+    {
+        "name": "FadeDownAnimation"
+    },
+    {
+        "name": "FadeLeftAnimation"
+    },
+    {
+        "name": "FadeRightAnimation"
+    },
+    {
+        "name": "GlowAnimation"
+    },
+    {
+        "name": "BlinkingAnimation"
+    },
+    {
+        "name": "HeartbeatAnimation"
+    },
+    {
+        "name": "ZoomInAnimation"
+    },
+    {
+        "name": "ZoomOutAnimation"
+    },
+    {
+        "name": "StretchAnimation"
+    },
+    {
+        "name": "FlashAnimation"
+    },
+    {
+        "name": "SlideUpAnimation"
+    },
+    {
+        "name": "SlideDownAnimation"
+    },
+    {
+        "name": "BounceInAnimation"
+    },
+    {
+        "name": "BounceOutAnimation"
+    },
+    {
+        "name": "RippleAnimation"
+    },
+    {
+        "name": "ShrinkGrowAnimation"
+    },
+    {
+        "name": "FloatAnimation"
+    },
+    {
+        "name": "SwingingAnimation"
+    },
+    {
+        "name": "TwistAnimation"
+    },
+    {
+        "name": "GrowShrinkAnimation"
+    },
+    {
+        "name": "WaveAnimation"
+    },
+    {
+        "name": "BlipAnimation"
+    },
+    {
+        "name": "SkewAnimation"
+    },
+    {
+        "name": "RollInAnimation"
+    },
+    {
+        "name": "RollOutAnimation"
+    },
+    {
+        "name": "StretchOutAnimation"
+    },
+    {
+        "name": "StretchInAnimation"
+    },
+    {
+        "name": "FlickerAnimation"
+    },
+    {
+        "name": "BounceLeftAnimation"
+    },
+    {
+        "name": "BounceRightAnimation"
+    },
+    {
+        "name": "DropAnimation"
+    },
+    {
+        "name": "ExpandAnimation"
+    },
+    {
+        "name": "ContractAnimation"
+    },
+    {
+        "name": "TwinkleAnimation"
+    },
+    {
+        "name": "ExpandUpAnimation"
+    },
+    {
+        "name": "ExpandDownAnimation"
+    },
+    {
+        "name": "RotateXAnimation"
+    },
+    {
+        "name": "RotateYAnimation"
+    },
+    {
+        "name": "StretchHorizontalAnimation"
+    },
+    {
+        "name": "StretchVerticalAnimation"
+    },
+    {
+        "name": "FadeDiagonalAnimation"
+    },
+    {
+        "name": "ColorShiftAnimation"
+    },
+    {
+        "name": "ScaleUpAnimation"
+    },
+    {
+        "name": "ScaleDownAnimation"
+    },
+    {
+        "name": "PopOutAnimation"
+    },
+    {
+        "name": "PopInAnimation"
+    },
+    {
+        "name": "SpiralAnimation"
+    },
+    {
+        "name": "BlurInAnimation"
+    },
+    {
+        "name": "BlurOutAnimation"
+    },
+    {
+        "name": "FlipXAnimation"
+    },
+    {
+        "name": "FlipYAnimation"
+    },
+    {
+        "name": "RotateZAnimation"
+    },
+    {
+        "name": "ScaleBounceAnimation"
+    },
+    {
+        "name": "SlideDiagonalAnimation"
+    },
+    {
+        "name": "FadeRotateAnimation"
+    },
+    {
+        "name": "BlinkScaleAnimation"
+    },
+    {
+        "name": "BounceTwistAnimation"
+    },
+    {
+        "name": "ShimmerAnimation"
+    },
+    {
+        "name": "WaveVerticalAnimation"
+    },
+    {
+        "name": "SkewXAnimation"
+    },
+    {
+        "name": "SkewYAnimation"
+    },
+    {
+        "name": "DriftAnimation"
+    },
+    {
+        "name": "ScaleFadeAnimation"
+    },
+    {
+        "name": "StretchDiagonalAnimation"
+    },
+    {
+        "name": "FlashScaleAnimation"
+    },
+    {
+        "name": "SwingXAnimation"
+    },
+    {
+        "name": "SwingYAnimation"
+    },
+    {
+        "name": "PulseOpacityAnimation"
+    },
+    {
+        "name": "ScaleRotateAnimation"
+    },
+    {
+        "name": "ShiftLeftAnimation"
+    },
+    {
+        "name": "ShiftRightAnimation"
+    },
+    {
+        "name": "SlideShrinkAnimation"
+    },
+    {
+        "name": "ZoomBlinkAnimation"
+    },
+    {
+        "name": "PushDownAnimation"
+    },
+    {
+        "name": "PushUpAnimation"
+    },
+    {
+        "name": "ScaleFlashAnimation"
+    },
+    {
+        "name": "SlideUpFadeAnimation"
+    },
+    {
+        "name": "SlideDownFadeAnimation"
+    },
+    {
+        "name": "ZoomSpinAnimation"
+    },
+    {
+        "name": "SwayAnimation"
+    },
+    {
+        "name": "PushBackAnimation"
+    },
+    {
+        "name": "PulseRotateAnimation"
+    },
+    {
+        "name": "ExpandCollapseAnimation"
+    },
+    {
+        "name": "PushPullAnimation"
+    },
+    {
+        "name": "BounceOpacityAnimation"
+    },
+    {
+        "name": "SpinBounceAnimation"
+    },
+    {
+        "name": "CrossFadeAnimation"
+    },
+    {
+        "name": "PushZoomAnimation"
+    },
+    {
+        "name": "ElasticAnimation"
+    },
+    {
+        "name": "SlideFadeAnimation"
+    },
+    {
+        "name": "GlowPulseAnimation"
+    },
+    {
+        "name": "SlideFlipAnimation"
+    },
+    {
+        "name": "SlideSkewAnimation"
+    },
+    {
+        "name": "CircleExpandAnimation"
+    },
+    {
+        "name": "FlipFadeAnimation"
+    },
+    {
+        "name": "TiltShiftAnimation"
+    },
+    {
+        "name": "SwayRotateAnimation"
+    },
+    {
+        "name": "ZigzagAnimation"
+    },
+    {
+        "name": "StretchGlowAnimation"
+    },
+    {
+        "name": "SwingFadeAnimation"
+    },
+    {
+        "name": "GrowShrinkDiagonalAnimation"
+    },
+    {
+        "name": "SpiralOutAnimation"
+    },
+    {
+        "name": "BounceRotateAnimation"
+    },
+    {
+        "name": "FlashTiltAnimation"
+    },
+    {
+        "name": "StretchBounceAnimation"
+    },
+    {
+        "name": "WaveDiagonalAnimation"
+    },
+    {
+        "name": "PopUpAnimation"
+    },
+    {
+        "name": "DropShrinkAnimation"
+    },
+    {
+        "name": "RotatePulseAnimation"
+    },
+    {
+        "name": "ExpandRotateAnimation"
+    },
+    {
+        "name": "SwipeAnimation"
+    },
+    {
+        "name": "SpinGrowAnimation"
+    },
+    {
+        "name": "FlickerZoomAnimation"
+    },
+    {
+        "name": "StretchFadeAnimation"
+    },
+    {
+        "name": "SlideUpGrowAnimation"
+    },
+    {
+        "name": "SwingAnimation"
+    },
+    {
+        "name": "SpinSkewAnimation"
+    },
+    {
+        "name": "TwirlAnimation"
+    },
+    {
+        "name": "PulseDiagonalAnimation"
+    },
+    {
+        "name": "ShrinkBounceAnimation"
+    },
+    {
+        "name": "BounceSlideAnimation"
+    },
+    {
+        "name": "RotateScaleFadeAnimation"
+    },
+    {
+        "name": "FlipExpandAnimation"
+    },
+    {
+        "name": "GlideInAnimation"
+    },
+    {
+        "name": "SpinPulseAnimation"
+    },
+    {
+        "name": "FadeSlideAnimation"
+    },
+    {
+        "name": "SlideGlowAnimation"
+    },
+    {
+        "name": "PopSkewAnimation"
+    },
+    {
+        "name": "PulseGrowAnimation"
+    },
+    {
+        "name": "StretchShiftAnimation"
+    },
+    {
+        "name": "CollapseExpandAnimation"
+    }
+]
