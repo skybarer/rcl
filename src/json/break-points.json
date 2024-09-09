@@ -1,8 +1,8 @@
 {
-    "extra_small": "xsmall",
-    "small": "small",
-    "medium": "medium",
-    "large": "large",
-    "extra_large": "xlarge",
-    "double_extra_large": "xxlarge"
+    "xs": "0",
+    "sm": "576px",
+    "md": "768px",
+    "lg": "992px",
+    "xl": "1200px",
+    "xxl": "1400px"
 }
