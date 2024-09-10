@@ -4,7 +4,7 @@ import React from 'react';
 import ImageHoverEnlarge from './ImageHoverEnlarge';
 
 export default {
-  title: 'ImageHoverEnlarge',
+  title: 'Animation/ImageHoverEnlarge',
   component: ImageHoverEnlarge,
   argTypes: {
     width: { control: 'text' },
