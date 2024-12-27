@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar';
-import './Navbar.css'
+import './Navbar.css';
 import {
   Title,
   Subtitle,
@@ -31,20 +31,28 @@ export default {
   },
   argTypes: {
     backgroundColor: { control: 'color' },
-
-  }
+  },
 };
 
-const Template = (args) => <Navbar {...args} />;
+const Template = (args) => (
+  <Navbar
+    label="My Website"
+    backgroundColor="red"
+    style={{ backgroundColor: 'black', color: 'white' }}
+  >
+    <button>Home</button>
+    <button>About</button>
+    <button>Contact</button>
+  </Navbar>
+);
 
 export const Basic = Template.bind({});
 Basic.parameters = {
-  layout: 'fullscreen'
-
+  layout: 'fullscreen',
 };
 
 Basic.args = {
   label: 'Navbar',
   backgroundColor: 'aliceblue',
-  color: '#000000'
+  color: '#000000',
 };
