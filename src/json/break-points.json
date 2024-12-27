@@ -1,8 +1,32 @@
 {
-    "xs": "0",
-    "sm": "576px",
-    "md": "768px",
-    "lg": "992px",
-    "xl": "1200px",
-    "xxl": "1400px"
+    "xs": {
+        "value": "0",
+        "name": "Extra Small",
+        "description": "Used for extra small devices such as mobile phones in portrait mode."
+    },
+    "sm": {
+        "value": "576px",
+        "name": "Small",
+        "description": "Used for small devices like tablets in portrait mode or large smartphones."
+    },
+    "md": {
+        "value": "768px",
+        "name": "Medium",
+        "description": "Used for medium devices like tablets in landscape mode or small desktop screens."
+    },
+    "lg": {
+        "value": "992px",
+        "name": "Large",
+        "description": "Used for large devices like laptops or medium-sized desktops."
+    },
+    "xl": {
+        "value": "1200px",
+        "name": "Extra Large",
+        "description": "Used for extra large devices such as high-resolution desktops or large laptops."
+    },
+    "xxl": {
+        "value": "1400px",
+        "name": "Extra Extra Large",
+        "description": "Used for very large screens, typically large desktop monitors or TV displays."
+    }
 }
