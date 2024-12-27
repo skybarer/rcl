@@ -10,16 +10,16 @@ const Wrapper = styled.div`
 const Button = styled.button`
   background-color: white;
   color: black;
-  padding-top: 0.5rem;
-  padding-bottom: 0.2rem;
+  /* padding-top: 0.5rem;
+  padding-bottom: 0.2rem; */
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   border: none;
   cursor: pointer;
-  border: 1px solid #bbbbbc;
+  /* border: 1px solid #e4e4e7; */
   border-radius: 0.375rem;
   font-weight: bold;
-  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  /* box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1); */
 `;
 
 const DropdownList = styled.ul`
