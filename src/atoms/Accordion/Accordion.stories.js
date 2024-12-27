@@ -42,21 +42,17 @@ const Template = (args) => (
     <Divider />
 
     <AccordionItem>
-      <AccordionTitle>
-        <strong>What is Lorem Ipsum?</strong>
-      </AccordionTitle>
+      <AccordionTitle>What is Lorem Ipsum?</AccordionTitle>
       <AccordionContent>
-        <span>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
-        </span>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently
+        with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
       </AccordionContent>
     </AccordionItem>
 
@@ -64,10 +60,8 @@ const Template = (args) => (
 
     <AccordionItem>
       <AccordionTitle>
-        <strong>
-          How is the free Personal Plan different from the Personal Pro and Team
-          Plans?
-        </strong>
+        How is the free Personal Plan different from the Personal Pro and Team
+        Plans?
       </AccordionTitle>
       <AccordionContent>
         <div>
@@ -110,83 +104,74 @@ const Template = (args) => (
     <Divider />
 
     <AccordionItem>
-      <AccordionTitle>
-        <strong>Section 2</strong>
-      </AccordionTitle>
+      <AccordionTitle>Section 2</AccordionTitle>
       <AccordionContent>
-        <span>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
-          sapiente laborum cupiditate possimus labore, hic temporibus velit
-          dicta earum suscipit commodi eum enim atque at? Et perspiciatis dolore
-          iure voluptatem.
-        </span>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
+        laborum cupiditate possimus labore, hic temporibus velit dicta earum
+        suscipit commodi eum enim atque at? Et perspiciatis dolore iure
+        voluptatem.
       </AccordionContent>
     </AccordionItem>
 
     <Divider />
 
     <AccordionItem>
-      <AccordionTitle>
-        <strong>Section 3</strong>
-      </AccordionTitle>
+      <AccordionTitle>Section 3</AccordionTitle>
       <AccordionContent>
-        <span>
-          The biggest difference is how you can collaborate with others. The
-          free Personal Plan is designed for individual use, but allows up to 5
-          unique guests. These are friends, family members, and others you can
-          invite to collaborate with you privately on any page. You can also
-          share a page publicly and turn on commenting or editing access. In the
-          Share menu at the top right, turn on "Share to web" then "Allow
-          editing." Any Notion user with the link will be able to edit your
-          page. With the Personal Pro Plan, you can invite unlimited guests for
-          private collaboration. For example, if you run your own business, you
-          can invite all your clients to provide feedback on your work. With the
-          Team Plan, you can add members to your workspace so you all share and
-          work on the same content. It also comes with more permission and admin
-          controls so you and your teammates can work together securely. See the
-          plan comparison chart for more details.The biggest difference is how
-          you can collaborate with others. The free Personal Plan is designed
-          for individual use, but allows up to 5 unique guests. These are
-          friends, family members, and others you can invite to collaborate with
-          you privately on any page. You can also share a page publicly and turn
-          on commenting or editing access. In the Share menu at the top right,
-          turn on "Share to web" then "Allow editing." Any Notion user with the
-          link will be able to edit your page. With the Personal Pro Plan, you
-          can invite unlimited guests for private collaboration. For example, if
-          you run your own business, you can invite all your clients to provide
-          feedback on your work. With the Team Plan, you can add members to your
-          workspace so you all share and work on the same content. It also comes
-          with more permission and admin controls so you and your teammates can
-          work together securely. See the plan comparison chart for more.The
-          biggest difference is how you can collaborate with others. The free
-          Personal Plan is designed for individual use, but allows up to 5
-          unique guests. These are friends, family members, and others you can
-          invite to collaborate with you privately on any page. You can also
-          share a page publicly and turn on commenting or editing access. In the
-          Share menu at the top right, turn on "Share to web" then "Allow
-          editing." Any Notion user with the link will be able to edit your
-          page. With the Personal Pro Plan, you can invite unlimited guests for
-          private collaboration. For example, if you run your own business, you
-          can invite all your clients to provide feedback on your work. With the
-          Team Plan, you can add members to your workspace so you all share and
-          work on the same content. It also comes with more permission and admin
-          controls so you and your teammates can work together securely. See the
-          plan comparison chart for more details.The biggest difference is how
-          you can collaborate with others. The free Personal Plan is designed
-          for individual use, but allows up to 5 unique guests. These are
-          friends, family members, and others you can invite to collaborate with
-          you privately on any page. You can also share a page publicly and turn
-          on commenting or editing access. In the Share menu at the top right,
-          turn on "Share to web" then "Allow editing." Any Notion user with the
-          link will be able to edit your page. With the Personal Pro Plan, you
-          can invite unlimited guests for private collaboration. For example, if
-          you run your own business, you can invite all your clients to provide
-          feedback on your work. With the Team Plan, you can add members to your
-          workspace so you all share and work on the same content. It also comes
-          with more permission and admin controls so you and your teammates can
-          work together securely. See the plan comparison chart for more
-          details.
-        </span>
+        The biggest difference is how you can collaborate with others. The free
+        Personal Plan is designed for individual use, but allows up to 5 unique
+        guests. These are friends, family members, and others you can invite to
+        collaborate with you privately on any page. You can also share a page
+        publicly and turn on commenting or editing access. In the Share menu at
+        the top right, turn on "Share to web" then "Allow editing." Any Notion
+        user with the link will be able to edit your page. With the Personal Pro
+        Plan, you can invite unlimited guests for private collaboration. For
+        example, if you run your own business, you can invite all your clients
+        to provide feedback on your work. With the Team Plan, you can add
+        members to your workspace so you all share and work on the same content.
+        It also comes with more permission and admin controls so you and your
+        teammates can work together securely. See the plan comparison chart for
+        more details.The biggest difference is how you can collaborate with
+        others. The free Personal Plan is designed for individual use, but
+        allows up to 5 unique guests. These are friends, family members, and
+        others you can invite to collaborate with you privately on any page. You
+        can also share a page publicly and turn on commenting or editing access.
+        In the Share menu at the top right, turn on "Share to web" then "Allow
+        editing." Any Notion user with the link will be able to edit your page.
+        With the Personal Pro Plan, you can invite unlimited guests for private
+        collaboration. For example, if you run your own business, you can invite
+        all your clients to provide feedback on your work. With the Team Plan,
+        you can add members to your workspace so you all share and work on the
+        same content. It also comes with more permission and admin controls so
+        you and your teammates can work together securely. See the plan
+        comparison chart for more.The biggest difference is how you can
+        collaborate with others. The free Personal Plan is designed for
+        individual use, but allows up to 5 unique guests. These are friends,
+        family members, and others you can invite to collaborate with you
+        privately on any page. You can also share a page publicly and turn on
+        commenting or editing access. In the Share menu at the top right, turn
+        on "Share to web" then "Allow editing." Any Notion user with the link
+        will be able to edit your page. With the Personal Pro Plan, you can
+        invite unlimited guests for private collaboration. For example, if you
+        run your own business, you can invite all your clients to provide
+        feedback on your work. With the Team Plan, you can add members to your
+        workspace so you all share and work on the same content. It also comes
+        with more permission and admin controls so you and your teammates can
+        work together securely. See the plan comparison chart for more
+        details.The biggest difference is how you can collaborate with others.
+        The free Personal Plan is designed for individual use, but allows up to
+        5 unique guests. These are friends, family members, and others you can
+        invite to collaborate with you privately on any page. You can also share
+        a page publicly and turn on commenting or editing access. In the Share
+        menu at the top right, turn on "Share to web" then "Allow editing." Any
+        Notion user with the link will be able to edit your page. With the
+        Personal Pro Plan, you can invite unlimited guests for private
+        collaboration. For example, if you run your own business, you can invite
+        all your clients to provide feedback on your work. With the Team Plan,
+        you can add members to your workspace so you all share and work on the
+        same content. It also comes with more permission and admin controls so
+        you and your teammates can work together securely. See the plan
+        comparison chart for more details.
       </AccordionContent>
     </AccordionItem>
 
